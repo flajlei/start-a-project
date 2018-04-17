@@ -1,0 +1,43 @@
+body{
+	margin:0;
+	background-color: #68CDD6;
+}
+.back{
+	height:7rem;
+	margin:1.25rem 0 0 1.25rem;
+	background:url(back1.png) no-repeat;
+}
+.theme{
+	height:11rem;
+	margin:0 auto;
+	background:url(theme1.png) no-repeat top center;
+}
+.abstract{
+	height:10rem;
+	width:80%;
+	margin:0 auto;
+	color:white;
+	font-size:1rem;
+}
+.user{
+	float:left;
+	width:6rem;
+	height:10rem;
+	margin-left:10%;
+	color:white;
+	font-size:1rem;
+	background:url(user1.png) no-repeat top center;
+	text-align:center;
+	line-height:13.5rem;
+}
+.photo{
+	float:right;
+	width:6rem;
+	height:10rem;
+	margin-right:10%;
+	color:white;
+	font-size:1rem;
+	background:url(photo1.png) no-repeat top center;
+	text-align:center;
+	line-height:13.5rem;
+}
