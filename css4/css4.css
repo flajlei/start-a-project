@@ -1,0 +1,70 @@
+body{
+	background-color:#eef0f4;
+	margin:0;
+}
+.head{
+	background-color:#5ac0ce;
+	height:1.625rem;
+	border:0.4375rem #5ac0ce solid;
+	margin:0 auto;
+	color:white;
+	font-size:1rem;
+}
+.register{
+	float:left;
+	width:40%;
+}
+.theme{
+	float:left;
+	width:20%;
+	margin:auto;
+	text-align:center;
+}
+.back{
+	float:right;
+	width:40%;
+	text-align:right;
+}
+.main{
+	position:relative;
+}
+.passphoto1{
+	position:absolute;
+	margin:18px 0 0 21px;
+}
+.passphoto2{
+	position:absolute;
+	margin:74px 0 0 21px;
+}
+.pass1,.pass2{
+	float:left;
+	background-color:white;
+	width:100%;
+	height:3rem;
+	border-left:82px white solid;
+	margin-top:0.5rem;
+}
+.pass1>input,.pass2>input{
+	border:0;
+	width:100%;
+	margin:1rem 0;
+}
+.pass2>input{
+	-webkit-text-security:disc;
+}
+.button{
+	background-color:#5ac0ce;
+	height:2.5rem;
+	width:100%;
+	border:0;
+	margin-top:0.5rem;
+	color:white;
+	font-size:1rem;
+	letter-spacing:1rem;
+	cursor:pointer;
+}
+.footer{
+	text-align:right;
+	margin:1rem;
+	font-size:0.5rem;
+}
