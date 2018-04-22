@@ -20,24 +20,20 @@ body{
 	font-size:0.5rem;
 }
 .user{
-	float:left;
 	width:4rem;
 	height:10rem;
-	margin-left:10%;
 	color:white;
 	font-size:0.5rem;
-	background:url(user2.png) no-repeat top center;
 	text-align:center;
 	line-height:7.5rem;
 }
+.user{
+	float:left;
+	margin-left:10%;
+	background:url(user2.png) no-repeat top center;
+}
 .photo{
 	float:right;
-	width:4rem;
-	height:10rem;
 	margin-right:10%;
-	color:white;
-	font-size:0.5rem;
 	background:url(photo2.png) no-repeat top center;
-	text-align:center;
-	line-height:7.5rem;
 }

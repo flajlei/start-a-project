@@ -19,25 +19,26 @@ body{
 	color:white;
 	font-size:1rem;
 }
-.user{
-	float:left;
+@media screen and (min-width: 980px){
+	.abstract{
+		text-align: center;
+	}
+}
+.user,.photo{
 	width:6rem;
 	height:10rem;
-	margin-left:10%;
 	color:white;
 	font-size:1rem;
-	background:url(user1.png) no-repeat top center;
 	text-align:center;
 	line-height:13.5rem;
 }
+.user{
+	float:left;
+	margin-left:10%;
+	background:url(user1.png) no-repeat top center;
+}
 .photo{
 	float:right;
-	width:6rem;
-	height:10rem;
 	margin-right:10%;
-	color:white;
-	font-size:1rem;
 	background:url(photo1.png) no-repeat top center;
-	text-align:center;
-	line-height:13.5rem;
 }
