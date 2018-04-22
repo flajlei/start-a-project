@@ -19,7 +19,7 @@ body{
 	color:white;
 	font-size:0.5rem;
 }
-.user{
+.user,.photo{
 	width:4rem;
 	height:10rem;
 	color:white;

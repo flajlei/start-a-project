@@ -13,16 +13,18 @@ body{
 .register{
 	float:left;
 	width:40%;
+	height:21px;
 }
 .theme{
 	float:left;
 	width:20%;
-	margin:auto;
+	height:21px;
 	text-align:center;
 }
 .back{
 	float:right;
 	width:40%;
+	height:21px;
 	text-align:right;
 }
 .main{
@@ -50,7 +52,7 @@ body{
 	margin:1rem 0;
 }
 .pass2>input{
-	-webkit-text-security:disc;
+	-webkit-text-security:disc;/*将文字转化为圆点*/
 }
 .button{
 	background-color:#5ac0ce;
@@ -61,7 +63,7 @@ body{
 	color:white;
 	font-size:1rem;
 	letter-spacing:1rem;
-	cursor:pointer;
+	cursor:pointer;/*成为焦点时鼠标样式*/
 }
 .footer{
 	text-align:right;
