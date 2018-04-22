@@ -2,33 +2,38 @@ body{
 	background-color:#eef0f4;
 	margin:0;
 }
-.head{
+header{
+	position:fixed;
+	top:0;
 	background-color:#5ac0ce;
-	height:1.625rem;
-	border:0.4375rem #5ac0ce solid;
+	width:100%;
+	height:2.5rem;
 	margin:0 auto;
 	color:white;
 	font-size:1rem;
+	line-height:2.3rem;
+	text-align: center;
+}
+main{
+	margin-top:2.5rem;
 }
 .register{
 	float:left;
-	width:40%;
+	width:10%;
 	height:21px;
 }
 .theme{
 	float:left;
-	width:20%;
+	width:80%;
 	height:21px;
-	text-align:center;
 }
 .back{
 	float:right;
-	width:40%;
+	width:10%;
 	height:21px;
-	text-align:right;
 }
-.main{
-	position:relative;
+.pass{
+	position:relative;/*绝对定位以父级相对定位为基准*/
 }
 .passphoto1{
 	position:absolute;
@@ -50,6 +55,7 @@ body{
 	border:0;
 	width:100%;
 	margin:1rem 0;
+	outline:none;/*点击时出现的默认外界边框消除*/
 }
 .pass2>input{
 	-webkit-text-security:disc;/*将文字转化为圆点*/
