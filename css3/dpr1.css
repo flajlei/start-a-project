@@ -5,12 +5,12 @@ body{
 .back{
 	height:7rem;
 	margin:1.25rem 0 0 1.25rem;
-	background:url(back1.png) no-repeat;
+	background:url(back2.png) no-repeat;
 }
 .theme{
 	height:11rem;
 	margin:0 auto;
-	background:url(theme1.png) no-repeat top center;
+	background:url(theme2.png) no-repeat top center;
 }
 .abstract{
 	height:10rem;
@@ -30,15 +30,15 @@ body{
 	color:white;
 	font-size:1rem;
 	text-align:center;
-	line-height:13.5rem;
+	line-height:7.5rem;
 }
 .user{
 	float:left;
 	margin-left:10%;
-	background:url(user1.png) no-repeat top center;
+	background:url(user2.png) no-repeat top center;
 }
 .photo{
 	float:right;
 	margin-right:10%;
-	background:url(photo1.png) no-repeat top center;
+	background:url(photo2.png) no-repeat top center;
 }
