@@ -39,7 +39,7 @@ main{
 .headphoto{
   float: left;
   background: url(headphoto.png) no-repeat right center;
-  width: 20%;
+  width: 6rem;
   height: 100%;
 }
 .name,.address{
