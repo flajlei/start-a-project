@@ -15,25 +15,23 @@ header{
 	text-align: center;
 }
 main{
+	position:relative;/*绝对定位以父级相对定位为基准*/
 	margin-top:2.5rem;
 }
 .register{
 	float:left;
-	width:10%;
+	width:15%;
 	height:21px;
 }
 .theme{
 	float:left;
-	width:80%;
+	width:70%;
 	height:21px;
 }
 .back{
 	float:right;
-	width:10%;
+	width:15%;
 	height:21px;
-}
-.pass{
-	position:relative;/*绝对定位以父级相对定位为基准*/
 }
 .passphoto1{
 	position:absolute;
@@ -43,7 +41,7 @@ main{
 	position:absolute;
 	margin:74px 0 0 21px;
 }
-.pass1,.pass2{
+.pass{
 	float:left;
 	background-color:white;
 	width:100%;
@@ -51,14 +49,11 @@ main{
 	border-left:82px white solid;
 	margin-top:0.5rem;
 }
-.pass1>input,.pass2>input{
+.pass>input{
 	border:0;
 	width:100%;
 	margin:1rem 0;
-	outline:none;/*点击时出现的默认外界边框消除*/
-}
-.pass2>input{
-	-webkit-text-security:disc;/*将文字转化为圆点*/
+	outline:none;/*点击时出现的默认外边框消除*/
 }
 .button{
 	background-color:#5ac0ce;
