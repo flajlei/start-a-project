@@ -90,7 +90,7 @@ main{
 .message{
   position: absolute;
   color: #5ac0ce;
-  width: 48%;
+  width: calc(50% - 8px);
   height: 90%;
   line-height: 2.25rem;
   text-align: center;
@@ -102,7 +102,7 @@ main{
   background-color: #5ac0ce;
   color: #fff;
   right: 0;
-  width: 48%;
+  width: calc(50% - 8px);
   height: 90%;
   line-height: 2.25rem;
   text-align: center;
