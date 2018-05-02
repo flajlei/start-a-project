@@ -126,6 +126,7 @@ button > span{
 .footer-photo3{
   right: 25%;
   background-position-x: -48px;
+  color: #aaa;
 }
 .footer-btn{
   position: relative;
