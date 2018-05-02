@@ -1,0 +1,148 @@
+body{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.nav-bc-top{
+  background-color: #5ec0ce;
+  border-bottom: 0;
+}
+.nav-bc-top > button{
+  border: 0;
+  margin: 8px -2px;
+}
+.nav-bc-top > button:hover{
+  background-color: #53a8b4;
+  color: #fff;
+  outline: none;
+}
+.btn-top{
+  width: 70px;
+}
+.nav-img{
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  padding: 0px;
+  background-image: url(sprite.png);
+  background-position-y: -25px;
+}
+/*顶部移动选项*/
+.top-move1,.top-move2,.top-move3{
+  border-radius: 0%;
+  border-left: 0;
+  margin-top: -1px;  
+  color: #aaa;
+  border-color: #dbdbdb;
+}
+.top-move2{
+  border-right: 0;
+}
+button > span{
+  position: absolute;
+  top: 14px;
+  right: 10px;
+}
+.menu1,.menu2,.menu3{
+  position: absolute;
+  top: 80px;
+  border-bottom: 1px #dbdbdb solid;
+  border-right: 1px #dbdbdb solid;
+}
+.top-move1:hover + ul,.top-move2:hover + ul,.top-move3:hover + ul{
+  display: block;
+  min-width: 0;
+}
+.menu2{
+  left: 33.3333%;
+}
+.menu3{
+  left: 66.6666%;
+}
+/*主体*/
+.main-photo1,.main-photo2,.main-3{
+  background-image: url(sprite.png);
+  width: 20px;
+  height: 20px;
+}
+.main-photo1{
+  background-position: -50px -25px;
+  margin-top: 10px;
+}
+.main-photo2{
+  background-position: -25px -25px;
+  margin-top: 10px;
+}
+.main-3{
+  white-space: nowrap;
+  background-position-x: -75px;
+  margin: 2px 0 0 2px;
+}
+.main-address{
+  color: #aaa;
+  margin-top: 5px;
+}
+.main-1,.main-address,.main-photo1,.main-photo2{
+  float: left;
+}
+.main-2,.main-3{
+  float: right;
+}
+.main-1{
+  padding: 0px 0px 0px 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.main-2{
+  color: #ce593d;
+}
+.main-info{
+  border-bottom: 1px #dbdbdb solid;
+}
+/*底部导航*/
+.nav-bc-bottom{
+  background-color: #fff;
+}
+.footer-photo1,.footer-photo2,.footer-photo3{
+  background: url(sprite.png) no-repeat;
+}
+.footer-photo1,.footer-photo3{
+  position: absolute;
+  width: 25px;
+  height: 20px;
+  padding-top: 25px;
+  margin-top: 5px;
+  white-space: nowrap;
+}
+.footer-photo1:hover,.footer-photo3:hover{
+  text-decoration: none;
+}
+.footer-photo1{
+  left: 25%;
+  background-position-x: -24px;
+}
+.footer-photo3{
+  right: 25%;
+  background-position-x: -48px;
+}
+.footer-btn{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-top: 0;
+  border-color: #5ec0ce;
+  border-radius: 50%;
+  background-color: #5ec0ce;
+}
+.footer-btn:hover{
+  outline: none;
+}
+.footer-photo2{
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  width: 25px;
+  height: 25px;
+}
