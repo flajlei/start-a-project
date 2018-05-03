@@ -10,7 +10,7 @@ body{
   border: 0;
   margin: 8px -2px;
 }
-.nav-bc-top > button:hover{
+.nav-bc-top > button:focus{
   background-color: #53a8b4;
   color: #fff;
   outline: none;
@@ -47,6 +47,7 @@ button > span{
 .menu1,.menu2,.menu3{
   position: absolute;
   top: 80px;
+  padding: 0 10px;
   border-bottom: 1px #dbdbdb solid;
   border-right: 1px #dbdbdb solid;
 }
@@ -116,12 +117,20 @@ button > span{
   margin-top: 5px;
   white-space: nowrap;
 }
-.footer-photo1:hover,.footer-photo3:hover{
+.footer-photo1:focus,.footer-photo3:focus{
   text-decoration: none;
 }
 .footer-photo1{
   left: 25%;
   background-position-x: -24px;
+  color: #aaa;
+}
+.footer-photo2{
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  width: 25px;
+  height: 25px;
 }
 .footer-photo3{
   right: 25%;
@@ -137,13 +146,14 @@ button > span{
   border-radius: 50%;
   background-color: #5ec0ce;
 }
-.footer-btn:hover{
+.footer-btn:focus{
   outline: none;
+  border-color: #53a8b4;
+  background-color: #53a8b4;
 }
-.footer-photo2{
-  position: absolute;
-  top: 12px;
-  left: 15px;
-  width: 25px;
-  height: 25px;
+.footer-photo1:focus{
+  background-position: 1px -50px;
+}
+.footer-photo3:focus{
+  background-position: -23px -50px;
 }
