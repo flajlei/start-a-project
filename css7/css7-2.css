@@ -1,0 +1,82 @@
+.header-photo1,.header-photo2{
+  position: absolute;
+  top: 14px;
+  background-image: url(sprite.png);
+}
+.header-nav{
+  padding-top: 20px;
+  color: #fff;
+  font-size: 1.7rem;
+  background-color: #5ec0ce;
+}
+.header-photo1{
+  left: 10px;
+  width: 26px;
+  height: 20px;
+  background-position-x: -40px; 
+}
+.header-photo2{
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background-position-x: -20px; 
+}
+/*主体*/
+body{
+  margin-top:50px;
+  margin-bottom: 50px;
+}
+.body-result{
+  padding-top: 10px;
+  background-color: #5ec0ce;
+}
+.body-reward{
+  position: relative;
+  top: -37px;
+  height: 5px;
+  color: #fff;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+.body-info1{
+  color: #f8b445;
+  font-size: 1.7rem;
+}
+.body-info2{
+  color: #fff;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+.body-info2 > div{
+  padding: 0;
+  color: #fff;
+}
+.body-day{
+  padding-bottom: 10px;
+  border-bottom: 1px #888 solid;
+}
+.body-day > h4,.body-day > div{
+  padding:0 15px;
+}
+h4 > small{
+  float: right;
+}
+.body-day > div{
+  color: #888;
+}
+/*底部导航*/
+.footer-nav{
+  padding: 0;
+  background-color: rgba(94, 192, 206, 0.5);
+}
+.footer-btn1,.footer-btn2{
+  width: 100%;
+  color: #fff;
+  font-size: 2rem;
+}
+.footer-btn1{
+  background-color: #f37072;
+}
+.footer-btn2{
+  background-color: #f8b445;  
+}

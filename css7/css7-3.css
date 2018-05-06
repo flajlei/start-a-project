@@ -1,0 +1,131 @@
+.header-nav{
+  padding-top: 20px;
+  color: #fff;
+  font-size: 1.7rem;
+  border-bottom: 0;
+  background-color: #5ec0ce;
+}
+.header-btn{
+  position: absolute;
+  float: left;
+  top: 18px;
+  margin: 0;
+  padding: 1px 0;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 0;
+}
+.icon-bar{
+  display: block;
+  width: 18px;
+  height: 2px;
+  margin: 3px 0;
+  background-color: #fff;
+}
+.header-photo{
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url(sprite.png);
+}
+/*主体*/
+body{
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+.body-now{
+  padding: 10px 0 10px 20px;
+  background-color: #bae9f4;
+}
+.body-now-p{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 25px;
+  height: 25px;
+  background-image: url(sprite.png);
+  background-position: -70px -21px;
+}
+.body-caret{
+  position: absolute;
+  top: 90px;
+  left: 25px;
+  width: 0;
+  height: 0;
+  border-top: 6px #bae9f4 solid;
+  border-left: 4px transparent solid;
+  border-right: 4px transparent solid;
+}
+.body-main{
+  background-color: #5ec0ce;
+}
+.body-info{
+  padding: 7px 0 20px 25px;
+  color: #fff;
+}
+.body-part{
+  padding: 0;
+}
+.body-user{
+  width: 80px;
+  height: 80px;
+  padding: 0;
+  border: 2px #fff solid;
+  border-radius: 0;
+}
+.body-user1{
+  height: 56px;
+  line-height: 56px;
+  background-color: #f3c881;
+}
+.body-user2{
+  background-color: #82af9b;
+}
+.body-select1,.body-select2,.body-select3,.body-select4{
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background-image: url(sprite.png);
+  display: none;
+}
+.body-select{
+  height: 20px;
+  padding: 0;
+  margin: 7px 0;
+}
+.body-select1{
+  background-position: -0px -20px;
+}
+.body-select2{
+  background-position: -18px -20px;
+}
+.body-select3{
+  background-position: -35px -20px;
+}
+.body-select4{
+  background-position: -53px -20px;
+}
+.body-user:focus{
+  outline: none;
+  border-color: #fff;
+}
+.body-user:focus + .body-select > button{
+  display: inline;
+}
+/*底部导航*/
+.footer-nav{
+  height: 70px;
+  background-color: #5ec0ce;
+}
+.footer-nav > a > button{
+  border: 0;
+  border-radius: 0;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 2rem;
+  background-color: #f8b445;
+}

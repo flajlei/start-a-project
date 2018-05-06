@@ -1,0 +1,80 @@
+.header{
+  background-color: #5ec0ce;
+}
+.header > button{
+  float: left;
+  border: 0;
+}
+/*主体*/
+body{
+  margin-top: 50px;
+  background-color: #f0f0f0;
+}
+.bg-c{
+  padding-right: 0;
+}
+.body-back{
+  height: 60px;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  margin: 1rem 0;
+  color: #888;
+  font-size: 2rem;
+}
+.body-back > span{
+  position: absolute;
+  top: 19px;
+  right: 10px;
+  width: 15px;
+  height: 20px;
+  background-image: url(sprite.png);
+  background-position-x: -70px;
+}
+.body-theme{
+  padding-bottom: 1rem;
+  border-bottom: 1px #fbe1b3 solid;
+  color: #f8b547;
+  font-size: 2rem;
+}
+.body-main{
+  border-top: 1px #888 solid;
+  border-left: 1px #888 solid;
+  padding: 1rem 0;
+  background-color: #fff;
+}
+.body-option{
+  height: 80px;
+  border-radius: 0;
+  padding-left: 24px;
+  margin: 1rem 0 1rem 1rem;
+  background-color: #5ec0ce;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.body-number{
+  margin-left: 1rem;
+}
+.body-right{
+  position: absolute;
+  top: 48%;
+  left: 93%;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-left: 20px solid #f8b547;
+  border-bottom: 20px solid transparent;
+  padding: 0;
+}
+.footer-nav{
+  margin-bottom: 5px;
+}
+.footer-btn{
+  padding: 5px;
+  border: 0;
+  border-radius: 50%;
+}
+.footer-btn:focus{
+  outline: none;
+  background-color: #5ec0ce;
+}
