@@ -17,7 +17,7 @@ body{
 .color-green,.body-chara-p4,.body-how1{
   color: #28b078;
 }
-.color-gray-h,.body-how2{
+.color-gray-h,.body-how2,.chara-text{
   color: #888;
 }
 .photo1{
@@ -60,20 +60,26 @@ body{
 .body-chara-p1{
   width: 50px;
   height: 60px;
-  margin: 0 auto;  
+  margin: 0 auto 20px auto;  
   background-position: -115px -20px;
 }
 .body-chara-p2{
   width: 60px;
   height: 50px;
-  margin: 10px auto 0 auto; 
+  margin: 10px auto 20px auto; 
   background-position: 0px -30px;
 }
 .body-chara-p3{
   width: 55px;
   height: 60px;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
   background-position: -60px -30px;
+}
+.chara-text{
+  display: inline-block;
+  width: auto;
+  margin-top: 10px;
+  text-align: left;
 }
 .body-chara-n{
   padding: 35px 0 35px 30px;
