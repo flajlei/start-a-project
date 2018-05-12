@@ -1,0 +1,186 @@
+body{
+  background-color: #fafafa;
+}
+.nav-top1{
+  line-height: 30px;
+  height: 30px;
+  min-height: 25px;
+  margin-bottom: 0;
+  border: 0;
+  background-color: #fff;
+}
+.nav-top2{
+  padding:6px 33px 6px 0;
+  background-image: url(sprite.png);
+  background-repeat: no-repeat;
+}
+.color-green,.body-chara-p4,.body-how1{
+  color: #28b078;
+}
+.color-gray-h,.body-how2{
+  color: #888;
+}
+.photo1{
+  background-position: 3px 3px;
+}
+.photo2{
+  background-position: -27px 3px;
+}
+.photo3{
+  margin-right: 15px;
+  background-position: -55px 3px;
+}
+.nav-top3{
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  background-color: #28b078;
+}
+.nav-top4 > a{
+  color: #fff;
+}
+.active > a{
+  color: #fff;
+  border-bottom: 2px #fff solid;
+  background-color: transparent;
+}
+/*主体*/
+.body-photo-top > img{
+  width: 100%;
+}
+.body-photo-top,.body-chara,.body-friend{
+  margin-bottom: 50px;
+}
+.body-space{
+  margin: 45px 0;
+}
+.body-chara-p1,.body-chara-p2,.body-chara-p3,.body-chara-p4,.body-how3{
+  background: url(sprite.png) no-repeat;
+}
+.body-chara-p1{
+  width: 50px;
+  height: 60px;
+  margin: 0 auto;  
+  background-position: -115px -20px;
+}
+.body-chara-p2{
+  width: 60px;
+  height: 50px;
+  margin: 10px auto 0 auto; 
+  background-position: 0px -30px;
+}
+.body-chara-p3{
+  width: 55px;
+  height: 60px;
+  margin: 0 auto;
+  background-position: -60px -30px;
+}
+.body-chara-n{
+  padding: 35px 0 35px 30px;
+  border-left: 1px #888 dashed;
+}
+.body-chara-p4{
+  width: 20px;
+  margin: 0;
+  padding-left: 20px;
+  background-position: -120px 4px;
+}
+.body-how{
+  display: flex;
+  align-items: center;
+  height: 100px;
+  padding: 0 5px;
+}
+.body-how1{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 2px #888;
+  line-height: 40px;
+}
+.body-how2{
+  flex: 1;
+  padding: 0 15px;
+}
+.body-how3{
+  width: 20px;
+  height: 30px;
+  background-position: -95px 0;
+}
+.body-student{
+  background-color: #fff;
+  box-shadow: 0 0 5px #888;
+}
+.body-student > img{
+  padding: 10px 0;
+}
+.body-student-i{
+  color: #888;
+}
+.body-student-btn{
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border:1px #888 solid;
+  border-radius: 50%;
+  margin-top: 10px;
+  background-color: transparent;
+}
+.body-student-btn:focus{
+  outline: none;
+  background-color: #28b078;
+}
+.body-part{
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 20%;
+  height: 100px;
+}
+.body-part:hover{
+  border: 1px #888 solid;
+  box-shadow: 0 0 5px #888;
+}
+.body-link{
+  background-color: #fff;
+}
+.body-link-space{
+  padding: 10px 0;
+}
+.body-link-a{
+  padding: 0;
+}
+.body-link-a > li{
+  float: left;
+  width: 10%;
+  margin: 5px 0;
+  list-style-type: none;
+}
+.body-link-a > li > a{
+  color: #888;
+}
+.footer,.footer-part4{
+  color: #fff;
+  background-color: #28b078;
+}
+.footer-part1,.footer-part2{
+  float: left;
+  width: 30%;
+}
+.footer-part1 > p,.footer-part2 > p{
+  margin: 25px 0;
+}
+.footer-part3{
+  float: right;
+  width: 40%;
+  text-align: right;
+  margin-top: 25px;
+}
+.footer-link{
+  color: #fff;
+}
+.footer-part4{
+  border: 2px #31bb87 solid;
+}
