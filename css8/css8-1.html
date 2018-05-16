@@ -8,32 +8,52 @@
   <meta name="format-detection" content="telephone=no"/><!--ie数字不转化为链接-->
   <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css8-1.css">
+  <link media="screen and (max-width:768px)" rel="stylesheet" href="css8-1-p.css" />
 </head>
 <body>
 <!--顶部导航-->
   <div class="container-fluid">
-    <div class="row">
-      <nav class="navbar navbar-default nav-top1">
-        <div class="col-sm-10 col-sm-push-1">
-          <div class="nav navbar-nav navbar-left color-green">客服热线：010-594-78634</div>
-          <div class="nav navbar-nav navbar-right">
-            <span class="nav-top2 photo1"></span>
-            <span class="nav-top2 photo2"></span>
-            <span class="nav-top2 photo3"></span>
+  <div class="row">
+    <nav class="col-xs-11 col-xs-push-1 col-sm-10 col-sm-push-1 nav-top">
+      <div class="color-green">客服热线：010-594-78634</div>
+        <div class="nav-sm-login">
+          <a class="photo1"></a>
+          <a class="photo2"></a>
+          <a class="photo3"></a>
+        </div>
+        <div class="nav-xs-login">
+          <a>登陆</a>|<a>注册</a>
+        </div>
+    </nav>
+      <div class="col-xs-12 bgcolor-green">
+        <div class="col-sm-10 col-sm-push-1 col-xs-11 col-xs-push-1 nav-bottom">
+          <a class="nav-logo" href="#"><img src="logo.png" alt="..."></a>
+        <!--大于768-->
+          <ul class="nav navbar-nav nav-sm-option">
+            <li class="sm-li active"><a href="css8-1.html">首页</a></li>
+            <li class="sm-li"><a href="css8-2.html">职位</a></li>
+            <li class="sm-li"><a href="">推荐</a></li>
+            <li class="sm-li"><a href="css8-3.html">关于</a></li>
+          </ul>
+        <!--小于768-->
+          <div class="nav-xs-option">
+            <button type="button" class="nav-xs-option btn btn-default navbar-toggle nav-btn">
+              <span class="sr-only"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <ul class="xs-option">
+              <li><a href="css8-1.html">首页</a></li>
+              <li><a href="css8-2.html">职位</a></li>
+              <li><a href="">推荐</a></li>
+              <li><a href="css8-3.html">关于</a></li>
+            </ul>
           </div>
         </div>
-      </nav>
-      <nav class="navbar nav-top3">
-        <div class="col-sm-10 col-sm-push-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="nav-top4 active"><a href="">首页</a></li>
-            <li class="nav-top4"><a href="css8-2.html">职位</a></li>
-            <li class="nav-top4"><a href="">推荐</a></li>
-            <li class="nav-top4"><a href="css8-3.html">关于</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+      </div>
+       
+  </div>
   </div>
 <!--主体-->
   <div class="container-fluid">
@@ -64,17 +84,17 @@
         </div> 
       </div>
       <div class="col-sm-10 col-sm-push-1 body-chara text-center">
-        <div class="col-sm-3">
+        <div class="col-sm-3 body-chara-s">
           <p class="body-chara-p1"></p>
           <p><strong>高效</strong></p>
           <p class="chara-text">将五到七年的成长时间，缩短到一年到三年。</p>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 body-chara-s">
           <p class="body-chara-p2"></p>
           <p><strong>规范</strong></p>
           <p class="chara-text">标准的实战教程，不会走弯路</p>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 body-chara-s">
           <p class="body-chara-p3"></p>
           <p><strong>人脉</strong></p>
           <p class="chara-text text-left">同班好友，同院学长，技术大师，入学就混入职脉圈，为以后铺平道路。</p>
@@ -234,7 +254,7 @@
         </div>
       </div>
       <div class="col-sm-12 footer">
-        <div class="col-sm-10 col-sm-push-1">
+        <div class="col-sm-10 col-sm-push-1 footer-part">
           <div class="footer-part1">
             <p><strong>技能树-改变你我</strong></p>
             <p>&nbsp;</p>
@@ -245,6 +265,7 @@
             <p><a class="footer-link" href="#">草船云孵化器</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="footer-link" href="#">最强IT特训营</a></p>
             <p><a class="footer-link" href="#">葡萄藤轻游戏</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="footer-link" href="#">桌游精灵</a></p>
           </div>
+          <div class="footer-empty"></div>
           <div class="footer-part3">
             <p>微信公众平台&nbsp;</p>
             <img src="two.png" alt="....">

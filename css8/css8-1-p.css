@@ -48,9 +48,6 @@ body{
 .nav-xs-login > a{
   color: #000;
 }
-.nav-xs-login,.nav-xs-option{
-  display: none;
-}
 .nav-btn{
   background-color: #fff;
 }
@@ -76,11 +73,11 @@ body{
 .xs-option > li:hover{
   background-color: #eee;
 }
-.xs-option:hover{
+.xs-option:hover,.nav-btn:focus + .xs-option,.nav-xs-login,.nav-xs-option{
   display: block;
 }
-.nav-btn:focus + .xs-option{
-  display: block;
+.nav-sm-option,.nav-sm-login{
+  display: none;
 }
 /*主体*/
 .body-photo-top > img{
@@ -119,9 +116,15 @@ body{
   margin-top: 10px;
   text-align: left;
 }
+.body-chara-s{
+  margin-top: 50px;
+}
 .body-chara-n{
-  padding: 35px 0 35px 30px;
-  border-left: 1px #888 dashed;
+  width: 150px;
+  border: 0;
+  padding: 0;
+  margin: 50px auto 0 auto;
+  text-align: center;
 }
 .body-chara-p4{
   width: 20px;
@@ -191,7 +194,6 @@ body{
   background-color: #fff;
 }
 .body-link-space{
-  height: 20px;
   padding: 10px 0;
 }
 .body-link-a{
@@ -205,6 +207,9 @@ body{
 }
 .body-link-a > li > a{
   color: #888;
+}
+.footer{
+  margin-top: 150px;
 }
 .footer,.footer-part4{
   color: #fff;
