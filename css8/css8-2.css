@@ -87,6 +87,9 @@ body{
 .xs-option:hover{
   display: block;
 }
+.xs-option > li > a{
+  display: block;
+}
 .nav-btn:focus + .xs-option{
   display: block;
 }
@@ -209,7 +212,7 @@ body{
 }
 /*底部*/
 .footer{
-  margin-top: 150px;
+  margin-top: 50px;
 }
 .footer,.footer-part4{
   color: #fff;

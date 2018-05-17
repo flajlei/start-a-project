@@ -84,6 +84,9 @@ body{
 .xs-option > li:hover{
   background-color: #eee;
 }
+.xs-option > li > a{
+  display: block;
+}
 .xs-option:hover{
   display: block;
 }
@@ -104,6 +107,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 .body-left,.body-right{
   background-color: #fff;
@@ -116,6 +120,15 @@ body{
 }
 .body-right{
   flex: 1;
+}
+@media screen and (max-width:768px){
+  .body-left,.body-right{
+    width:100%;
+    margin: 0;
+  }
+  .body-right{
+    margin: 20px 0;
+  }
 }
 .theme-r,.body-info > p{
   text-indent: 2rem;
@@ -183,7 +196,7 @@ body{
 }
 /*底部*/
 .footer{
-  margin-top: 150px;
+  margin-top: 50px;
 }
 .footer,.footer-part4{
   color: #fff;

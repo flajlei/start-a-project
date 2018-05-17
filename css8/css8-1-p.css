@@ -56,7 +56,7 @@ body{
 }
 .xs-option{
   position: absolute;
-  z-index: 2;
+  z-index: 16;
   top: 50px;
   left: 0;
   width: 100%;
@@ -72,6 +72,9 @@ body{
 }
 .xs-option > li:hover{
   background-color: #eee;
+}
+.xs-option > li > a{
+  display: block;
 }
 .xs-option:hover,.nav-btn:focus + .xs-option,.nav-xs-login,.nav-xs-option{
   display: block;
@@ -182,8 +185,9 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   background-color: #fff;
-  width: 20%;
+  width: 50%;
   height: 100px;
 }
 .body-part:hover{
@@ -191,26 +195,22 @@ body{
   box-shadow: 0 0 5px #888;
 }
 .body-link{
+  padding: 0;
   background-color: #fff;
 }
-.body-link-space{
-  padding: 10px 0;
+.link-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 1px;
 }
-.body-link-a{
-  padding: 0;
+.link-list > li{
+  box-sizing: border-box;
+  margin-left: 20px;
+  min-width: 50px;
+  text-align: left;
 }
-.body-link-a > li{
-  float: left;
-  width: 10%;
-  margin: 5px 0;
-  list-style-type: none;
-}
-.body-link-a > li > a{
-  color: #888;
-}
-.footer{
-  margin-top: 150px;
-}
+/*底部*/
 .footer,.footer-part4{
   color: #fff;
   background-color: #28b078;
