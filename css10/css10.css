@@ -1,0 +1,256 @@
+.flex-two{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-default{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list-txt{
+  color: #ccc;
+}
+/*头部*/
+.header1{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 40px;
+  border: 0;
+  border-radius: 0;
+  background-color: #1277dc;
+}
+.header1 > div{
+  color: #fff;
+}
+.header1-right a{
+  color: #fff;
+}
+.header1-right > div{
+  width: 50px;
+  padding: 10px 0;
+  border-left: 1px #fff solid;
+  border-right: 1px #fff solid;
+}
+.header1-right > .active{
+  width: 100px;
+  background-color: #fff;
+}
+.header1-right > .active > a{
+  color: #000;
+}
+.header2{
+  height: 60px;
+  background-color: #f9f9f9;
+}
+.header2-right{
+  flex-wrap: wrap;
+  width: 50%;
+  min-width: 300px;
+}
+.header2-right > .active{
+  color: #fff;
+  background-color: #1277dc;
+}
+.header1,.header2{
+  margin-bottom: 0;
+}
+/*主体上*/
+.body-top > .flex-two{
+  flex-wrap: wrap;
+}
+.body-list{
+  flex-direction: column;
+}
+.list0{
+  width: 10vw;
+  min-width: 90px;
+  text-align: center;
+}
+.list1,.list2{
+  position: relative;
+  background-color: #ccc;
+}
+.active .list1,
+.active .list2,
+.body-list:hover .list1,
+.body-list:hover .list2{
+  background-color: #ff7f00;
+}
+.active > .list-txt,
+.body-list:hover > .list-txt{
+  color: #ff7f00;
+}
+.list1{
+  width: 100%;
+  height: 5px;
+  top: 7px;
+}
+.list2{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 auto;
+  top: -5px;
+  color: #fff;
+}
+/*主体下*/
+.vetline{
+  width: 0;
+  height: 15px;
+  border: 1px #1277dc solid;
+  margin-right: 2px;
+}
+.option-th{
+  width: 100%;
+  height: 30px;
+  color: #1277dc;
+  background-color: #f2f2f2;
+}
+.photo1,.photo2,.photo3{
+  background-image: url(sprite.png);
+}
+.photo1{
+  padding: 10px;
+  margin: 5px 5px 0 5px;
+}
+.photo2{
+  padding: 10px 12px 10px 10px;
+  margin: 5px 3px 0 5px;
+  background-position-y: 20px;
+}
+.photo3{
+  padding: 10px 6px 10px 10px;
+  margin: 5px 7px 0 7px;
+  background-position-x: 16px;
+}
+.option-list{
+  width: 100%;
+  min-height: 60px;
+  border: 1px #f2f2f2 solid;
+  background-color: #fbfcff;
+}
+.option-list .radio{
+  margin: 0 0 0 30px;
+}
+.option-list .btn-group{
+  margin-right: 15px;
+}
+.btn-radio{
+  display: none;
+}
+.radio-on{
+  float: left;
+  width: 16px;
+  height: 16px;
+  border: 1px #333 solid;
+  border-radius: 50%;
+  margin-top: 2px;
+  margin-right: 10px;
+}
+.radio-in{
+  border: 2px #fff solid;
+  border-radius: 50%;
+}
+input:checked + .radio-on{
+  border: 1px #1277dc solid;
+  background-color: #1277dc;
+}
+.caret-out{
+  padding: 4px 5px;
+  border-radius: 2px;
+  background-color: #1277dc;
+}
+.btn-default{
+  height: 30px;
+  border-radius: 0;
+}
+.btn-default small{
+  color: #999;
+}
+.btn-right{
+  border-left: 0;
+  padding: 2px !important;
+}
+.caret{
+  border-top:5px #fff solid;
+}
+.btn-list{
+  min-width: 96px;
+}
+.list-size{
+  flex: 1;
+  min-height: 120px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.list-size > .radio{
+  width: 100%;
+}
+.list-size > .flex-two{
+  flex-wrap: wrap;
+}
+.size{
+  width: 20%;
+  min-width: 90px;
+}
+.size > input{
+  width: 50px;
+}
+@media screen and (max-width:510px){
+  .list-size > .flex-two{
+    display: block;
+  }
+}
+.last-page{
+  padding: 100px 0 80px 0;
+}
+@media screen and (max-width:768px){
+  .last-page{
+    padding: 50px 0 40px 0;
+  }
+}
+.last-page > button{
+  width: 135px;
+  height: 35px;
+  color: #fff;
+  background-color: #e34f4f;
+}
+/*底部*/
+.footer-top{
+  min-height: 160px;
+  background-color: #f9f9f9;
+  flex-wrap: wrap;
+}
+.footer-top div,.footer-top a{
+  color: #333;
+}
+.footer-top a:hover{
+  color: #1277dc;
+  text-decoration: none;
+}
+.footer-left,.footer-center,.footer-right{
+  height: 60px;
+}
+.footer-center{
+  flex-wrap: wrap;
+}
+.footer-center > div{
+  width: 33%;
+  padding-bottom: 10px;
+}
+.footer-right{
+  min-width: 190px;
+}
+.footer-bottom{
+  color: #fff;
+  background-color: #1277dc;
+}
