@@ -1,0 +1,164 @@
+@import "default";
+//布局
+header,nav,nav > div > button,.part2,.part2-r,footer,.foot{
+  @include flex-row-n(space-between);
+}
+header,footer{
+  @include nav-fix(100%);
+  height: 50px;
+}
+.foot-l{
+  @include flex-col-w(space-between);
+}
+.part1,.part2,.part3{
+  display: flex;
+}
+//顶部
+header{
+  top: 0;
+  background-color: $color-blue;
+  button{
+    height: 40px;
+    width: 80px;
+    border: 0;
+    border-radius: 5px;
+    margin-right: -5px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: darken($color-blue,20%);
+    &:hover{
+      outline: none;
+      color: $color-blue;
+      background-color: #fff;
+    }
+  }
+  > .photo{
+    @include sprite(12px,10px,0px,-25px);
+  }
+}
+//顶部移动导航
+nav{
+  width: 100%;
+  margin-top: 50px;
+  > div{
+      flex: 1;
+      height: 40px;
+      border-bottom: 1px $color-gary solid;
+    > button{
+      width: 100%;
+      height: 30px;
+      color: #aaa;
+      border: 0;
+      border-right: 1px $color-gary solid;
+      margin-top: 5px;
+      background-color: #fff;
+      &:hover,&:focus{
+        outline: none;
+      } 
+      &:focus + ul{
+        display: block;
+      }
+      + ul{
+        position: absolute;
+        top: 73px;
+        width: 33.333333%;
+        padding-left: 0;
+        border: 1px $color-gary solid;
+        background-color: #fff;
+        list-style: none;
+        display: none;
+        > li{
+          text-indent: 5px;
+          padding: 5px;
+          &:hover{
+            display: block;
+            background-color: $color-gary;
+          }
+        }
+        }
+      }  
+    }
+}
+.caret{
+  border-top: 5px #aaa solid;
+  border-left: 5px transparent solid;
+  border-right: 5px transparent solid;
+}
+//主体
+main{
+  margin-bottom: 50px;
+}
+.body-part{
+  width: 100%;
+  border-bottom: 1px $color-gary solid;
+  > .part1,.part3{
+    padding: 10px;
+    color: #aaa;
+  }
+  > .part1 > div{
+    @include sprite(10px,10px,-48px,-22px);
+  }
+  > .part3 > div{
+    @include sprite(10px,10px,-22px,-22px);
+  }
+  > .part2{
+    padding: 0 10px 0 30px;
+    > .time{
+      @include text-hidden;
+    }
+    > .part2-r{
+      min-width: 90px;
+      color: $color-red;
+      > a{
+        @include sprite(10px,5px,10px,2px);
+      }
+    }
+  }  
+}
+//尾部
+footer{
+  bottom: 0;
+  background-color: #fff;
+  > .foot{
+    width: 60%;
+    }
+    button{
+      width: 50px;
+      height: 50px;
+      border: 0;
+      border-radius: 50%;
+      background-color: $color-blue;
+      > div{
+        width: 0;
+        margin: 0 auto;
+        @include sprite(12px,10px,0,0);
+      }
+      &:focus{
+        outline: none;
+        background-color: darken($color-blue,20%);
+    }
+  } 
+}
+.foot-l{
+  > div{
+    transform:scale(0.7);
+  }
+}
+.foot-photo1{
+  @include sprite(10px,12px,-25px,0);
+  &:focus{
+    background-position: 0 -50px;
+    + div{
+      color: $color-blue;
+    }
+  }
+}
+.foot-photo2{
+  @include sprite(10px,12px,-48px,0);
+  &:focus{
+    background-position: -23px -50px;
+    + div{
+      color: $color-blue;
+    }
+  }
+}
