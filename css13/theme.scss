@@ -1,0 +1,79 @@
+@import "../frame/load.scss";
+//颜色
+.bgcolor-gary{
+  background-color: $color-gary;
+}
+.bgcolor-white{
+  background-color: #fff;
+}
+.bgcolor-blue{
+  background-color: $color-blue;
+}
+.bgcolor-blue2{
+  background-color: #bae9f4;
+}
+.bgcolor-orange{
+  background-color: $color-orange;
+}
+.bgcolor-red{
+  background-color: #f37072;
+}
+.bgcolor-yellow{
+  background-color: #f3c881;
+}
+.bgcolor-yellow2{
+  background-color: #f8b445;
+}
+.bgcolor-green{
+  background-color: #82af9b;
+}
+.color-gary{
+  color: #888;
+}
+.color-white{
+  color: #fff;
+}
+.color-orange{
+  color: $color-orange;
+}
+//雪碧图
+.sprite{
+  background-image: url(../css7/sprite.png);
+}
+//间隔
+.outspace-center{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.outspace-top{
+  margin-top: 1rem;
+}
+.outspace-bottom{
+  margin-bottom: 1rem;
+}
+.inspace-center{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.inspace-top{
+  padding-top: 1rem;
+}
+.inspace-bottom{
+  padding-bottom: 1rem;
+}
+//文字
+.text-size1{
+  font-size: 1.1rem;
+}
+.text-size2{
+  font-size: 1.3rem;
+}
+.text-size3{
+  font-size: 1.5rem;
+}
+.text-size4{
+  font-size: 1.8rem;
+}
+.text-center{
+  text-align: center;
+}

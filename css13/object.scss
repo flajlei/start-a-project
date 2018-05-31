@@ -1,0 +1,86 @@
+@import "../frame/load.scss";
+//弹性布局（横向不换行）
+.flex-row-n1{
+  @include flex-row-n(flex-start);
+}
+.flex-row-n2{
+  @include flex-row-n(flex-end);
+}
+.flex-row-n3{
+  @include flex-row-n(center);
+}
+.flex-row-n4{
+  @include flex-row-n(space-between);
+}
+.flex-row-n5{
+  @include flex-row-n(space-around);
+}
+//弹性布局（纵向不换行）
+.flex-col-n1{
+  @include flex-col-n(flex-start);
+}
+.flex-col-n2{
+  @include flex-col-n(flex-end);
+}
+.flex-col-n3{
+  @include flex-col-n(center);
+}
+.flex-col-n4{
+  @include flex-col-n(space-between);
+}
+.flex-col-n5{
+  @include flex-col-n(space-around);
+}
+//弹性布局（横向换行)
+.flex-row-w1{
+  @include flex-row-w(flex-start);
+}
+.flex-row-w2{
+  @include flex-row-w(flex-end);
+}
+.flex-row-w3{
+  @include flex-row-w(center);
+}
+.flex-row-w4{
+  @include flex-row-w(space-between);
+}
+.flex-row-w5{
+  @include flex-row-w(space-around);
+}
+//弹性布局(纵向换行)
+.flex-col-w1{
+  @include flex-col-w(flex-start);
+}
+.flex-col-w2{
+  @include flex-col-w(flex-end);
+}
+.flex-col-w3{
+  @include flex-col-w(center);
+}
+.flex-col-w4{
+  @include flex-col-w(space-between);
+}
+.flex-col-w5{
+  @include flex-col-w(space-around);
+}
+.flex-1{
+  flex: 1;
+}
+//浮动
+.float-left{
+  float: left;
+}
+.float-right{
+  float: right;
+}
+.clearfix:after{
+  content:"";//设置内容为空
+  height:0;//高度为0
+  line-height:0;//行高为0
+  display:block;//将文本转为块级元素
+  visibility:hidden;//将元素隐藏
+  clear:both;//清除浮动
+}
+.clearfix{
+  zoom:1;//为了兼容IE
+}

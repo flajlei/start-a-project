@@ -1,0 +1,16 @@
+//默认配置
+body{
+  margin: 0;
+}
+button{
+  padding: 0;
+  border-color: transparent;
+  &:focus{
+    outline: none;
+  }
+}
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

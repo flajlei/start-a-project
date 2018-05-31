@@ -1,0 +1,34 @@
+//----------------------------------------------布局相关-------------------------------------------------
+//弹性布局（横向不换行）
+@mixin flex-row-n($text){
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: $text;
+  align-items: center;
+}
+  //弹性布局（纵向不换行）
+@mixin flex-col-n($text){
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: $text;
+  align-items: center;
+}
+  //弹性布局（横向换行）
+@mixin flex-row-w($text){
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: $text;
+  align-items: center;
+}
+  //弹性布局（纵向换行）
+@mixin flex-col-w($text){
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: $text;
+  align-items: center;
+}
+  //fix导航
+@mixin nav-fix($width){
+  position: fixed;
+  width: $width;
+}

@@ -1,0 +1,16 @@
+@import "../frame/default.scss";
+@import "../frame/load.scss";
+//总体布局
+header,footer{
+  @include nav-fix(100%);
+}
+header{
+  top: 0;
+  height: 50px;
+}
+footer{
+  bottom: 0;
+}
+main{
+  margin-top: 50px;
+}

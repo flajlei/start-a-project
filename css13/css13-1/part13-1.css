@@ -1,0 +1,58 @@
+.hambur-btn {
+  background-color: transparent; }
+  .hambur-btn .icon-bar {
+    border: 1px #fff solid;
+    width: 20px;
+    height: 0;
+    margin: 5px 0; }
+  .hambur-btn:focus + .left-window {
+    left: 0; }
+
+header {
+  padding: 0 1rem; }
+
+main {
+  padding: 1rem 1rem 0 1rem;
+  padding-top: 15px; }
+
+.last-btn {
+  width: 100%;
+  padding: 16px 0;
+  border: 1px #888 solid; }
+
+.photo-contury {
+  padding: 10px 10px;
+  background-position: 30px 0; }
+
+.main-body {
+  border: 1px #eef2f2 solid;
+  margin-bottom: 2rem; }
+
+.main-theme {
+  border-bottom: 1px #f8b547 solid; }
+
+.body-left {
+  padding: 1rem; }
+
+.body-right {
+  padding: 0 0.5rem 2rem 0.5rem; }
+
+.caret {
+  border-left: 15px #f8b547 solid;
+  border-top: 15px transparent solid;
+  border-bottom: 15px transparent solid; }
+
+.option-btn {
+  width: 100%;
+  padding: 2rem 0; }
+
+footer {
+  height: 60px; }
+  footer > .active {
+    background-color: #5ac0ce; }
+
+.footer-btn {
+  position: relative;
+  top: 0;
+  padding: 3px;
+  border-radius: 50%; }

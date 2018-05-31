@@ -1,0 +1,73 @@
+header {
+  padding: 0 1rem; }
+
+.hambur-btn {
+  border: 1px #fff solid;
+  background-color: transparent; }
+  .hambur-btn .icon-bar {
+    border-top: 1px #fff solid;
+    width: 16px;
+    height: 0;
+    margin: 4px 1px; }
+
+.header-photo {
+  padding: 10px; }
+
+.body-tip {
+  padding: 10px 2vw 10px 5vw; }
+
+.body-photo1 {
+  padding: 13px;
+  background-position: -70px -20px; }
+
+.tip-caret {
+  position: relative;
+  left: 20px;
+  width: 0;
+  border-top: 6px #bae9f4 solid;
+  border-left: 4px transparent solid;
+  border-right: 4px transparent solid; }
+
+main {
+  margin-bottom: 70px; }
+
+.body-info {
+  padding-left: 20px; }
+
+.body-part {
+  width: 33.33333%; }
+
+.body-user {
+  width: 80px;
+  height: 80px;
+  border: 3px #fff solid; }
+  .body-user:focus + .body-select {
+    visibility: visible; }
+  .body-user .body-user1 {
+    height: 56px; }
+  .body-user .body-user2 {
+    height: 18px; }
+
+.body-select {
+  width: 80px;
+  padding: 10px 0;
+  visibility: hidden; }
+  .body-select > button {
+    padding: 8px;
+    border: 0; }
+  .body-select .body-select1 {
+    background-position: -0px -20px; }
+  .body-select .body-select2 {
+    background-position: -18px -20px; }
+  .body-select .body-select3 {
+    background-position: -35px -20px; }
+  .body-select .body-select4 {
+    background-position: -53px -20px; }
+
+footer {
+  height: 70px; }
+  footer a {
+    width: 80%; }
+    footer a button {
+      width: 100%;
+      height: 40px; }
