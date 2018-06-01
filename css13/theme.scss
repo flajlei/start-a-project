@@ -36,6 +36,9 @@
 .color-orange{
   color: $color-orange;
 }
+.color-blue{
+  color: $color-blue;
+}
 //雪碧图
 .sprite{
   background-image: url(../css7/sprite.png);
@@ -76,4 +79,10 @@
 }
 .text-center{
   text-align: center;
+}
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
 }
