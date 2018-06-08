@@ -1,0 +1,75 @@
+@import "../../frame/part.scss";
+.ad-photo{
+  height: 150px;
+  background-image: url(../photo/body-top1.png);
+  @include background-all;
+}
+main{
+  background-color: #fafafa;
+  padding-bottom: 50px;
+}
+.body-left,.body-right{
+  border: 0px #888 solid;
+  box-shadow: 0 0 2px #888;
+}
+.body-left{
+  width: 20%;
+}
+.list-top,.body-theme{
+  border-bottom: 1px #d4d4d4 solid;
+}
+.list{
+  padding: 0;
+  list-style-type: none;
+  li{
+    width: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    &:hover{
+      div{
+        color: $color-orange;
+      }
+      .btn-cir-sm{
+        background-color: $color-orange;
+      }
+    }
+  }
+  .btn-cir-sm{
+    width: 0;
+    height: 0;
+    padding: 3px;
+    border-radius: 50%;
+    border: 1px $color-orange solid;
+    margin-right: 2px;
+  }
+  .active{
+    div{
+      color: $color-orange;
+    }
+    .btn-cir-sm{
+      background-color: $color-orange;
+    }
+  }
+}
+.body-right{
+  width: 78%;
+}
+.theme-l,.body-info > p{
+  padding: 1rem;
+}
+.body-info > p{
+  text-indent: 2rem;
+}
+//手机端
+@media screen and (max-width: 768px){
+  .body-main{
+    flex-flow: column;
+    align-items: center;
+  }
+  .body-left,.body-right{
+    width: 90%;
+  }
+  .body-right{
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,111 @@
+.scroll-photo {
+  height: 370px;
+  background-image: url(../photo/body-top.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
+main {
+  background-color: #fafafa; }
+
+.body-chara {
+  margin-top: 80px;
+  height: 180px; }
+
+.body-chara-p1, .body-chara-p2, .body-chara-p3 {
+  width: 0;
+  margin: 0 auto; }
+
+.body-chara-p1 {
+  padding: 30px 22px;
+  background-position: -116px -21px; }
+
+.body-chara-p2 {
+  padding: 24px 30px;
+  background-position: 0 -30px; }
+
+.body-chara-p3 {
+  padding: 28px 26px;
+  background-position: -60px -29px; }
+
+.body-chara-p4 {
+  padding: 7px 10px;
+  margin-top: 4px;
+  background-position: -120px 0; }
+
+.body-chara-part4 {
+  height: 100%;
+  align-self: center;
+  border-left: 1px #888 dashed;
+  padding-left: 5%; }
+
+.body-how {
+  padding: 0 5px;
+  min-width: 200px;
+  height: 80px; }
+
+.body-how1 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 2px #888;
+  line-height: 40px; }
+
+.body-how2 {
+  flex: 1;
+  padding: 0 15px; }
+
+.body-how3 {
+  width: 20px;
+  height: 30px;
+  background-position: -95px 0; }
+
+.student {
+  box-shadow: 0 0 5px #888;
+  padding: 15px;
+  margin: 0 5px; }
+
+.btn-cir-sm {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: 1px #888 solid;
+  border-radius: 50%;
+  margin-top: 10px;
+  background-color: transparent; }
+
+.btn > .active {
+  background-color: #28b078; }
+
+.body-part > div {
+  min-width: 200px;
+  height: 100px;
+  line-height: 115px; }
+  .body-part > div:hover {
+    border: 1px #888 solid;
+    box-shadow: 0 0 5px #888; }
+
+.link-list {
+  padding: 0; }
+  .link-list li {
+    margin-left: 50px; }
+
+@media screen and (max-width: 768px) {
+  .scroll-photo {
+    height: 185px; }
+
+  .body-chara, .body-student {
+    flex-flow: column;
+    height: auto; }
+    .body-chara > div, .body-student > div {
+      width: 80%;
+      margin-top: 50px; }
+
+  .body-chara-part4 {
+    align-items: center;
+    border: 0;
+    padding-left: 0; }
+
+  .body-how {
+    flex: inherit;
+    margin: 0 auto;
+    width: 80%; } }

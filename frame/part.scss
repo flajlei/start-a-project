@@ -1,9 +1,7 @@
 //----------------------------------------------图片相关-------------------------------------------------
 //雪碧图插入
-@mixin sprite($pad1,$pad2,$x,$y){
-  background-image: url(sprite.png);
-  padding: $pad1 $pad2;
-  background-position: $x $y;
+@mixin sprite($address){
+  background-image: url($address);
 }
 //大背景图片插入
 @mixin background-all{
@@ -39,13 +37,18 @@
   text-overflow: ellipsis; //设置超出内容为省略号
 }
 //框居中文字左对齐
-@mixin text-center-div($width){
+@mixin text-div{
   margin : 0 auto;         // 使div框居中
-  width : $width; 
   text-align : center;     // 文本居中显示
 }
-@mixin text-center-p{
+@mixin text-p($position){
   width : auto;            // 必设
   display : inline-block;  // 不能设置为block
-  text-align : left;       // 居左显示
+  text-align : $position;       // 居左显示
 }
+//----------------------------------------------颜色相关-------------------------------------------------
+// $color-blue: #5ac0ce;
+$color-red: #ce593d;
+$color-gary: #eef2f2;
+$color-orange: #f8b547;
+$color-green: #28b078;

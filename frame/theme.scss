@@ -1,0 +1,122 @@
+@import "part.scss";
+//颜色
+.bgcolor-gary{
+  background-color: $color-gary;
+}
+.bgcolor-white{
+  background-color: #fff;
+}
+// .bgcolor-blue{
+//   background-color: $color-blue;
+// }
+// .bgcolor-blue2{
+//   background-color: #bae9f4;
+// }
+// .bgcolor-orange{
+//   background-color: $color-orange;
+// }
+// .bgcolor-red{
+//   background-color: #f37072;
+// }
+// .bgcolor-yellow{
+//   background-color: #f3c881;
+// }
+// .bgcolor-yellow2{
+//   background-color: #f8b445;
+// }
+.bgcolor-green{
+  background-color: $color-green;
+}
+.color-gary{
+  color: #888;
+}
+.color-green{
+  color: $color-green;
+}
+.color-white{
+  color: #fff;
+}
+.color-red{
+  color: $color-red;
+}
+// .color-orange{
+//   color: $color-orange;
+// }
+// .color-blue{
+//   color: $color-blue;
+// }
+//间隔
+.outspace-center{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.outspace-top{
+  margin-top: 1rem;
+}
+.outspace-bottom{
+  margin-bottom: 1rem;
+}
+.inspace-center{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.inspace-top{
+  padding-top: 1rem;
+}
+.inspace-bottom{
+  padding-bottom: 1rem;
+}
+//文字
+.text-size1{
+  font-size: 1.1rem;
+}
+.text-size2{
+  font-size: 1.3rem;
+}
+.text-size3{
+  font-size: 1.5rem;
+}
+.text-size4{
+  font-size: 1.8rem;
+}
+.text-left{
+  text-align: left;
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+//多行居中文字左对齐
+.text-out-center{
+  @include text-div;
+}
+.text-in-center{
+  @include text-p(center);
+}
+.text-in-left{
+  @include text-p(left);
+}
+.text-in-right{
+  @include text-p(right);
+}
+//根据宽度显示/隐藏
+.xs-display{
+  display: none;
+}
+.sm-display{
+  display: inherit;
+}
+//-----------------------------------------------样式-----------------------------------------
+//汉堡按钮
+@mixin hambur-btn{
+  border: 1px #fff solid;
+  background-color: transparent;
+  .icon-bar{
+    border-top: 1px #fff solid;
+    width: 16px;
+    height: 0;
+    margin: 4px 1px;
+  }
+}
