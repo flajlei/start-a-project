@@ -22,3 +22,10 @@ abbr{
   border: 0;
   font-style: normal;
 }
+//input内number时取消默认按钮
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
+  -webkit-appearance:textfield;
+}
+input[type="number"]{
+  -moz-appearance:textfield;
+}

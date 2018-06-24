@@ -1,0 +1,44 @@
+header {
+  border-bottom: 1px #aaa solid; }
+  header .header-photo1 {
+    padding: 10px;
+    background-position: -66px 0;
+    transform: rotate(180deg); }
+  header .header-photo2 {
+    padding: 10px;
+    background-position: -100px 0; }
+
+main {
+  height: 100%;
+  padding-top: 15px;
+  background-color: #5ac0ce; }
+  main > .cardId {
+    position: relative;
+    top: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 0 auto;
+    line-height: 35px;
+    background-color: #fff; }
+  main > .card-back, main .card-man, main .card-ghost {
+    width: 300px;
+    height: 370px;
+    border: 2px #fff solid;
+    margin: 0 auto;
+    background-color: #ffedc5; }
+  main > .card-back > img {
+    width: 150px; }
+  main > .card-man > img, main .card-ghost > img {
+    width: 120px;
+    padding-top: 30px;
+    padding-bottom: 15px; }
+  main > .next {
+    width: 300px;
+    height: 50px;
+    margin: 20px auto;
+    background-color: #5ac0ce; }
+    main > .next > button {
+      width: 100%;
+      height: 100%;
+      background-color: #f8b547; }

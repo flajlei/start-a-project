@@ -20,7 +20,7 @@ function colorChange() {
     var b = Math.floor(Math.random()*9);
     var c = Math.floor(Math.random()*9);
   };
-  //随机获取三个颜色
+  //随机获取三个颜色 toString(16)转换为16进制
   var colorA = "#";
   var colorB = "#";
   var colorC = "#";

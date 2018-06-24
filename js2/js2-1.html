@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="js2-1.css">
+  <link rel="stylesheet" href="js2.css">
+</head>
+<body class="bgcolor-gary">
+<!--顶部导航-->
+  <header class="flex-row-n4 bgcolor-blue">
+    <div class="sprite"></div>
+  </header>
+  <main>
+    <div class="theme text-center text-size2">玩家配比</div>
+    <div class="people flex-row-n1 children-part2 flex-baseline">
+      <div>幽灵<span id="ghost"> </span>人</div>
+      <div>水民<span id="man"> </span>人</div>
+    </div>
+    <div class="number">
+      <div class="text-center">
+        <span class="text-size2"><strong>请输入玩家数量</strong></span>
+        <input type="number" id="peopleNum" class="number-input text-size2 text-center">
+        <span class="color-orange"><small>玩家数量为4-18</small></span>
+      </div>
+    </div>
+    <button type="submit" id="nextBtn" class="text-size3">去发牌</button>
+  </main>
+  <!--弹窗-->
+  <div class="popup" id="popup">
+    <div class="text-center">
+      <div>请输入正确的玩家数量</div>
+      <div class="clearfix">
+        <button class="float-left">取消</button>
+        <button class="float-left">确认</button>
+      </div>
+    </div>
+  </div>
+    <script src="../js/addLoadEvent.js"></script>
+    <script src="js2-1.js"></script>
+  </body>
+  </html>

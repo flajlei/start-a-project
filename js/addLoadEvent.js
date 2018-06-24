@@ -47,25 +47,57 @@ function moveElement(elementID, finalx, finaly, interval) {
   if (!document.getElementById(elementID))
       return false;
   var elem = document.getElementById(elementID);
+  if (elem.movement) {
+    clearTimeout(elem.movement);
+  }
+  if (!elem.style.left) {
+    elem.style.left = "0px";
+  }
+  if (!elem.style.top) {
+    elem.style.top = "0px";
+  }
   var xpos = parseInt(elem.style.left);
   var ypos = parseInt(elem.style.top);
   if (xpos == finalx && ypos == finaly) {
-      return true;
+    return true;
   }
   if (xpos < finalx) {
-      xpos++;
+    var dist = Math.ceil((finalx - xpos)/10);
+    xpos = xpos + dist;
   }
   if (xpos > finalx) {
-      xpos--;
+    var dist = Math.ceil((xpos - finalx)/10);
+    xpos = xpos - dist;
   }
   if (ypos < finaly) {
-      ypos++;
+    var dist = Math.ceil((finaly - ypos)/10);
+    xpos = dist + ypos;
   }
   if (ypos > finaly) {
-      ypos--;
+    var dist = Math.ceil((ypos - finaly)/10);
+    xpos = dist - ypos;
   }
   elem.style.left = xpos + "px";
   elem.style.top = ypos + "px";
   var repeat = "moveElement('" + elementID + "'," + finalx + "," + finaly + "," + interval + ")";
   movement = setTimeout(repeat, interval);
+}
+//Fisher–Yates Shuffle数组乱序
+function shuffle(array) {
+  var a = array;
+  for (var i = a.length - 1;i >= 0; i--) {
+    var j = Math.floor(Math.random()*(i + 1));
+    var temp = a[i];
+    a[i] = a[j]
+    a[j] = temp;
+  }
+  return a;
+}
+//获取url中的传参
+function getQueryString(name) {
+  var result = window.location.search.match(new RegExp("[\?\&]" + name + "=([^\&]+)", "i"));
+  if (result == null || result.length < 1) {
+      return "";
+  }
+  return result[1];
 }

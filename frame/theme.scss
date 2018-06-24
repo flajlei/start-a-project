@@ -39,12 +39,12 @@
 .color-red{
   color: $color-red;
 }
-// .color-orange{
-//   color: $color-orange;
-// }
-// .color-blue{
-//   color: $color-blue;
-// }
+.color-orange{
+  color: $color-orange;
+}
+.color-blue{
+  color: $color-blue;
+}
 //间隔
 .outspace-center{
   margin-top: 1rem;
@@ -102,11 +102,14 @@
   @include text-p(right);
 }
 //根据宽度显示/隐藏
-.xs-display{
+.xs-display,.display-none{
   display: none;
 }
-.sm-display{
+.sm-display,.display-inherit{
   display: inherit;
+}
+.display-block{
+  display: block;
 }
 //-----------------------------------------------样式-----------------------------------------
 //汉堡按钮

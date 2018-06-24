@@ -1,0 +1,65 @@
+@import "../frame/part.scss";
+header{
+  .sprite{
+    padding: 10px;
+    background-position: -66px 0;
+    transform:rotate(180deg);
+  }
+}
+main{
+  height: 100%;
+  padding: 5px;
+  background-color: #eef2f2;
+  > div{
+    margin: 5px 0;
+    background-color: #fff;
+  }
+  > button{
+    width: 100%;
+    height: 46px;
+    color: #fff;
+    background-color: orange;
+  }
+  > .theme{
+    padding: 5px 0;
+  }
+  > .people{
+    height: 280px;
+    padding: 20px;
+  }
+  > .number{
+    height: 100px;
+      .number-input{
+        border: 0;
+        width: 35px;
+        background-color: $color-gary;
+      }
+  }
+}
+.popup{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  > div{
+    position: relative;
+    top: 50%;
+    width: 50%;
+    height: 80px;
+    margin: 0 auto;
+    background-color: #fff;
+    > div{
+      height: 50px;
+      line-height: 50px;
+    }
+  }
+  button{
+    width: 50%;
+    height: 30px;
+    border: 1px #888 solid;
+    background-color: #fff;
+  }
+}

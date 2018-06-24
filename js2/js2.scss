@@ -1,0 +1,12 @@
+@import "../frame/load.scss";
+.sprite{
+  @include sprite("../css7/sprite.png");
+}
+html{
+  height: 100%;
+}
+header{
+  height: 50px;
+  padding: 0 10px;
+  background-color: $color-blue;
+}
