@@ -48,10 +48,10 @@ function card() {
       //按钮文字和牌上方数字
       next.firstChild.nodeValue = "查看"+peopleID+"号身份";
       cardId.firstChild.nodeValue = peopleID;
+      i++;//放在下边会导致从idCard[1]开始计数
     } else {//点击按钮卡牌转为正面
       cardBack.classList.add("display-none");
         if (peopleID < peopleNum) {//如果角色的卡牌还没到最后一人
-          i++;
           peopleID++;
           next.firstChild.nodeValue = "隐藏并传递给"+peopleID+"号";
             if (idCard[i] == "幽灵") {//该号为幽灵
