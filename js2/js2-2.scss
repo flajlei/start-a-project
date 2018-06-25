@@ -1,4 +1,7 @@
 @import "../frame/part.scss";
+html{
+  background-color: $color-blue;
+}
 header{
     border-bottom: 1px #aaa solid;
   .header-photo1{
@@ -14,7 +17,6 @@ header{
 main{
   height: 100%;
   padding-top: 15px;
-  background-color: $color-blue;
   > .cardId{
     position: relative;
     top: 20px;

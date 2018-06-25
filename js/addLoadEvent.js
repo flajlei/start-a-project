@@ -29,6 +29,22 @@ function getNextElement(node) {
   }
   return null;
 }
+//获取指定class
+function getElementsByClassName(node, classname) {
+  if (node.getElementsByClassName) {
+    return node.getElementsByClassName(classname);
+  }
+  else {
+    var results = new Array();
+    var elems = node.getElementsByTagName("*");
+    for (var i = 0; i < elems.length; i++) {
+      if (elem[i].className.indexOf(classname) != -1) {
+        results[results.length] = elems[i];
+      }
+    }
+    return results;
+  }
+}
 //为元素节点添加class属性节点
 function addClass(element,value) {
   if (!element.className) {
