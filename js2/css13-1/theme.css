@@ -80,3 +80,12 @@
 
 .text-right {
   text-align: right; }
+.xs-display,.display-none{
+  display: none;
+}
+.sm-display,.display-inherit{
+  display: inherit;
+}
+.display-block{
+  display: block;
+}

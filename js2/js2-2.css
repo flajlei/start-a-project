@@ -13,7 +13,8 @@ header {
 
 main {
   height: 100%;
-  padding-top: 15px; }
+  padding-top: 15px;
+  background-color: #5ac0ce; }
   main > .cardId {
     position: relative;
     top: 20px;

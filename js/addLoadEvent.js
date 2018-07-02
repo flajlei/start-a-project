@@ -117,3 +117,22 @@ function getQueryString(name) {
   }
   return result[1];
 }
+//获得第一级子元素
+function getChildren(obj){
+  var objChild = [] ;//创建数组
+  var objs = obj.getElementsByTagName('*');//获取obj的所有子元素节点
+  for(var i=0,j=objs.length; i<j;++i){
+      if(objs[i].nodeType != 1){alert(objs[i].nodeType);//如果子元素[i]不是元素节点
+          continue ;//跳过
+      }
+      var temp = objs[i].parentNode;//定义子元素节点[i]的父元素
+      if(temp.nodeType == 1){//
+          if(temp == obj){
+              objChild[objChild.length] = objs[i] ;
+          }
+      }else if(temp.parentNode == obj){
+          objChild[objChild.length] = objs[i] ;
+      }
+  }
+  return objChild ;
+}
