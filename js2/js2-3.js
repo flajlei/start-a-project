@@ -1,20 +1,28 @@
 //接收上一页打乱顺序的数组通过-分离重组数组         完成
   var idCard = sessionStorage.getItem("idCard").split("-");
-//根据人数数量确定显示多少个人物块                 完成
-  var bodyMain = document.getElementById("bodyMain");
-  var card = getChildren(bodyMain);
-  var id = document.getElementsByClassName("body-user1");
-  for (var i=0;i<card.length;i++) {
-    if (i > idCard.length-1) {
-      card[i].classList.add("display-none");
-    } else {
-      var idText = document.createTextNode(idCard[i]);
-      id[i].appendChild(idText);
+//根据人数数量确定显示多少个人物块            使用jq完成
+  // var bodyMain = document.getElementById("bodyMain");
+  // var card = getChildren(bodyMain);
+  // var id = document.getElementsByClassName("body-user1");
+  // for (var i=0;i<card.length;i++) {
+  //   if (i > idCard.length-1) {
+  //     card[i].classList.add("display-none");
+  //   } else {
+  //     var idText = document.createTextNode(idCard[i]);
+  //     id[i].appendChild(idText);
+  //   }
+  // }
+  $(document).ready(function(){
+    for (var i=0;i<18;i++){
+      if (i < $(idCard).length) {
+        $(card).eq(i).find('.body-user1').text($(idCard)[i]);
+      } else {
+        $(card).eq(i).hide();
+      }
     }
-  }
+  });
 //为天数增加状态，根据按钮使游戏进程按照1-2-下一天进行
-  var day = new Object();
-
+  
 //为人员添加存活和死亡两个状态，在选择某人员并按下按钮后状态切换，死亡状态不能选择，对象所属的角色变量-1
 //将这个死亡顺序记录下来
 //按下按钮后判断，如果满足结束条件，游戏结束，跳转到结算画面，未结束则继续
