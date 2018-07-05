@@ -1,0 +1,38 @@
+.header-photo1 {
+  padding: 10px 13px;
+  background-position: -40px 0; }
+
+.header-photo2 {
+  padding: 10px;
+  background-position: -20px 0; }
+
+header {
+  padding: 0 1rem;
+  z-index: 1; }
+
+.body-result, .body-day {
+  padding: 0 2rem; }
+
+.body-reward {
+  position: relative;
+  top: -43px;
+  height: 0;
+  z-index: 0;
+  letter-spacing: 2px; }
+
+.body-user {
+  width: 33.33333%; }
+
+.body-day {
+  padding-top: 2px;
+  border-bottom: 1px #888 solid; }
+
+footer {
+  height: 60px;
+  background-color: rgba(94, 192, 206, 0.5); }
+  footer > a {
+    width: 43%; }
+    footer > a > button {
+      width: 100%;
+      border-radius: 5px;
+      padding: 5px 0; }
