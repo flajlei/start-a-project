@@ -1,0 +1,100 @@
+@import "../../frame/part.scss";
+header{
+  padding: 0 1rem;
+  background-color: $color-blue;
+}
+.hambur-btn{
+  border: 1px #fff solid;
+  background-color: transparent;
+  .icon-bar{
+    border-top: 1px #fff solid;
+    width: 16px;
+    height: 0;
+    margin: 4px 1px;
+  }
+}
+.header-photo{
+  padding: 10px;
+}
+.body-photo1{
+  padding: 13px;
+  background-position: -70px -20px;
+}
+//主体
+main{
+  padding: 5px;
+  margin-bottom: 70px;
+}
+.body-day{
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 5px;
+}
+.time-line{
+  position: relative;
+  padding: 20px;
+  > .left{
+    position: absolute;
+    left: 0;
+    width: 35px;
+    height: 100%;
+    border-right: 2px $color-gary solid;
+    align-items: stretch;
+      > .moon,.sun{
+        position: absolute;
+        left: 15px;
+        width: 40px;
+        height: 40px;
+        border: 0;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-color: #f7f7f7;
+      }
+      > .moon{
+        background-image: url(../photo/moon.png);
+        top: 20px;
+        background-position: 10px 7px;
+      }
+      > .sun{
+        background-image: url(../photo/sun.png);
+        top: 75px;
+        background-position: 7px 6px;
+
+      }
+  }
+  > .right{
+    width: 80%;
+    > .text{
+      position: relative;
+      height: 40px;
+      line-height: 40px;
+      > .caret{
+        position: absolute;
+        top: 10px;
+        left: -20px;
+        @include caret-left(20px,10px,10px,$color-blue);
+      }
+    }
+  }
+}
+.color-end{
+  background-color: #92b7a5;
+}
+.line{
+  height: 100%;
+  border: 2px $color-gary solid;
+}
+//尾部
+footer{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 70px;
+  a{
+    width: 80%;
+    button{
+      width: 100%;
+      height: 40px;
+    }
+  }
+}

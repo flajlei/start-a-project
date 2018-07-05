@@ -1,6 +1,6 @@
-@import "../frame/load.scss";
+@import "../../frame/load.scss";
 .sprite{
-  @include sprite("../css7/sprite.png");
+  @include sprite("../../css7/sprite.png");
 }
 html{
   height: 100%;

@@ -1,7 +1,8 @@
 //使用临时存储参数sessionStorage
-// var peopleNum = sessionStorage.getItem("peopleNum");
-var peopleNum = getQueryString("peopleNum");//从url读取传递参数
-var ghostNum = getQueryString("ghostNum");
+var peopleNum = sessionStorage.getItem("peopleNum");
+var ghostNum = sessionStorage.getItem("ghostNum");
+// var peopleNum = getQueryString("peopleNum");//从url读取传递参数
+// var ghostNum = getQueryString("ghostNum");
 var manNum = peopleNum - ghostNum;
 var idCard = new Array();
 //根据人数分配鬼和水民

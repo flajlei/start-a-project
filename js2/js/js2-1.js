@@ -1,3 +1,5 @@
+//清理游戏进度
+sessionStorage.clear();
 function addPeopleNum() {
   if (!document.getElementById) return false;
   if (!document.createTextNode) return false;
@@ -43,8 +45,9 @@ function addPeopleNum() {
     peopleNum = people.value;
     ghostNum = ghost.firstChild.nodeValue;
     if (peopleNum >= 4 && peopleNum <= 18) {
-      // sessionStorage.setItem("peopleNum",peopleNum);
-      window.location.href = "js2-2.html"+"?"+"peopleNum"+"="+peopleNum+"&"+"ghostNum"+"="+ghostNum;
+      sessionStorage.setItem("peopleNum",peopleNum);
+      sessionStorage.setItem("ghostNum",ghostNum);
+      window.location.href = "js2-2.html"//+"?"+"peopleNum"+"="+peopleNum+"&"+"ghostNum"+"="+ghostNum;
     } 
     else if (peopleNum < 4 || peopleNum > 18){
       var popup = document.getElementById("popup");

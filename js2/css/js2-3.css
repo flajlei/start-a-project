@@ -168,6 +168,15 @@
 .bgcolor-white {
   background-color: #fff; }
 
+.bgcolor-blue {
+  background-color: #5ac0ce; }
+
+.bgcolor-blue2 {
+  background-color: #bae9f4; }
+
+.bgcolor-orange {
+  background-color: #f8b547; }
+
 .bgcolor-green {
   background-color: #28b078; }
 
@@ -286,13 +295,54 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield; }
 
-.sprite {
-  background-image: url("../css7/sprite.png"); }
-
 html {
-  height: 100%; }
+  background-color: #5ac0ce; }
 
 header {
-  height: 50px;
-  padding: 0 10px;
-  background-color: #5ac0ce; }
+  padding: 0 1rem; }
+
+.hambur-btn {
+  border: 1px #fff solid;
+  background-color: transparent; }
+  .hambur-btn .icon-bar {
+    border-top: 1px #fff solid;
+    width: 16px;
+    height: 0;
+    margin: 4px 1px; }
+
+.header-photo {
+  padding: 10px; }
+
+.body-photo1 {
+  padding: 13px;
+  background-position: -70px -20px; }
+
+main {
+  margin-bottom: 70px; }
+
+.body-part {
+  width: 33.33333%; }
+
+.body-user {
+  width: 80px;
+  height: 80px;
+  border: 3px #fff solid; }
+  .body-user:focus + .body-select {
+    visibility: visible; }
+  .body-user .body-user1 {
+    height: 56px; }
+  .body-user .body-user2 {
+    height: 18px; }
+
+.body-select {
+  width: 80px;
+  padding: 10px 0;
+  visibility: hidden; }
+
+footer {
+  height: 70px; }
+  footer a {
+    width: 80%; }
+    footer a button {
+      width: 100%;
+      height: 40px; }
