@@ -73,7 +73,7 @@ $(document).ready(function() {
     sessionStorage.setItem("idLineA",idLineA);
     sessionStorage.setItem("ghostNum",ghostNum);
     sessionStorage.setItem("waterNum",waterNum);
-    if (ghostNum = 0 || waterNum <= ghostNum) {
+    if (ghostNum == 0 || waterNum <= ghostNum) {
       window.location.href = "css13-2.html";
     } else {
       window.location.href = "js2-4.html";
