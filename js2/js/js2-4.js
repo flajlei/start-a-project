@@ -43,7 +43,7 @@ var dayLine = new StateMachine({
   ],
   methods: {
     onKillSay:   function() {},
-    onDeadSay:   function() {alert('死者发言')},
+    onDeadSay:   function() {confirm('死者发言')},
     onPeopleSay: function() {alert('轮流发言')},
     onSelect:    function() {day++}
   }
