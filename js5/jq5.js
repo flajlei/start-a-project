@@ -16,7 +16,7 @@ $(document).ready(function(){
     } else if (password == "") {
       $(".error").text("请输入密码");
     } else {
-      $.post("/carrots-admin-ajax/a/login", {
+      $.post("http://dev.admin.carrots.ptteng.com/a/login", {
         name : user ,
         pwd  : password
       }, function (data) {
