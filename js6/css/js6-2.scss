@@ -1,0 +1,163 @@
+@import "../../frame/part.scss";
+.sprite{
+  @include sprite("../photo/sprite.png");
+}
+body{
+  height: 100vh;
+}
+.left{
+  width: 200px;
+  color: #fff;
+  background-color: #222939;
+}
+header{
+  height: 40px;
+  border-bottom: 1px #ddd solid;
+  > .left{
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+  }
+}
+main{
+  height: 100%;
+  //主页面左端
+  > .left{
+      padding-top: 40px;
+      height: 100%;
+    > div{
+      > div{
+        height: 40px;
+        padding: 0 40px 0 10px;
+        .photoA,.photoB{
+          width: 0;
+          height: 0;
+          padding: 10px;
+        }
+        .photoA{
+          background-position: 0 0;
+        }
+        .text{
+          padding-left: 10px;
+        }
+        .photoB{
+          background-position: -27px -3px;
+        }
+        &:hover{
+          background-color: #777;
+          + a{
+            display: block;
+          }
+        }
+      } 
+      > a{
+        color: #fff;
+        display: none;
+        text-decoration: none;
+        > .link{
+          height: 40px;
+          padding-left: 60px;
+          line-height: 40px;
+        }
+        &:hover{
+          display: block;
+          background-color: #777;
+        }
+      } 
+    } 
+  }
+}
+//主页面右端上部 Article列表
+.optionA{
+  width: 90%;
+  height: 150px;
+  margin: 0 auto;
+  border: 1px #ddd solid;
+  border-radius: 5px;
+  padding: 0 20px;
+    .time,.list,.state{
+    height: 50px;
+    > strong{
+      width: 60px;
+    }
+    > span{
+      margin-left: 20px;
+    }
+    > input,select{
+      width: 120px;
+      height: 25px;
+      margin-left: 20px;
+      border: 1px #ddd solid;
+      border-radius: 5px;
+      flex: 1;
+    }
+    }
+    .time{
+    width: 60%;
+  }
+    .list{
+    width: 40%;
+    padding-left: 20px;
+  }
+    .state{
+    width: 33%;
+  }
+}
+  .clearBtn,.searchBtn{
+    width: 50px;
+    height: 30px;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+  }
+  .clearBtn{
+    background-color: #d9524e;
+  }
+  .searchBtn{
+    background-color: #5ab75a;
+    margin-left: 5px;
+  }
+//主界面右侧下部 Article列表
+.listA{
+  width: 90%;
+  height: 200px;
+  margin: 20px auto 0 auto;
+  border: 1px #ddd solid;
+  border-radius: 5px;
+    .theme{
+    height: 40px;
+    padding: 0 20px;
+    border-bottom: 1px #ddd solid;
+      button{
+      color: #fff;
+      background-color: #5ab75a;
+      border-radius: 2px;
+    }
+  }
+    .listTable{
+    width: 98%;
+    margin: 2% auto 0 auto;
+    > table{
+      width: 100%;
+      border: 1px #ddd solid;
+        .tableTop{
+        height: 40px;
+        border-bottom: 1px #ddd solid;
+      }
+    }
+  }
+}
+//新增页面
+.optionB{
+  width: 90%;
+  height: 150px;
+  margin: 0 auto;
+  border: 1px #ddd solid;
+  border-radius: 5px;
+   .theme{
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px #ddd solid;
+    padding: 0 10px;
+  }
+}

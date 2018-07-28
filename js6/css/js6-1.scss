@@ -1,0 +1,42 @@
+@import "../../frame/part.scss";
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: #222939;
+  > div{
+    position: relative;
+    width: 380px;
+    height: 320px;
+    background-color: #fff;
+    border-radius: 5px;
+    > .photo{
+      position: relative;
+      top: -38px;
+      width: 75px;
+      height: 75px;
+      margin: 0 auto;
+      border-radius: 50%;
+      background-image: url(../photo/carrots.png);
+    }
+    > input,.error,button{
+      width: 340px;
+      height: 50px;
+      margin-bottom: 15px;
+    }
+    > input{
+      margin-bottom: 15px;
+      border: 0;
+      border-radius: 5px;
+      padding-left: 15px;
+      color: #fdaa2a;
+      background-color: #f8febc;
+      &:focus{
+        box-shadow: 0 0 5px #888;
+      }
+    }
+    > button{
+      color: #fff;
+      background-color: #508ac2;
+    }
+  }
+}

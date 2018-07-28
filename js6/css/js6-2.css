@@ -1,0 +1,130 @@
+.sprite {
+  background-image: url("../photo/sprite.png"); }
+
+body {
+  height: 100vh; }
+
+.left {
+  width: 200px;
+  color: #fff;
+  background-color: #222939; }
+
+header {
+  height: 40px;
+  border-bottom: 1px #ddd solid; }
+  header > .left {
+    height: 100%;
+    text-align: center;
+    line-height: 40px; }
+
+main {
+  height: 100%; }
+  main > .left {
+    padding-top: 40px;
+    height: 100%; }
+    main > .left > div > div {
+      height: 40px;
+      padding: 0 40px 0 10px; }
+      main > .left > div > div .photoA, main > .left > div > div .photoB {
+        width: 0;
+        height: 0;
+        padding: 10px; }
+      main > .left > div > div .photoA {
+        background-position: 0 0; }
+      main > .left > div > div .text {
+        padding-left: 10px; }
+      main > .left > div > div .photoB {
+        background-position: -27px -3px; }
+      main > .left > div > div:hover {
+        background-color: #777; }
+        main > .left > div > div:hover + a {
+          display: block; }
+    main > .left > div > a {
+      color: #fff;
+      display: none;
+      text-decoration: none; }
+      main > .left > div > a > .link {
+        height: 40px;
+        padding-left: 60px;
+        line-height: 40px; }
+      main > .left > div > a:hover {
+        display: block;
+        background-color: #777; }
+
+.optionA {
+  width: 90%;
+  height: 150px;
+  margin: 0 auto;
+  border: 1px #ddd solid;
+  border-radius: 5px;
+  padding: 0 20px; }
+  .optionA .time, .optionA .list, .optionA .state {
+    height: 50px; }
+    .optionA .time > strong, .optionA .list > strong, .optionA .state > strong {
+      width: 60px; }
+    .optionA .time > span, .optionA .list > span, .optionA .state > span {
+      margin-left: 20px; }
+    .optionA .time > input, .optionA .time select, .optionA .list > input, .optionA .list select, .optionA .state > input, .optionA .state select {
+      width: 120px;
+      height: 25px;
+      margin-left: 20px;
+      border: 1px #ddd solid;
+      border-radius: 5px;
+      flex: 1; }
+  .optionA .time {
+    width: 60%; }
+  .optionA .list {
+    width: 40%;
+    padding-left: 20px; }
+  .optionA .state {
+    width: 33%; }
+
+.clearBtn, .searchBtn {
+  width: 50px;
+  height: 30px;
+  color: #fff;
+  border: 0;
+  border-radius: 5px; }
+
+.clearBtn {
+  background-color: #d9524e; }
+
+.searchBtn {
+  background-color: #5ab75a;
+  margin-left: 5px; }
+
+.listA {
+  width: 90%;
+  height: 200px;
+  margin: 20px auto 0 auto;
+  border: 1px #ddd solid;
+  border-radius: 5px; }
+  .listA .theme {
+    height: 40px;
+    padding: 0 20px;
+    border-bottom: 1px #ddd solid; }
+    .listA .theme button {
+      color: #fff;
+      background-color: #5ab75a;
+      border-radius: 2px; }
+  .listA .listTable {
+    width: 98%;
+    margin: 2% auto 0 auto; }
+    .listA .listTable > table {
+      width: 100%;
+      border: 1px #ddd solid; }
+      .listA .listTable > table .tableTop {
+        height: 40px;
+        border-bottom: 1px #ddd solid; }
+
+.optionB {
+  width: 90%;
+  height: 150px;
+  margin: 0 auto;
+  border: 1px #ddd solid;
+  border-radius: 5px; }
+  .optionB .theme {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px #ddd solid;
+    padding: 0 10px; }
