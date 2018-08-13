@@ -23,47 +23,51 @@ main{
   height: 100%;
   //主页面左端
   > .left{
-      padding-top: 40px;
-      height: 100%;
-    > div{
-      > div{
+    padding-top: 40px;
+    height: 100%;
+      .leftList{
+      height: 40px;
+      padding: 0 40px 0 10px;
+      .photoA,.photoB{
+        width: 0;
+        height: 0;
+        padding: 10px;
+      }
+      .photoA{
+        background-position: 0 0;
+      }
+      .text{
+        padding-left: 10px;
+      }
+      .photoB{
+        background-position: -27px -3px;
+      }
+      &:hover{
+        background-color: #777;
+      }
+    }
+    .active{
+      background-color: #777;
+      > .photoB{
+        transform: rotate(-90deg);
+      }
+      ~ a{
+        display: block;
+      }
+    }
+     a{
+      color: #fff;
+      display: none;
+      text-decoration: none;
+      > .link{
         height: 40px;
-        padding: 0 40px 0 10px;
-        .photoA,.photoB{
-          width: 0;
-          height: 0;
-          padding: 10px;
-        }
-        .photoA{
-          background-position: 0 0;
-        }
-        .text{
-          padding-left: 10px;
-        }
-        .photoB{
-          background-position: -27px -3px;
-        }
-        &:hover{
-          background-color: #777;
-          + a{
-            display: block;
-          }
-        }
-      } 
-      > a{
-        color: #fff;
-        display: none;
-        text-decoration: none;
-        > .link{
-          height: 40px;
-          padding-left: 60px;
-          line-height: 40px;
-        }
-        &:hover{
-          display: block;
-          background-color: #777;
-        }
-      } 
+        padding-left: 60px;
+        line-height: 40px;
+      }
+      &:hover{
+        display: block;
+        background-color: #777;
+      }
     } 
   }
 }
@@ -147,7 +151,7 @@ main{
     }
   }
 }
-//新增页面
+//Article详情页
 .optionB{
   width: 90%;
   margin: 0 auto;

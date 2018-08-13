@@ -22,32 +22,36 @@ main {
   main > .left {
     padding-top: 40px;
     height: 100%; }
-    main > .left > div > div {
+    main > .left .leftList {
       height: 40px;
       padding: 0 40px 0 10px; }
-      main > .left > div > div .photoA, main > .left > div > div .photoB {
+      main > .left .leftList .photoA, main > .left .leftList .photoB {
         width: 0;
         height: 0;
         padding: 10px; }
-      main > .left > div > div .photoA {
+      main > .left .leftList .photoA {
         background-position: 0 0; }
-      main > .left > div > div .text {
+      main > .left .leftList .text {
         padding-left: 10px; }
-      main > .left > div > div .photoB {
+      main > .left .leftList .photoB {
         background-position: -27px -3px; }
-      main > .left > div > div:hover {
+      main > .left .leftList:hover {
         background-color: #777; }
-        main > .left > div > div:hover + a {
-          display: block; }
-    main > .left > div > a {
+    main > .left .active {
+      background-color: #777; }
+      main > .left .active > .photoB {
+        transform: rotate(-90deg); }
+      main > .left .active ~ a {
+        display: block; }
+    main > .left a {
       color: #fff;
       display: none;
       text-decoration: none; }
-      main > .left > div > a > .link {
+      main > .left a > .link {
         height: 40px;
         padding-left: 60px;
         line-height: 40px; }
-      main > .left > div > a:hover {
+      main > .left a:hover {
         display: block;
         background-color: #777; }
 

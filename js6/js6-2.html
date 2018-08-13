@@ -8,12 +8,12 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/js6.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/js6-2.css" />
 </head>
-<body ng-app="myApp">
+<body ng-app="myApp" ng-controller="myCtrl">
   <header class="flex-row-n4">
     <h3 class="left">萝卜多后台管理系统</h3>
     <div>
       <div class="float-left">猎头</div>
-      <div class="float-left">user</div>
+      <div class="float-left">{{name}}</div>
       <div class="float-left">退出</div>
     </div>
   </header>
@@ -21,14 +21,14 @@
     <!--左侧-->
     <div class="left">
       <div>
-        <div class="flex-row-w4">
+        <div class="flex-row-w4 leftList">
           <div class="sprite photoA"></div>
           <div class="text flex-1"><span>信息管理</span></div>
           <div class="sprite photoB"></div>
         </div>
       </div>
       <div>
-        <div class="flex-row-w4">
+        <div class="flex-row-w4 leftList">
           <div class="sprite photoA"></div>
           <div class="text flex-1"><span>Article管理</span></div>
           <div class="sprite photoB"></div>
@@ -36,35 +36,35 @@
         <a href="#/a"><div class="link">Article列表</div></a>
       </div>
       <div>
-        <div class="flex-row-w4">
+        <div class="flex-row-w4 leftList">
           <div class="sprite photoA"></div>
           <div class="text flex-1"><span>人才管理</span></div>
           <div class="sprite photoB"></div>
         </div>
       </div>
       <div>
-        <div class="flex-row-w4">
+        <div class="flex-row-w4 leftList">
           <div class="sprite photoA"></div>
           <div class="text flex-1"><span>推荐管理</span></div>
           <div class="sprite photoB"></div>
         </div>
       </div>
       <div>
-        <div class="flex-row-w4">
+        <div class="flex-row-w4 leftList">
           <div class="sprite photoA"></div>
          <div class="text flex-1"><span>后台管理</span></div>
           <div class="sprite photoB"></div>
         </div>
       </div>
       <div>
-        <div class="flex-row-w4">
+        <div class="flex-row-w4 leftList">
           <div class="sprite photoA"></div>
           <div class="text flex-1"><span>用户管理</span></div>
           <div class="sprite photoB"></div>
         </div>
       </div>
       <div>
-        <div class="flex-row-w4">
+        <div class="flex-row-w4 leftList">
           <div class="sprite photoA"></div>
           <div class="text flex-1"><span>内容管理</span></div>
           <div class="sprite photoB"></div>
@@ -74,10 +74,9 @@
     <!--右侧-->
     <div ng-view class="flex-1"></div>
   </main>
-  <script src="../jquery/jquery-3.3.1.js"></script>
   <script src="../angular/angular.js"></script>
   <script src="../angular/angular-route.js"></script>
-  <script src="js/app.js"></script>
+  <script src="../jquery/jquery-3.3.1.js"></script>
   <script src="js/js6-2.js"></script>
 </body>
 </html>

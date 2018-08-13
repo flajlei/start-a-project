@@ -1,4 +1,4 @@
-<div class="optionA">
+<div class="optionA" ng-controller="search">
   <div class="flex-row-w1">
     <div class="flex-row-n1 time">
       <strong class="flex-row-n4"><span>发</span><span>布</span><span>时</span><span>间</span></strong>
@@ -16,8 +16,8 @@
     </div> 
   </div>
   <div class="flex-row-n2">
-    <button class="clearBtn">清空</button>
-    <button class="searchBtn">搜索</button>
+    <button class="clearBtn" ng-click="clearBtn">清空</button>
+    <button class="searchBtn" ng-click="searchBtn">搜索</button>
   </div>
 </div>
 <div class="listA">
@@ -37,7 +37,7 @@
         <td><strong>状态</strong></td>
         <td><strong>操作</strong></td>
       </tr>
-      <tr class="flex-row-n5 tableTop">
+      <tr class="flex-row-n5">
         <td><strong></strong></td>
         <td><strong></strong></td>
         <td><strong></strong></td>
