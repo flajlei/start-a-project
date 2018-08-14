@@ -35,20 +35,16 @@ myApp.config(['$routeProvider',function($routeProvider) {
   .otherwise({redirectTo:'/'});
 }]);
 //登陆id
-myApp.controller('myCtrl',function($scope) {
-    $scope.name = name;
-});
-//
-myApp.controller('search',function($scope,$http) {
-  $scope.search = function() {
+myApp.controller('myCtrl',function($scope,$http) {
+  $scope.name = name;
+  $scope.searchBtn = function() {
     $http({
       method: 'post',
-      url: '/carrots-admin-ajax/a/u/article',
+      url: '/carrots-admin-ajax/get/a/article/search',
       data: {
         name: $scope.name,
         pwd: $scope.pwd,
-
       }
-    })
+    });
   };
 });

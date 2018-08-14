@@ -1,109 +1,71 @@
-body {
-  margin: 0; }
+/*
+Error: Mixin nav-fix is missing argument $width.
+        on line 17 of F:\gitgit\start-a-project\css12\css12-1.scss, in `nav-fix'
+        from line 17 of F:\gitgit\start-a-project\css12\css12-1.scss
 
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+12:   @include flex-row-n(flex-start);
+13:   width: 100%;
+14: }
+15: //顶部
+16: header{
+17:   @include nav-fix;
+18:   top: 0;
+19:   color: #fff;
+20:   background-color: $color-blue;
+21: }
+22: .nav-photo1{
 
-.color-red {
-  color: #ce593d; }
-
-header, footer {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 40px;
-  padding: 0 1rem; }
-
-.body-top, .body-bottom1, .body-bottom2 > div {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%; }
-
-header {
-  position: fixed;
-  padding: 0 1rem;
-  top: 0;
-  color: #fff;
-  background-color: #5ac0ce; }
-
-.nav-photo1 {
-  background-image: url(sprite.png);
-  padding: 10px 7px;
-  background-position: 15px 22px; }
-
-.body-top {
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 164px;
-  margin-top: 40px;
-  background-image: url(headground.png); }
-  .body-top > img {
-    padding: 1rem; }
-  .body-top > div {
-    color: #fff;
-    letter-spacing: 2px; }
-
-.top-p {
-  background-image: url(sprite.png);
-  padding: 7px 7px;
-  background-position: 12px -25px;
-  float: left;
-  margin-top: 7px; }
-
-.body-bottom {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center; }
-
-.body-bottom1, .body-bottom2 > div {
-  padding: 1rem;
-  border-bottom: 1px #eef2f2 solid; }
-
-.body-bottom2 {
-  width: 100%;
-  padding-left: 1rem;
-  margin-bottom: 50px; }
-
-.col-line1 {
-  color: #5ac0ce;
-  padding-right: 10px; }
-
-.col-line2 {
-  color: #eef2f2;
-  padding: 0 10px; }
-
-.star-p {
-  background-image: url(sprite.png);
-  padding: 10px 10px;
-  background-position: -46px -46px; }
-
-.list-q {
-  color: #999;
-  min-width: 64px; }
-
-footer {
-  position: fixed;
-  padding: 0 1rem;
-  bottom: 0;
-  height: 50px; }
-  footer button {
-    width: 48%;
-    height: 40px;
-    border: 1px #5ac0ce solid;
-    border-radius: 5px;
-    font-size: 1rem; }
-
-.footer-l {
-  color: #5ac0ce;
-  background-color: #fff; }
-
-.footer-r {
-  color: #fff;
-  background-color: #5ac0ce; }
+Backtrace:
+F:\gitgit\start-a-project\css12\css12-1.scss:17:in `nav-fix'
+F:\gitgit\start-a-project\css12\css12-1.scss:17
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:75:in `block in perform_arguments'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:67:in `zip'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:67:in `perform_arguments'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:362:in `block in visit_mixin'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:20:in `render'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:290:in `render'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:400:in `run'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+F:/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+F:/koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+F:/koala/bin/sass:22:in `load'
+F:/koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Mixin nav-fix is missing argument $width.\A         on line 17 of F:\gitgit\start-a-project\css12\css12-1.scss, in `nav-fix'\A         from line 17 of F:\gitgit\start-a-project\css12\css12-1.scss\A \A 12:   @include flex-row-n(flex-start);\A 13:   width: 100%;\A 14: }\A 15: //顶部\A 16: header{\A 17:   @include nav-fix;\A 18:   top: 0;\A 19:   color: #fff;\A 20:   background-color: $color-blue;\A 21: }\A 22: .nav-photo1{"; }
