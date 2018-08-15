@@ -14,7 +14,7 @@ header,footer{
 }
 //顶部
 header{
-  @include nav-fix;
+  @include nav-fix(100%);
   top: 0;
   color: #fff;
   background-color: $color-blue;
@@ -71,7 +71,7 @@ header{
 }
 //底部
 footer{
-  @include nav-fix;
+  @include nav-fix(100%);
   bottom: 0;
   height: 50px;
   button{
