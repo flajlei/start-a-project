@@ -23,7 +23,7 @@ main {
   main > .number {
     height: 100px; }
     main > .number .number-input {
-      border: 0;
+      border: 1px #aaa solid;
       width: 35px;
       background-color: #eef2f2; }
 

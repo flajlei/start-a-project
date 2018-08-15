@@ -30,7 +30,7 @@ main{
   > .number{
     height: 100px;
       .number-input{
-        border: 0;
+        border: 1px #aaa solid;
         width: 35px;
         background-color: $color-gary;
       }

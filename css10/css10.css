@@ -16,6 +16,12 @@
 .list-txt{
   color: #ccc;
 }
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
+  -webkit-appearance:textfield;
+}
+input[type="number"]{
+  -moz-appearance:textfield;
+}
 /*头部*/
 .header1{
   display: flex;
@@ -147,6 +153,7 @@
   margin: 0 0 0 30px;
 }
 .option-list .btn-group{
+  height: 30px;
   margin-right: 15px;
 }
 .btn-radio{
@@ -169,24 +176,7 @@ input:checked + .radio-on{
   border: 1px #1277dc solid;
   background-color: #1277dc;
 }
-.caret-out{
-  padding: 4px 5px;
-  border-radius: 2px;
-  background-color: #1277dc;
-}
-.btn-list small{
-  color: #999;
-}
-.caret{
-  border-top:5px #fff solid;
-}
-.btn-list{
-  height: 30px;
-  min-width: 6.857rem;
-  border-radius: 0;
-  padding: 0 0.143rem 0 0.8rem;
-}
-.btn-option{
+/* .btn-option{
   position: absolute;
   top: 29px;
   width: 6.857rem;
@@ -195,13 +185,8 @@ input:checked + .radio-on{
   list-style: none;
   text-indent: 10px;
   display: none;
-}
-.btn-list:focus + .btn-option,.btn-option:hover{
-  display: block;
-}
-.btn-option > li:hover{
-  background-color: #ccc;
-}
+} */
+
 .list-size{
   flex: 1;
   min-height: 120px;
