@@ -16,8 +16,8 @@
     </div> 
   </div>
   <div class="flex-row-n2">
-    <button class="clearBtn" ng-click="clearBtn">清空</button>
-    <button class="searchBtn" ng-click="searchBtn">搜索</button>
+    <button class="clearBtn" ng-click="clearBtn()">清空</button>
+    <button class="searchBtn" ng-click="searchBtn()">搜索</button>
   </div>
 </div>
 <div class="listA">
@@ -37,15 +37,15 @@
         <td><strong>状态</strong></td>
         <td><strong>操作</strong></td>
       </tr>
-      <tr class="flex-row-n5">
-        <td><strong></strong></td>
-        <td><strong></strong></td>
-        <td><strong></strong></td>
-        <td><strong></strong></td>
-        <td><strong></strong></td>
-        <td><strong></strong></td>
-        <td><strong></strong></td>
-        <td><strong></strong></td>
+      <tr class="flex-row-n5" ng-repeat="x in articleList">
+        <td>1</td>
+        <td>{{x.title}}</td>
+        <td>{{x.type}}</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
       </tr>
     </table>
   </div>

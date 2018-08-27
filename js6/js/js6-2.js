@@ -39,12 +39,15 @@ myApp.controller('myCtrl',function($scope,$http) {
   $scope.name = name;
   $scope.searchBtn = function() {
     $http({
-      method: 'post',
-      url: '/carrots-admin-ajax/get/a/article/search',
-      data: {
-        name: $scope.name,
-        pwd: $scope.pwd,
+      method: 'get',
+      url: '/carrots-admin-ajax/a/article/search',
+    })
+      .then(function(response) {
+        $scope.data = response.data;
+      if ($scope.data.message == "success"){
+        console.log($scope.data.data);
+        $scope.articleList = $scope.data.data.articleList;
       }
-    });
+    })
   };
 });

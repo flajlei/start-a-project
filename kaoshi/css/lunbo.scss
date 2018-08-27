@@ -1,0 +1,85 @@
+@import "../../frame/load.scss";
+body{
+  width: 100vw;
+  height: 100vh;
+  background: url(../photo/flybg.png) no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+.top{
+  width: 100%;
+  height: 70%;
+  > .name{
+    position: relative;
+    width: 100%;
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+  }
+  > .photo{
+    width: 100%;
+    height: 100%;
+    > img{
+      position: absolute;
+      left: 0%;
+      width: 100%;
+      height: 400px;
+      padding-bottom: 30px;
+      margin: 0 auto;
+      display: none;
+    }
+    > .active{
+      display: block;
+    }
+    > .activein{
+      display: block;
+      animation: activein 1s forwards;
+    }
+    > .activeout{
+      display: block;
+      animation: activeout 1s forwards;
+    }
+  }
+}
+.down{
+  width: 100%;
+  height: 30%;
+  > .fly1,.fly2,.fly3,.fly4,.fly5,.fly6{
+    width: 180px;
+    height: 160px;
+    background-image: url(../photo/flynav.png);
+    &:hover{
+      background-position-y: -185px;
+    }
+  }
+  > .active{
+    background-position-y: -185px;
+  }
+  > .fly1{
+    background-position-x: 12px;
+  }
+  > .fly2{
+    background-position-x: -175px;
+  }
+  > .fly3{
+    background-position-x: -360px;
+  }
+  > .fly4{
+    background-position-x: -545px;
+  }
+  > .fly5{
+    background-position-x: -735px;
+  }
+  > .fly6{
+    background-position-x: -920px;
+  }
+}
+//入
+@keyframes activein {
+  from {left:100%;}
+  to {left:0%;}
+}
+@keyframes activeout {
+  from {left:0%;}
+  to {left:-100%;}
+}

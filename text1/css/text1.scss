@@ -1,0 +1,48 @@
+@import "../../frame/part.scss";
+*{
+  margin: 0;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+}
+main{
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  > div{
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 100px;
+    > .back,.face{
+      width: 100px;
+      height: 100px;
+    }
+    > .back{
+      background: url(../photo/jj.gif) no-repeat;
+      background-size: 100% 100%;
+      transform: scale(1,1);
+    }
+    > .face{
+      position: relative;
+      top: -100px;
+      background-size: 100% 100%;
+      transform:scale(0,1);
+    }
+    > .out{
+      animation: out 1s forwards;
+    }
+    > .in{
+      animation: in 1s forwards;
+    }
+  }
+}
+@keyframes out{
+  from {transform:scale(1,1);}
+  to {transform:scale(0,1);}
+}
+@keyframes in{
+  from {transform:scale(0,1);}
+  to {transform:scale(1,1);}
+}
