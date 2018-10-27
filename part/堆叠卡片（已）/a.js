@@ -1,0 +1,9 @@
+$(document).ready(function(){
+  $(".box-a").mouseenter(function(e){
+      x=$(".box-a").offset();
+      console.log("divx"+x.top);
+      console.log("divy"+x.left);
+      console.log("鼠标y"+e.clientX);
+      console.log("鼠标x"+e.clientY);
+  })
+})

@@ -1,0 +1,56 @@
+.outspace-center {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.outspace-top {
+  margin-top: 1rem; }
+
+.outspace-bottom {
+  margin-bottom: 1rem; }
+
+.inspace-center {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+.inspace-top {
+  padding-top: 1rem; }
+
+.inspace-bottom {
+  padding-bottom: 1rem; }
+
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.text-out-center {
+  margin: 0 auto;
+  text-align: center; }
+
+.text-in-center {
+  width: auto;
+  display: inline-block;
+  text-align: center; }
+
+.text-in-left {
+  width: auto;
+  display: inline-block;
+  text-align: left; }
+
+.text-in-right {
+  width: auto;
+  display: inline-block;
+  text-align: right; }
+
+.xs-display, .display-none {
+  display: none; }
+
+.sm-display, .display-inherit {
+  display: inherit; }
+
+.display-block {
+  display: block; }

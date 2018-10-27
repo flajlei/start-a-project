@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+.father{
+  position: relative;
+  width: 100vm;
+  height: 100vh;
+  background-color: black;
+}
+.child{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 200px;
+  height: 100px;
+  background: linear-gradient(to bottom right,red,blue);
+}
+.text{
+  width: 200px;
+  height: 100px;
+  background: -webkit-linear-gradient(left,blue,#66ffff 10%,#cc00ff 20%,#CC00CC 30%, #CCCCFF 40%, #00FFFF 50%,#CCCCFF 60%,#CC00CC 70%,#CC00FF 80%,#66FFFF 90%,blue 100%);
+  -webkit-text-fill-color: transparent;/* 将字体设置成透明色 */
+  -webkit-background-clip: text;/* 裁剪背景图，使文字作为裁剪区域向外裁剪 */
+  -webkit-background-size: 200% 100%; /*放大背景区域*/
+  -webkit-animation: masked-animation 4s linear infinite;
+}
+@keyframes masked-animation {
+  0% {
+      background-position: 0  0;
+  }
+  100% {
+      background-position: -100%  0;
+  }
+}
+.line{
+  position: absolute;
+  top: 40px;
+  background-color: linear-gradient(to right,red,#00FFFF);
+}

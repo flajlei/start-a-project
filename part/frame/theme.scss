@@ -1,0 +1,67 @@
+@import "part.scss";
+//间隔
+.outspace-center{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.outspace-top{
+  margin-top: 1rem;
+}
+.outspace-bottom{
+  margin-bottom: 1rem;
+}
+.inspace-center{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.inspace-top{
+  padding-top: 1rem;
+}
+.inspace-bottom{
+  padding-bottom: 1rem;
+}
+//文字
+.text-left{
+  text-align: left;
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+//多行居中文字左对齐
+.text-out-center{
+  @include text-div;
+}
+.text-in-center{
+  @include text-p(center);
+}
+.text-in-left{
+  @include text-p(left);
+}
+.text-in-right{
+  @include text-p(right);
+}
+//根据宽度显示/隐藏
+.xs-display,.display-none{
+  display: none;
+}
+.sm-display,.display-inherit{
+  display: inherit;
+}
+.display-block{
+  display: block;
+}
+//-----------------------------------------------样式-----------------------------------------
+//汉堡按钮
+@mixin hambur-btn{
+  border: 1px #fff solid;
+  background-color: transparent;
+  .icon-bar{
+    border-top: 1px #fff solid;
+    width: 16px;
+    height: 0;
+    margin: 4px 1px;
+  }
+}

@@ -1,0 +1,29 @@
+.box{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.xline{
+  position: absolute;
+  bottom: 30%;
+  left: 10%;
+  width: 80%;
+  height: 0;
+  border: 1px #000 solid;
+}
+.ball{
+  position: absolute;
+  left: 50px;
+  bottom: 300px;                    /*高度h bottom*/
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  /* transition: all 0.5s linear; */
+}
+/*公式
+h=0.5*g*t*t
+v=g*t
+x轴时速度v0
+阻力减速度speeddown
+*/

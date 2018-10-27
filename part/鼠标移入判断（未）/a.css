@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background: url(timg.jpg);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+/* 3D旋转卡片 */
+.box-a{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 300px;
+  height: 150px;
+  padding: 25px;
+  border-radius: 5px;
+  text-align: center;
+}
+.card-1{
+  background-color: aqua;
+  box-shadow: 2px 2px 5px aqua;
+}
+.borderL,.borderR,.borderT,.borderB{
+  position: absolute;
+  border: 1px red solid;
+}
+.borderL{
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.borderR{
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+.borderT{
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.borderB{
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}

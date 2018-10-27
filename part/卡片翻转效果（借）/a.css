@@ -1,0 +1,54 @@
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 500px; /*z轴焦点距离，屏幕与眼睛之间*/
+	-webkit-perspective: 500px; /*谷歌浏览器的兼容*/
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);  /*鼠标移到div时翻转*/
+	}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;              /*过渡，翻转时的动画，无则直接变为前后，无翻转动作*/
+	transform-style: preserve-3d;  /*保留3D属性，删除则只是前页面水平翻转*/
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;   /*隐藏被旋转的div的背面*/
+    background-color: red;       
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;                     /*确保前在上*/
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);     /*初始时翻转180度然后由backface隐藏,然后在框架翻转时再次出现*/
+}
+
+/*
+1.在最外层的容器元素上设置整个动画区域的透视(perspective)属性。
+2.当外层容器元素遇到鼠标悬停事件时，内部存放卡片的容器旋转180度。这里也是控制旋转速度的地方。如果将旋转值设置为-180deg，是反向旋转。
+3.表示卡片正面和背面的元素都要绝对定位，这样它们才能在相同的位置相互遮挡。它们的背面可视性(backface-visibility)属性设置为隐藏，这样每个卡片的背面在翻转时都是看不见的。
+4.将卡片的正面设置为一个比背面要高的z-index值，这样保证卡片的正面在最上面。
+5.将背面卡片旋转180度，这样让它扮演背面的角色。
+*/
+
+/*3D元素的组成
+舞台:设置视距perspective
+容器:设置3d效果transform-style：preserve-3d
+内容:
+*/

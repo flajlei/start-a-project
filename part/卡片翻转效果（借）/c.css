@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.win{
+    width: 100vw;
+    height: 100vh;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    transform-style: preserve-3d;
+    position: relative;
+    border: 1px #000 solid;
+}
+.list{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border: 1px red solid;
+    background-color: aqua;
+}
+.list1{
+    transform: rotateY(-45deg) translateZ(120px);
+}
+.list2{
+    transform: rotateY(45deg) translateZ(120px);
+}
+.list3{
+    transform: rotateY(135deg) translateZ(120px);
+}
+.list4{
+    transform: rotateY(225deg) translateZ(120px);
+}
+.list5{
+    transform: rotateY(-45deg) rotateX(90deg) translateZ(120px);
+}
+.list6{
+    transform: rotateY(-45deg) rotateX(270deg) translateZ(120px);
+}

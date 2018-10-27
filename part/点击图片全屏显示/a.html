@@ -1,0 +1,22 @@
+<style>
+    .flywin{width: 100vw;height: 100vh;top: 0;position: fixed;background-color: rgba(0,0,0,0.3);z-index: 2;display: none;}
+    .fly{position: absolute;width:100%;height: 100%;background-size: auto 100%;background-repeat: no-repeat;background-position: center;}
+  </style>
+  <div class="flywin">
+      <div class="fly"></div>
+  </div>
+  <script type="text/javascript">
+  //不能同时有多个同id，但可以多个同class
+      $('.photo').click(function(){
+          var that = this;
+          var i = $("#photo").index(that);
+          console.log(i);
+          var imgurl = $(that).attr("src");
+          console.log(imgurl);
+          $(".flywin").css("display","block");
+          $(".fly").css("background-image","").css("background-image","url("+imgurl+")");
+      })
+      $(".flywin").click(function(){
+          $(".flywin").css("display","none");
+      })
+  </script>

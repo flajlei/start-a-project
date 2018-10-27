@@ -1,0 +1,25 @@
+body{
+  width: 100vw;
+  margin: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+/*轮播图盒子显示区域rollwin*/
+.rollwin{
+  position: relative;
+  width: 420px;
+  height: 260px;
+  border: 1px #000 solid;
+  margin: 0 auto;
+  font-size: 0;/*消除图片间距*/
+  overflow: hidden;
+}
+/*图片放置框rollbox*/
+.rollbox{
+  transition: 0.6s;
+}
+/*轮播的图片，图片的宽高应和roll一致，使用百分比会使图片
+变为rollimg的宽度导致变形*/
+.photo{
+  transition: 0.6s;
+}

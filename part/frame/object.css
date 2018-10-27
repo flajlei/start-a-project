@@ -1,0 +1,35 @@
+.flex {
+  display: flex; }
+
+.row {
+  width: 1280px;
+  margin: 0 auto; }
+
+@media screen and (max-width: 1280px) {
+  .row {
+    width: 100%; } }
+.flex-baseline {
+  align-items: baseline; }
+
+.flex-start {
+  align-items: flex-start; }
+
+.flex-1 {
+  flex: 1; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.clearfix:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }

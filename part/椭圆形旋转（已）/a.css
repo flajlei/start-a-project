@@ -1,0 +1,168 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+.center-box{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  /* border: 1px #fff solid; */
+}
+.out{
+  position: absolute;
+  left: -62px;
+  width: 212px;
+  height: 0;
+  /* border: 1px aquamarine solid; */
+  transform-origin: 100%;
+}
+.in{
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+@keyframes rolling-top{
+  0%{transform: rotate(90deg);top: 298px;}        /*在上*/
+  25%{transform: rotate(135deg);top: 298px;}      /*转到右*/
+  25.01%{transform: rotate(225deg);top: 0;}        /*切换转轴位置*/
+  50%{transform: rotate(270deg);top: 0;}          /*转到下*/
+  75%{transform: rotate(315deg);top: 0;}          /*转到左*/
+  75.01%{transform: rotate(45deg);top: 298px;}     /*切换转轴位置*/
+  100%{transform: rotate(90deg);top: 298px;}      /*转到上*/
+}
+@keyframes rolling-bottom{
+  0%{transform: rotate(270deg);top: 0;}           /*在下*/
+  25%{transform: rotate(315deg);top: 0;}          /*转到左*/
+  25.01%{transform: rotate(45deg);top: 298px;}     /*切换转轴位置*/
+  50%{transform: rotate(90deg);top: 298px;}       /*转到上*/
+  75%{transform: rotate(135deg);top: 298px;}      /*转到右*/
+  75.01%{transform: rotate(225deg);top: 0;}        /*切换转轴位置*/
+  100%{transform: rotate(270deg);top: 0;}         /*转到下上*/
+}
+@keyframes rolling-left{
+  0%{transform: rotate(315deg);top: 0;}           /*在左*/
+  0.01%{transform: rotate(45deg);top: 298px;}      /*切换转轴位置*/
+  25%{transform: rotate(90deg);top: 298px;}       /*转到上*/
+  50%{transform: rotate(135deg);top: 298px;}      /*转到右*/
+  50.01%{transform: rotate(225deg);top: 0;}        /*切换转轴位置*/
+  75%{transform: rotate(270deg);top: 0;}          /*转到下*/
+  100%{transform: rotate(315deg);top: 0;}         /*转到左*/
+}
+@keyframes rolling-right{
+  0%{transform: rotate(135deg);top: 298px;}       /*在右*/
+  0.01%{transform: rotate(225deg);top: 0;}         /*切换转轴位置*/
+  25%{transform: rotate(270deg);top: 0;}          /*转到下*/
+  50%{transform: rotate(315deg);top: 0;}          /*转到左*/
+  50.01%{transform: rotate(45deg);top: 298px;}     /*切换转轴位置*/
+  75%{transform: rotate(90deg);top: 298px;}       /*转到上*/
+  100%{transform: rotate(135deg);top: 298px;}     /*转到右*/
+}
+@keyframes rolling-in-top{
+  0%{transform: rotate(270deg);}                  /*上*/
+  25%{transform: rotate(225deg);}                 /*右*/
+  25.01%{transform: rotate(135deg);}               /*切*/
+  50%{transform: rotate(90deg);}                  /*下*/
+  75%{transform: rotate(45deg);}                  /*左*/
+  75.01%{transform: rotate(315deg);}               /*切*/
+  100%{transform: rotate(270deg);}                /*上*/
+}
+@keyframes rolling-in-bottom{
+  0%{transform: rotate(90deg);}                   /*下*/
+  25%{transform: rotate(45deg);}                  /*左*/
+  25.01%{transform: rotate(315deg);}               /*切*/
+  50%{transform: rotate(270deg);}                 /*上*/
+  75%{transform: rotate(225deg);}                 /*右*/
+  75.01%{transform: rotate(135deg);}               /*切*/
+  100%{transform: rotate(90deg);}                 /*上*/
+}
+@keyframes rolling-in-left{
+  0%{transform: rotate(45deg);}                   /*左*/
+  0.01%{transform: rotate(315deg);}                /*切*/
+  25%{transform: rotate(270deg);}                 /*上*/
+  50%{transform: rotate(225deg);}                 /*右*/
+  50.01%{transform: rotate(135deg);}               /*切*/
+  75%{transform: rotate(90deg);}                  /*下*/
+  100%{transform: rotate(45deg);}                 /*上*/
+}
+@keyframes rolling-in-right{
+  0%{transform: rotate(225deg);}                  /*右*/
+  0.01%{transform: rotate(135deg);}                /*切*/
+  25%{transform: rotate(90deg);}                  /*下*/
+  50%{transform: rotate(45deg);}                  /*左*/
+  50.01%{transform: rotate(315deg);}               /*切*/
+  75%{transform: rotate(270deg);}                 /*上*/
+  100%{transform: rotate(225deg);}                /*上*/
+}
+.top{
+  top: 298px;
+  transform: rotate(90deg);
+  animation: rolling-top 6s linear forwards infinite;
+}
+.bottom{
+  transform: rotate(270deg);
+  animation: rolling-bottom 6s linear forwards infinite;
+}
+.left{
+  top: 298px;
+  transform: rotate(45deg);
+  animation: rolling-left 6s linear forwards infinite;
+}
+.right{
+  transform: rotate(225deg);
+  animation: rolling-right 6s linear forwards infinite;
+}
+.in-top{
+  background: url(buycar1.png) no-repeat;
+  background-size: 100%;
+  transform: rotate(225deg);
+  animation: rolling-in-top 6s linear forwards infinite;
+}
+.in-bottom{
+  background: url(my1.png) no-repeat;
+  background-size: 100%;
+  transform: rotate(45deg);
+  animation: rolling-in-bottom 6s linear forwards infinite;
+}
+.in-left{
+  background: url(search1.png) no-repeat;
+  background-size: 100%;
+  transform: rotate(270deg);
+  animation: rolling-in-left 6s linear forwards infinite;
+}
+.in-right{
+  background: url(shop1.png) no-repeat;
+  background-size: 100%;
+  transform: rotate(90deg);
+  animation: rolling-in-right 6s linear forwards infinite;
+}
+.top,.bottom,.left,.right,.in-top,.in-bottom,.in-left,.in-right{
+  animation-play-state: paused;
+}
+.rota{
+  animation-play-state: running;
+}
+.test{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 300px;
+  height: 127px;
+  border-radius: 50%;
+  border: 1px aquamarine solid;
+}

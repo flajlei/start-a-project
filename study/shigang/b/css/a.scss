@@ -1,0 +1,301 @@
+@import "../../../frame/default.scss";
+@import "../../../frame/object.scss";
+.sprite{
+  background-image: url(../photo/sprite.png);
+}
+.part{
+  background-image: url(../photo/part.png);
+}
+.color-gary {
+  color: #b3b3b3;
+}
+.color-gary2{
+  color: #6b6b6b;
+}
+.color-white{
+  color: #fff;
+}
+.text-center{
+  text-align: center;
+}
+body{
+  overflow-x: hidden;
+}
+header{
+  width: 100%;
+  background-color: #000;
+  > .head{
+    width: 100%;
+    height: 100%;
+    background: url(../photo/navbg.png) no-repeat center center;
+    > .top{
+    width: 100%;
+    height: 60px;
+    > .left{
+      width: 100px;
+      height: 100px;
+      background-position-y: -100px;
+    }
+    > .right{
+      > div{
+        width: 80px;
+        color: #fff;
+      }
+      > button{
+        width: 40px;
+        height: 20px;
+        border-radius: 2px;
+        color: #fff;
+        background-color: #017cb2;
+      }
+    }
+    }
+    > .down{
+    width: 100%;
+    height: 565px;
+    margin: 0 auto;
+    > .text{
+      width: 565px;
+      > .text1{
+        color: #fff;
+        font-size: 2.8rem;
+      }
+      > .text2{
+        color: #fff;
+        padding: 50px 0;
+        font-size: 1.3rem;
+      }
+      > .text3{
+        > button{
+          width: 265px;
+          height: 60px;
+          color: #fff;
+        }
+        > .qa{
+          border: 1px #fff solid;
+          background-color: transparent;
+        }
+        > .register{
+          margin-left: 30px;
+          background-color: #35d04f;
+        }
+      }
+    }
+    }
+    > .roll{
+    position: relative;
+    > div{
+      width: 60px;
+      height: 2px;
+      margin: 0 5px 5px 5px;
+      background-color: #fff;
+    }
+    > .active{
+      background-color: #d0ad35;
+    }
+    }
+  }
+}
+main{
+  > .work{
+    > .work-top{
+      font-size: 2rem;
+      text-align: center;
+      margin: 90px 0;
+    }
+    > .work-down{
+      > div{
+        width: 350px;
+        height: 350px;
+        > .sprite{
+          width: 0;
+          height: 0;
+          padding: 50px;
+        }
+        > .theme{
+          font-size: 1.8rem;
+          margin-bottom: 10px;
+        }
+      }
+      > .list2{
+        border-left: 1px #ebf0f3 solid;
+        border-right: 1px #ebf0f3 solid;
+        > .sprite{
+          background-position-x: -100px;
+        }
+      }
+      > .list3{
+        > .sprite{
+          background-position-x: -200px
+        }
+      }
+      > .list4{
+        border-top: 1px #ebf0f3 solid;
+        > .sprite{
+          background-position-x: -300px;
+        }
+      }
+      > .list5{
+        border: 1px #ebf0f3 solid;
+        border-bottom: 0;
+        > .sprite{
+          background-position: -100px -100px;
+        }
+      }
+      > .list6{
+        border-top: 1px #ebf0f3 solid;
+        > .sprite{
+          background-position: -200px -100px;
+        }
+      }
+    }
+  }
+  > .rolling{
+    height: 745px;
+    background-color: #bdc9d5;
+    > .theme{
+      padding-top: 90px;
+      font-size: 2rem;
+    }
+    > .info{
+      margin: 40px 0 50px 0;
+    }
+    > .photo{
+      width: 80%;
+      height: 80%;
+      margin: 15px auto;
+      background: url(../photo/1.png) no-repeat;
+    }
+    > .line{
+      height: 6px;
+      > div{
+        width: 15px;
+        height: 3px;
+        background-color: #fff;
+        margin: 0 5px 5px 5px;
+        &:hover{
+        height: 6px;
+        }
+      }
+      > .active{
+        height: 6px;
+      }
+    }
+  }
+  > .coop{
+    background-color: #f0f4f7;
+    padding: 105px 0 40px 0;
+    > .theme{
+      font-size: 3.5rem;
+      color: #0dcdb6;
+    }
+    > .info{
+      padding: 25px 0;
+    }
+    > .photo{
+      max-width: 1100px;
+      margin: 0 auto;
+      > .part{
+        width: 215px;
+        height: 140px;
+      }
+      > .part1,.part6,.part11{
+        background-position-x: -10px;
+      }
+      > .part2,.part7,.part12{
+        background-position-x: -227px; 
+      }
+      > .part3,.part8,.part13{
+        background-position-x: -443px;
+      }
+      > .part4,.part9,.part14{
+        background-position-x: -659px;
+      }
+      > .part5,.part10,.part15{
+        background-position-x: -878px;
+      }
+      > .part6,.part7,.part8,.part9,.part10{
+        background-position-y: -140px;
+      }
+      > .part11,.part12,.part13,.part14,.part15{
+        background-position-y: -280px;
+      }
+    }
+    > button{
+      width: 245px;
+      height: 45px;
+      margin: 90px 0 45px 0;
+      color: #fff;
+      background-color: #2f383d;
+      font-size: 1.2rem;
+    }
+  }
+  > .link{
+    margin: 130px 0;
+    > .theme{
+      margin-bottom: 35px;
+      font-size: 2rem;
+    }
+    > div > a{
+      margin: 0 10px;
+      color: #8c8c8c;
+      text-decoration: none;
+    }
+  }
+}
+footer{
+  width: 100%;
+  background-color: #2f383d;
+  > .foot{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    > .code{
+      width: 450px;
+      height: 380px;
+      padding-left: 10px;
+      > .contact{
+        > .sprite{
+        padding: 24px;
+        margin-right: 20px;
+        }
+        > .wx{
+          background-position: -18px -228px;
+        }
+        > .qq{
+          background-position: -74px -228px;
+        }
+        > .wb{
+          background-position: -130px -228px;
+        }
+        > .tel{
+          background-position: -185px -228px;
+        }
+      }
+      > .state{
+        margin-top: 10px;
+        color: #565d5d;
+      }
+      > .police{
+        padding: 30px 20px;
+        background-position: -250px -220px;
+      }
+    }
+    > .help{
+      min-width: 100px;
+      height: 380px;
+      padding-left: 20px;
+      border-left: 1px #2a3235 solid;
+      > div{
+        color: #8c8c8c;
+        margin-bottom: 10px;
+      }
+      > .theme{
+        color: #fff;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+//如何在宽度缩小时保证图片一直在正中间。
+//footer上链接的位置。

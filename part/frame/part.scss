@@ -1,0 +1,61 @@
+//----------------------------------------------图片相关-------------------------------------------------
+//雪碧图插入
+@mixin sprite($address){
+  background-image: url($address);
+}
+//大背景图片插入
+@mixin background-all{
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+}
+//下拉菜单小三角
+@mixin caret-top($length1,$length2,$length3,$color){
+  border-bottom: $length1 $color solid;
+  border-left: $length2 transparent solid;
+  border-right: $length3 transparent solid;
+}
+@mixin caret-bottom($length1,$length2,$length3,$color){
+  border-top: $length1 $color solid;
+  border-left: $length2 transparent solid;
+  border-right: $length3 transparent solid;
+}
+@mixin caret-left($length1,$length2,$length3,$color){
+  border-right: $length1 $color solid;
+  border-top: $length2 transparent solid;
+  border-bottom: $length3 transparent solid;
+}
+@mixin caret-right($length1,$length2,$length3,$color){
+  border-left: $length1 $color solid;
+  border-top: $length2 transparent solid;
+  border-bottom: $length3 transparent solid;
+}
+//----------------------------------------------文字相关-------------------------------------------------
+//文字不换行变为...
+@mixin text-hidden{
+  overflow: hidden;        //把超出的内容进行隐藏；
+  white-space: nowrap;     //设置内容不换行；
+  text-overflow: ellipsis; //设置超出内容为省略号
+}
+//框居中文字左对齐
+@mixin text-div{
+  margin : 0 auto;         // 使div框居中
+  text-align : center;     // 文本居中显示
+}
+@mixin text-p($position){
+  width : auto;            // 必设
+  display : inline-block;  // 不能设置为block
+  text-align : $position;       // 居左显示
+}
+//颜色
+$bc-gary:#3e3e3e;
+$bc-orange:#f1501a;
+$bc-none: transparent;
+$text-white:#fff;
+$text-gary:#dbdbdb;
+$text-orange:#f1501a;
+// $color-blue: #5ac0ce;
+$color-red: #ce593d;
+$color-gary: #eef2f2;
+$color-orange: #f8b547;
+$color-green: #28b078;
+$color-blue: #5ac0ce;

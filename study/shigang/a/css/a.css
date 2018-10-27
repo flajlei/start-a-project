@@ -1,0 +1,411 @@
+body, ul, p {
+  margin: 0; }
+
+body {
+  font-size: 14px; }
+
+button {
+  padding: 0;
+  border-color: transparent; }
+  button:focus {
+    outline: none; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+abbr {
+  text-decoration: none;
+  border: 0;
+  font-style: normal; }
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: textfield; }
+
+input[type="number"] {
+  -moz-appearance: textfield; }
+
+.flex-row-n1 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center; }
+
+.flex-row-n2 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center; }
+
+.flex-row-n3 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center; }
+
+.flex-row-n4 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center; }
+
+.flex-row-n5 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center; }
+
+.flex-col-n1 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center; }
+
+.flex-col-n2 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: center; }
+
+.flex-col-n3 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center; }
+
+.flex-col-n4 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center; }
+
+.flex-col-n5 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center; }
+
+.flex-row-w1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center; }
+
+.flex-row-w2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center; }
+
+.flex-row-w3 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center; }
+
+.flex-row-w4 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center; }
+
+.flex-row-w5 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center; }
+
+.flex-col-w1 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center; }
+
+.flex-col-w2 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  align-items: center; }
+
+.flex-col-w3 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center; }
+
+.flex-col-w4 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center; }
+
+.flex-col-w5 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center; }
+
+.flex-baseline {
+  align-items: baseline; }
+
+.flex-start {
+  align-items: flex-start; }
+
+.flex-1 {
+  flex: 1; }
+
+.children-part1 > div, .children-part1 > td, .children-part1 > li {
+  width: 100%; }
+
+.children-part2 > div, .children-part2 > td, .children-part2 > li {
+  width: 50%; }
+
+.children-part3 > div, .children-part3 > td, .children-part3 > li {
+  width: 33.333333%; }
+
+.children-part4 > div, .children-part4 > td, .children-part4 > li {
+  width: 25%; }
+
+.children-part5 > div, .children-part5 > td, .children-part5 > li {
+  width: 20%; }
+
+.children-part10 > div, .children-part10 > td, .children-part10 > li {
+  width: 10%; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.clearfix:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+.sprite {
+  background-image: url(../photo/sprite.png); }
+
+.part {
+  background-image: url(../photo/part.png); }
+
+.color-gary {
+  color: #b3b3b3; }
+
+.color-gary2 {
+  color: #6b6b6b; }
+
+.color-white {
+  color: #fff; }
+
+.text-center {
+  text-align: center; }
+
+body {
+  overflow-x: hidden; }
+
+header {
+  width: 100%;
+  background-color: #000; }
+  header > .head {
+    width: 100%;
+    height: 100%;
+    background: url(../photo/navbg.png) no-repeat center center; }
+    header > .head > .top {
+      width: 100%;
+      height: 60px; }
+      header > .head > .top > .left {
+        width: 100px;
+        height: 100px;
+        background-position-y: -100px; }
+      header > .head > .top > .right > div {
+        width: 80px;
+        color: #fff; }
+      header > .head > .top > .right > button {
+        width: 40px;
+        height: 20px;
+        border-radius: 2px;
+        color: #fff;
+        background-color: #017cb2; }
+    header > .head > .down {
+      width: 100%;
+      height: 565px;
+      margin: 0 auto; }
+      header > .head > .down > .text {
+        width: 100%;
+        text-align: center; }
+        header > .head > .down > .text > .text1 {
+          color: #fff;
+          font-size: 2.8rem; }
+        header > .head > .down > .text > .text2 {
+          color: #fff;
+          padding: 50px 0;
+          font-size: 1.3rem; }
+        header > .head > .down > .text > .text3 > button {
+          width: 265px;
+          height: 60px;
+          color: #fff; }
+        header > .head > .down > .text > .text3 > .qa {
+          border: 1px #fff solid;
+          background-color: transparent; }
+        header > .head > .down > .text > .text3 > .register {
+          margin-left: 30px;
+          background-color: #35d04f; }
+    header > .head > .roll {
+      position: relative; }
+      header > .head > .roll > div {
+        width: 60px;
+        height: 2px;
+        margin: 0 5px 5px 5px;
+        background-color: #fff; }
+      header > .head > .roll > .active {
+        background-color: #d0ad35; }
+
+main > .work > .work-top {
+  font-size: 2rem;
+  text-align: center;
+  margin: 90px 0; }
+main > .work > .work-down > div {
+  width: 350px;
+  height: 350px; }
+  main > .work > .work-down > div > .sprite {
+    width: 0;
+    height: 0;
+    padding: 50px; }
+  main > .work > .work-down > div > .theme {
+    font-size: 1.8rem;
+    margin-bottom: 10px; }
+main > .work > .work-down > .list2 {
+  border-left: 1px #ebf0f3 solid;
+  border-right: 1px #ebf0f3 solid; }
+  main > .work > .work-down > .list2 > .sprite {
+    background-position-x: -100px; }
+main > .work > .work-down > .list3 > .sprite {
+  background-position-x: -200px; }
+main > .work > .work-down > .list4 {
+  border-top: 1px #ebf0f3 solid; }
+  main > .work > .work-down > .list4 > .sprite {
+    background-position-x: -300px; }
+main > .work > .work-down > .list5 {
+  border: 1px #ebf0f3 solid;
+  border-bottom: 0; }
+  main > .work > .work-down > .list5 > .sprite {
+    background-position: -100px -100px; }
+main > .work > .work-down > .list6 {
+  border-top: 1px #ebf0f3 solid; }
+  main > .work > .work-down > .list6 > .sprite {
+    background-position: -200px -100px; }
+main > .rolling {
+  background-color: #bdc9d5; }
+  main > .rolling > .theme {
+    padding-top: 90px;
+    font-size: 2rem; }
+  main > .rolling > .info {
+    margin: 40px 0 50px 0; }
+  main > .rolling > .photo {
+    width: 80%;
+    height: 425px;
+    margin: 15px auto;
+    background: url(../photo/1.png) no-repeat; }
+  main > .rolling > .line {
+    height: 6px; }
+    main > .rolling > .line > div {
+      width: 15px;
+      height: 3px;
+      background-color: #fff;
+      margin: 0 5px 5px 5px; }
+      main > .rolling > .line > div:hover {
+        height: 6px; }
+    main > .rolling > .line > .active {
+      height: 6px; }
+main > .coop {
+  background-color: #f0f4f7;
+  padding: 105px 0 40px 0; }
+  main > .coop > .theme {
+    font-size: 3.5rem;
+    color: #0dcdb6; }
+  main > .coop > .info {
+    padding: 25px 0; }
+  main > .coop > .photo {
+    max-width: 1100px;
+    margin: 0 auto; }
+    main > .coop > .photo > .part {
+      width: 215px;
+      height: 140px; }
+    main > .coop > .photo > .part1, main > .coop > .photo .part6, main > .coop > .photo .part11 {
+      background-position-x: -10px; }
+    main > .coop > .photo > .part2, main > .coop > .photo .part7, main > .coop > .photo .part12 {
+      background-position-x: -227px; }
+    main > .coop > .photo > .part3, main > .coop > .photo .part8, main > .coop > .photo .part13 {
+      background-position-x: -443px; }
+    main > .coop > .photo > .part4, main > .coop > .photo .part9, main > .coop > .photo .part14 {
+      background-position-x: -659px; }
+    main > .coop > .photo > .part5, main > .coop > .photo .part10, main > .coop > .photo .part15 {
+      background-position-x: -878px; }
+    main > .coop > .photo > .part6, main > .coop > .photo .part7, main > .coop > .photo .part8, main > .coop > .photo .part9, main > .coop > .photo .part10 {
+      background-position-y: -140px; }
+    main > .coop > .photo > .part11, main > .coop > .photo .part12, main > .coop > .photo .part13, main > .coop > .photo .part14, main > .coop > .photo .part15 {
+      background-position-y: -280px; }
+  main > .coop > button {
+    width: 245px;
+    height: 45px;
+    margin: 90px 0 45px 0;
+    color: #fff;
+    background-color: #2f383d;
+    font-size: 1.2rem; }
+main > .link {
+  margin: 130px 0; }
+  main > .link > .theme {
+    margin-bottom: 35px;
+    font-size: 2rem; }
+  main > .link > div > a {
+    margin: 0 10px;
+    color: #8c8c8c;
+    text-decoration: none; }
+
+footer {
+  width: 100%;
+  background-color: #2f383d; }
+  footer > .foot {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0; }
+    footer > .foot > .code {
+      width: 450px;
+      height: 380px;
+      padding-left: 10px; }
+      footer > .foot > .code > .contact > .sprite {
+        padding: 24px;
+        margin-right: 20px; }
+      footer > .foot > .code > .contact > .wx {
+        background-position: -18px -228px; }
+      footer > .foot > .code > .contact > .qq {
+        background-position: -74px -228px; }
+      footer > .foot > .code > .contact > .wb {
+        background-position: -130px -228px; }
+      footer > .foot > .code > .contact > .tel {
+        background-position: -185px -228px; }
+      footer > .foot > .code > .state {
+        margin-top: 10px;
+        color: #565d5d; }
+      footer > .foot > .code > .police {
+        padding: 30px 20px;
+        background-position: -250px -220px; }
+    footer > .foot > .help {
+      min-width: 100px;
+      height: 380px;
+      padding-left: 20px;
+      border-left: 1px #2a3235 solid; }
+      footer > .foot > .help > div {
+        color: #8c8c8c;
+        margin-bottom: 10px; }
+      footer > .foot > .help > .theme {
+        color: #fff;
+        font-size: 1.1rem; }

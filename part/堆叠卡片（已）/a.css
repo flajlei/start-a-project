@@ -1,0 +1,72 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background: url(timg.jpg);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+/* 3D旋转卡片 */
+.box-a{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 300px;
+  height: 150px;
+  padding: 25px;
+  border-radius: 5px;
+  text-align: center;
+}
+.card-1{
+  background-color: aqua;
+  box-shadow: 2px 2px 5px aqua;
+  transform: rotatex(45deg) rotateY(-15deg) rotate(45deg) translate(120px,120px);
+}
+.card0{
+  background-color: red;
+  box-shadow: 2px 2px 5px red;
+  transform: rotatex(45deg) rotateY(-15deg) rotate(45deg) translate(80px,80px);
+}
+.card1{
+  background-color: #66ccff;
+  box-shadow: 2px 2px 5px #66ccff;
+  transform: rotatex(45deg) rotateY(-15deg) rotate(45deg) translate(40px,40px);
+}
+.card2{
+  background-color: #aa43f7;
+  box-shadow: 2px 2px 5px #aa43f7;
+  transform: rotatex(45deg) rotateY(-15deg) rotate(45deg) translate(0px,0px);
+}
+.card-1:hover{
+  animation: move-1 0.5s ease-out forwards;
+}
+.card0:hover{
+  animation: move0 0.5s ease-out forwards;
+}
+.card1:hover{
+  animation: move1 0.5s ease-out forwards;
+}
+.card2:hover{
+  animation: move2 0.5s ease-out forwards;
+}
+@keyframes move-1{
+  from{transform: rotatex(45deg) rotateY(-15deg) rotate(45deg) translate(120px,120px);}
+  to{transform: rotatex(30deg) rotateY(-15deg) rotate(30deg) translate(120px,230px);}
+}
+@keyframes move0{
+  from{transform: rotatex(45deg) rotateY(-15deg) rotate(45deg) translate(80px,80px);}
+  to{transform: rotatex(30deg) rotateY(-15deg) rotate(30deg) translate(80px,190px);}
+}
+@keyframes move1{
+  from{transform: rotatex(45deg) rotateY(-15deg) rotate(45deg) translate(40px,40px);}
+  to{transform: rotatex(30deg) rotateY(-15deg) rotate(30deg) translate(40px,150px);}
+}
+@keyframes move2{
+  from{transform: rotatex(45deg) rotateY(-15deg) rotate(45deg) translate(0px,0px);}
+  to{transform: rotatex(30deg) rotateY(-15deg) rotate(30deg) translate(0px,110px);}
+}
