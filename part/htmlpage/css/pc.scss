@@ -1,0 +1,42 @@
+@import "color.scss";
+.banner{
+  width: 100%;
+}
+.pc-title{
+  text-align: center;
+  padding-top: 20px;
+  > .pc-title-big{
+    font-size: 3rem;
+    color: $text-blue;
+    margin: 0 10px;
+  }
+}
+.pc-title-e{
+  color: $text-gary;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.pc-theme > h2{
+  font-weight: 400;
+}
+.pc-info{
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  >p{
+    height: 150px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    word-break: break-all;
+    word-wrap: break-word;
+  }
+  >.star{
+    >div,p{
+      font-size: 1.5rem;
+    }
+    >p{
+      color: $text-gary;
+    }
+  }
+}

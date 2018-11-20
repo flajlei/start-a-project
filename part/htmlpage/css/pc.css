@@ -1,0 +1,34 @@
+.banner {
+  width: 100%; }
+
+.pc-title {
+  text-align: center;
+  padding-top: 20px; }
+  .pc-title > .pc-title-big {
+    font-size: 3rem;
+    color: #2487B9;
+    margin: 0 10px; }
+
+.pc-title-e {
+  color: #888;
+  text-align: center;
+  padding-bottom: 20px; }
+
+.pc-theme > h2 {
+  font-weight: 400; }
+
+.pc-info {
+  flex-flow: column nowrap;
+  justify-content: space-around; }
+  .pc-info > p {
+    height: 150px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    word-break: break-all;
+    word-wrap: break-word; }
+  .pc-info > .star > div, .pc-info > .star p {
+    font-size: 1.5rem; }
+  .pc-info > .star > p {
+    color: #888; }

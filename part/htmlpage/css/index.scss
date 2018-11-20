@@ -1,0 +1,115 @@
+@import "color.scss";
+.sever{
+  padding:70px 0;
+  text-align: center;
+  background-color: $back-white;
+  > .row{
+    //标题
+    > .sever-title{
+      width: min-content;
+      white-space: nowrap;
+      margin: 20px auto;
+      border-bottom: 1px $text-gary solid;
+      > .sever-line{
+        width: 20px;
+        border-bottom: 2px $text-blue solid;
+        margin: auto;
+        height: 20px;
+      }
+    }
+    >p{
+      color: $text-gary;
+      font-size: 1.5rem;
+    }
+    //服务分类
+    > .sever-list{
+      justify-content: space-between;
+      > a{
+        > .list-box{
+          > .list-img{
+            width: 100px;
+            height: 100px;
+            margin: 20px auto;
+            border-radius: 50%;
+            border: 1px $text-blue solid;
+            .iconfont{
+              line-height: 100px;
+              font-size: 4rem;
+              color: $text-blue;
+            }
+          }
+          > p{
+            color:$text-gary;
+            font-size: 1.5rem;
+          }
+          > h3{
+            margin: 20px 0;
+          }
+          //图标变色
+          &:hover{
+            > .list-img{
+              background-color: $text-blue;
+              .iconfont{
+                color: #fff;
+              }
+            }
+            > h3{
+              color: $text-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.data{
+  padding: 70px 0;
+  background-color: #fff;
+  >.row{
+    justify-content: space-around;
+  }
+}
+.data-box{
+  padding: 40px;
+  width: 23%;
+  color: #fff;
+  min-height: 350px;
+  text-align: center;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  > div{
+    justify-content: center;
+    position: relative;
+    > .number{
+      font-size: 8rem;
+    }
+    > .more{
+      font-size: 4rem;
+    }
+  }
+  > img{
+    width: 120px;
+    margin: auto;
+  }
+  > p{
+    font-size: 1.5rem;
+  }
+  &:hover{
+    > div{
+      animation: text-move 1s linear forwards;
+    }
+  }
+}
+@keyframes text-move{
+  0%{top: 0}
+  10%{top: 10px}
+  20%{top: 0}
+  30%{top: -10px}
+  40%{top: 0}
+  50%{top: 5px}
+  70%{top: 0}
+  70%{top: -5px}
+  80%{top: 0}
+  90%{top: 2px}
+  100%{top: 0}
+}

@@ -1,0 +1,93 @@
+.sever {
+  padding: 70px 0;
+  text-align: center;
+  background-color: #fff; }
+  .sever > .row > .sever-title {
+    width: min-content;
+    white-space: nowrap;
+    margin: 20px auto;
+    border-bottom: 1px #888 solid; }
+    .sever > .row > .sever-title > .sever-line {
+      width: 20px;
+      border-bottom: 2px #2487B9 solid;
+      margin: auto;
+      height: 20px; }
+  .sever > .row > p {
+    color: #888;
+    font-size: 1.5rem; }
+  .sever > .row > .sever-list {
+    justify-content: space-between; }
+    .sever > .row > .sever-list > a > .list-box > .list-img {
+      width: 100px;
+      height: 100px;
+      margin: 20px auto;
+      border-radius: 50%;
+      border: 1px #2487B9 solid; }
+      .sever > .row > .sever-list > a > .list-box > .list-img .iconfont {
+        line-height: 100px;
+        font-size: 4rem;
+        color: #2487B9; }
+    .sever > .row > .sever-list > a > .list-box > p {
+      color: #888;
+      font-size: 1.5rem; }
+    .sever > .row > .sever-list > a > .list-box > h3 {
+      margin: 20px 0; }
+    .sever > .row > .sever-list > a > .list-box:hover > .list-img {
+      background-color: #2487B9; }
+      .sever > .row > .sever-list > a > .list-box:hover > .list-img .iconfont {
+        color: #fff; }
+    .sever > .row > .sever-list > a > .list-box:hover > h3 {
+      color: #2487B9; }
+
+.data {
+  padding: 70px 0;
+  background-color: #fff; }
+  .data > .row {
+    justify-content: space-around; }
+
+.data-box {
+  padding: 40px;
+  width: 23%;
+  color: #fff;
+  min-height: 350px;
+  text-align: center;
+  justify-content: space-around;
+  flex-flow: column nowrap; }
+  .data-box > div {
+    justify-content: center;
+    position: relative; }
+    .data-box > div > .number {
+      font-size: 8rem; }
+    .data-box > div > .more {
+      font-size: 4rem; }
+  .data-box > img {
+    width: 120px;
+    margin: auto; }
+  .data-box > p {
+    font-size: 1.5rem; }
+  .data-box:hover > div {
+    animation: text-move 1s linear forwards; }
+
+@keyframes text-move {
+  0% {
+    top: 0; }
+  10% {
+    top: 10px; }
+  20% {
+    top: 0; }
+  30% {
+    top: -10px; }
+  40% {
+    top: 0; }
+  50% {
+    top: 5px; }
+  70% {
+    top: 0; }
+  70% {
+    top: -5px; }
+  80% {
+    top: 0; }
+  90% {
+    top: 2px; }
+  100% {
+    top: 0; } }

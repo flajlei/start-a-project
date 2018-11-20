@@ -1,0 +1,73 @@
+.stage{
+	perspective: 4000px;
+	width: 100%;
+	margin-top: 40px;
+}
+.box{
+	transform-style: preserve-3d;
+	position: relative;
+	width: 145px;
+	height: 200px;
+	margin: 0 auto;
+
+	transform: rotateY(0deg);
+	animation: roll 36s infinite linear;
+}
+.box-list{
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	backface-visibility: hidden;
+}
+.box-list1{
+	transform: rotateY(30deg) translateZ(450px);
+}
+.box-list2{
+	transform: rotateY(60deg) translateZ(450px);
+}
+.box-list3{
+	transform: rotateY(90deg) translateZ(450px);
+}
+.box-list4{
+	transform: rotateY(120deg) translateZ(450px);
+}
+.box-list5{
+	transform: rotateY(150deg) translateZ(450px);
+}
+.box-list6{
+	transform: rotateY(180deg) translateZ(450px);
+}
+.box-list7{
+	transform: rotateY(210deg) translateZ(450px);
+}
+.box-list8{
+	transform: rotateY(240deg) translateZ(450px);
+}
+.box-list9{
+	transform: rotateY(270deg) translateZ(450px);
+}
+.box-list10{
+	transform: rotateY(300deg) translateZ(450px);
+}
+.box-list11{
+	transform: rotateY(330deg) translateZ(450px);
+}
+.box-list12{
+	transform: rotateY(360deg) translateZ(500px);
+}
+@keyframes roll{
+	0%{transform: rotateY(0deg);}
+	8.33%{transform: rotateY(30deg);}
+	16.66%{transform: rotateY(60deg);}
+	24.99%{transform: rotateY(90deg);}
+	33.32%{transform: rotateY(120deg);}
+	41.65%{transform: rotateY(150deg);}
+	49.98%{transform: rotateY(180deg);}
+	58.31%{transform: rotateY(210deg);}
+	66.64%{transform: rotateY(240deg);}
+	74.97%{transform: rotateY(270deg);}
+	83.3%{transform: rotateY(300deg);}
+	91.63%{transform: rotateY(330deg);}
+	100%{transform: rotateY(360deg);}
+}

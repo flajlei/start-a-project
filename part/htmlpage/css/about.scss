@@ -1,0 +1,50 @@
+@import "color.scss";
+.banner{
+  width: 100%;
+}
+.info-line{
+  width: 20px;
+  border-bottom: 2px #2487B9 solid;
+  margin: auto;
+  height: 20px;
+}
+.about-info{
+  width: 70%;
+  margin: auto;
+  color: $text-gary;
+  font-size:1.5rem;
+}
+.about-title{
+  padding-bottom: 1px;
+}
+.about-img{
+  text-align: center;
+  > img{
+    width: 90%;
+    margin: 60px 0;
+  }
+}
+.pc-info{
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  >p{
+    margin: 5px 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    word-break: break-all;
+    word-wrap: break-word;
+  }
+  >.star{
+    >div,p{
+      font-size: 1.5rem;
+    }
+    >p{
+      color: $text-gary;
+    }
+  }
+}
+.pc-theme > h2{
+  font-weight: 400;
+}

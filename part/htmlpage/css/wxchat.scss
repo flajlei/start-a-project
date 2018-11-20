@@ -1,0 +1,199 @@
+@import "color.scss";
+.banner{
+  width: 100%;
+}
+main{
+  background-color: #fff;
+}
+//服务信息
+//在main.scss文件
+//服务分类
+.sever{
+  padding: 70px 0;
+}
+.sever-title{
+  text-align: center;
+  padding: 20px 0;
+  > .sever-title-big{
+    font-size: 4rem;
+    color: $text-blue;
+    margin: 0 10px;
+  }
+}
+.sever-list{
+  justify-content: space-around;
+  padding-top: 70px;
+  .sever-box{
+    width: 22%;
+    padding: 40px 20px;
+    border: 1px $border-gary solid;
+    text-align: center;
+    >.iconimg{
+      width: 100px;
+      height: 100px;
+      margin: auto;
+      border-radius: 50%;
+      line-height: 100px;
+      >.iconfont{
+        font-size: 5.5rem;
+        color: #fff;
+      }
+    }
+    >h3{
+      padding: 20px;
+    }
+    >p{
+      color: $text-gary;
+      font-size: 1.4rem;
+    }
+  }
+  .icon1{
+    >.iconimg{
+    background-color: #ffa54c;
+    }
+    &:hover{
+      color: #fff;
+      background-color: #ffa54c;
+      >.iconimg{
+        background-color: #fff;
+        >.iconfont{
+          color: #ffa54c;
+        }
+      }
+      >p{
+        color: #fff;
+      }
+    }
+  }
+  .icon2{
+    >.iconimg{
+    background-color: #55e3db;
+    }
+    &:hover{
+      color: #fff;
+      background-color: #55e3db;
+      >.iconimg{
+        background-color: #fff;
+        >.iconfont{
+          color: #55e3db;
+        }
+      }
+      >p{
+        color: #fff;
+      }
+    }
+  }
+  .icon3{
+    >.iconimg{
+    background-color: #a3a8f0;
+    }
+    &:hover{
+      color: #fff;
+      background-color: #a3a8f0;
+      >.iconimg{
+        background-color: #fff;
+        >.iconfont{
+          color: #a3a8f0;
+        }
+      }
+      >p{
+        color: #fff;
+      }
+    }
+  }
+  .icon4{
+    >.iconimg{
+    background-color: #79c0f2;
+    }
+    &:hover{
+      color: #fff;
+      background-color: #79c0f2;
+      >.iconimg{
+        background-color: #fff;
+        >.iconfont{
+          color: #79c0f2;
+        }
+      }
+      >p{
+        color: #fff;
+      }
+    }
+  }
+}
+//服务特色
+.feature{
+  padding:70px 0;
+}
+.feature-list{
+  text-align: left;
+  align-items: center;
+  justify-content: space-around;
+  margin: 70px 0;
+  >.feature-list-l{
+    >.feature-theme{
+      position: relative;
+      margin-bottom: 40px;
+      >.feature-number{
+        font-size: 4.5rem;
+      }
+      >.feature-line{
+        position: absolute;
+        top: 7px;
+        left: 13px;
+        width: 11px;
+        height: 80px;
+        background-color: #fff;
+        border-left: 1px #888 solid;
+        transform: rotateZ(40deg);
+      }
+      >h3{
+        position: absolute;
+        top: 5px;
+        width: min-content;
+        white-space: nowrap;
+        padding: 30px;
+        font-weight: 400;
+        font-size: 3rem;
+        letter-spacing: 0.2rem;
+        > span{
+          font-size: 2.3rem;
+          color: $text-blue;
+        }
+      }
+    }
+    >p{
+      color: $text-gary;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      max-width: 600px;
+    }
+    >h4{
+      font-size: 1.8rem;
+      margin: 10px 0;
+    }
+  }
+}
+@media (max-width:1080px){
+  .feature,.sever{
+    padding: 35px 0;
+  }
+  .sever-list{
+    flex-flow: row wrap;
+    .sever-box{
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  .feature-list{
+    >img{
+      width: 80%;
+      max-width: 300px;
+    }
+  }
+  .feature-list:nth-of-type(odd){
+    flex-flow: column nowrap;
+  }
+  .feature-list:nth-of-type(even){
+    flex-flow: column-reverse nowrap;
+  }
+}

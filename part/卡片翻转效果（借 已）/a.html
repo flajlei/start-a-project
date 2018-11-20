@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="a.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <!--ontouchstart为兼容手机端,当点击到图片时会添加或删除class:hover-->
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+            <div class="front">
+                <!-- 前面内容 -->前
+            </div>
+            <div class="back">
+                <!-- 背面内容 -->后
+            </div>
+        </div>
+    </div>
+</body>
+</html>

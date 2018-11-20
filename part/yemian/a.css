@@ -163,3 +163,47 @@ main {
 
 .right-out {
   animation: right-out 1s ease alternate forwards; }
+
+.dis {
+  position: relative;
+  z-index: 3; }
+
+.abtn {
+  width: 70px;
+  height: 40px;
+  position: relative;
+  left: 500px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #fff;
+  box-shadow: 2px 2px 1px #000;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #99ddff), color-stop(5%, #66ccff), color-stop(100%, #4dc4ff));
+  border: 1px #4dc4ff solid;
+  margin-bottom: 300px; }
+
+.bbtn {
+  width: 400px;
+  height: 300px; }
+
+.a, .b, .c, .d, .a1, .b1, .c1, .d1 {
+  padding: 50px; }
+
+.a, .a1 {
+  background-color: #99ddff; }
+
+.b {
+  background-color: #444e55; }
+
+.c {
+  background-color: #394147; }
+
+.d {
+  background-color: #1c252b; }
+
+.b1 {
+  background-color: #66ccff; }
+
+.c1 {
+  background-color: #4dc4ff; }
+
+.d1 {
+  background-color: #33bbff; }

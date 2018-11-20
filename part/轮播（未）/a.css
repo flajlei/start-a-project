@@ -4,6 +4,9 @@ body{
   overflow-x: hidden;
   box-sizing: border-box;
 }
+*{
+  scroll-behavior: smooth;
+}
 /*轮播图盒子显示区域rollwin*/
 .rollwin{
   position: relative;
