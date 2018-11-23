@@ -50,6 +50,7 @@ main {
   position: relative; }
   main > .roll {
     position: relative;
+    top: 67px;
     width: 100vw;
     height: 0;
     padding-bottom: 50%;
@@ -63,17 +64,51 @@ main {
         width: 100%;
         height: 100%;
         background-repeat: no-repeat;
-        background-size: auto 100%;
+        background-size: 100%;
         background-position: center;
         opacity: 0; }
       main > .roll > .roll-box > .active {
         opacity: 1; }
       main > .roll > .roll-box > .img1 {
-        background-image: url(img/1.png); }
+        background-image: url(img/title1.jpg); }
       main > .roll > .roll-box > .img2 {
-        background-image: url(img/2.png); }
+        background-image: url(img/title2.jpg); }
       main > .roll > .roll-box > .img3 {
-        background-image: url(img/3.png); }
+        background-image: url(img/classA1.jpg); }
+    main > .roll > .roll-caret, main > .roll .roll-point {
+      position: absolute;
+      width: 100%; }
+    main > .roll > .roll-caret {
+      top: 0;
+      height: 100%;
+      padding: 0 3%;
+      justify-content: space-between;
+      align-items: center; }
+      main > .roll > .roll-caret > .left-caret {
+        border-right: 15px #888 solid;
+        border-top: 20px transparent solid;
+        border-bottom: 20px transparent solid; }
+        main > .roll > .roll-caret > .left-caret:hover {
+          border-right: 15px #fff solid; }
+      main > .roll > .roll-caret > .right-caret {
+        border-left: 15px #888 solid;
+        border-top: 20px transparent solid;
+        border-bottom: 20px transparent solid; }
+        main > .roll > .roll-caret > .right-caret:hover {
+          border-left: 15px #fff solid; }
+    main > .roll > .roll-point {
+      justify-content: center;
+      height: min-content;
+      bottom: 0; }
+      main > .roll > .roll-point > div {
+        padding: 5px;
+        border-radius: 50%;
+        border: 1px #fff solid;
+        margin: 10px; }
+        main > .roll > .roll-point > div:hover {
+          background-color: #fff; }
+      main > .roll > .roll-point > div.active {
+        background-color: #fff; }
   main > .classA {
     background-color: transparent;
     color: #fff;
@@ -163,47 +198,3 @@ main {
 
 .right-out {
   animation: right-out 1s ease alternate forwards; }
-
-.dis {
-  position: relative;
-  z-index: 3; }
-
-.abtn {
-  width: 70px;
-  height: 40px;
-  position: relative;
-  left: 500px;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px #fff;
-  box-shadow: 2px 2px 1px #000;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #99ddff), color-stop(5%, #66ccff), color-stop(100%, #4dc4ff));
-  border: 1px #4dc4ff solid;
-  margin-bottom: 300px; }
-
-.bbtn {
-  width: 400px;
-  height: 300px; }
-
-.a, .b, .c, .d, .a1, .b1, .c1, .d1 {
-  padding: 50px; }
-
-.a, .a1 {
-  background-color: #99ddff; }
-
-.b {
-  background-color: #444e55; }
-
-.c {
-  background-color: #394147; }
-
-.d {
-  background-color: #1c252b; }
-
-.b1 {
-  background-color: #66ccff; }
-
-.c1 {
-  background-color: #4dc4ff; }
-
-.d1 {
-  background-color: #33bbff; }

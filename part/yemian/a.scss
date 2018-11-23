@@ -59,6 +59,8 @@ main{
     position: relative;
     >.roll{
         position: relative;
+        //顶部距离
+        top: 67px;
         width: 100vw;
         height: 0;
         padding-bottom: 50%;
@@ -72,7 +74,7 @@ main{
                 width: 100%;
                 height: 100%;
                 background-repeat: no-repeat;
-                background-size: auto 100%;
+                background-size: 100%;
                 background-position: center;
                 opacity: 0;
             }
@@ -80,13 +82,58 @@ main{
                 opacity: 1;
             }
             >.img1{
-                background-image: url(img/1.png);
+                background-image: url(img/title1.jpg);
             }
             >.img2{
-                background-image: url(img/2.png);
+                background-image: url(img/title2.jpg);
             }
             >.img3{
-                background-image: url(img/3.png);
+                background-image: url(img/classA1.jpg);
+            }
+        }
+        >.roll-caret,.roll-point{
+            position: absolute;
+            width: 100%;
+        }
+        >.roll-caret{
+            top: 0;
+            height: 100%;
+            padding: 0 3%;
+            justify-content: space-between;
+            align-items: center;
+            >.left-caret{
+                border-right: 15px #888 solid;
+                border-top: 20px transparent solid;
+                border-bottom: 20px transparent solid;
+                &:hover{
+                    border-right: 15px #fff solid;
+                }
+            }
+            >.right-caret{
+                border-left: 15px #888 solid;
+                border-top: 20px transparent solid;
+                border-bottom: 20px transparent solid;
+                &:hover{
+                    border-left: 15px #fff solid;
+                }
+            }
+        }
+        >.roll-point{
+            justify-content: center;
+            height: min-content;
+            bottom: 0;
+            >div{
+                padding: 5px;
+                border-radius: 50%;
+                border: 1px #fff solid;
+                margin: 10px;
+                &:hover{
+                    background-color: #fff;
+                }
+            }
+            >div.active{
+                background-color: #fff;
+                
             }
         }
     }
@@ -173,48 +220,3 @@ main{
 .left-out{animation: left-out 1s ease alternate forwards;}//图片从左出去
 .right-in{animation: right-in 1s ease forwards;}//图片从右进入
 .right-out{animation: right-out 1s ease alternate forwards;}//图片从右出去
-
-.dis{
-    position: relative;
-    z-index: 3;
-}
-.abtn{
-    width: 70px;
-    height: 40px;
-    position: relative;
-    left: 500px;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px #fff;
-    box-shadow: 2px 2px 1px #000;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#99ddff), color-stop(5%,#66ccff), color-stop(100%,#4dc4ff));
-    border: 1px #4dc4ff solid;
-    margin-bottom: 300px;
-}
-.bbtn{
-    width: 400px;
-    height: 300px;
-}
-.a,.b,.c,.d,.a1,.b1,.c1,.d1{
-    padding: 50px;
-}
-.a,.a1{
-    background-color: #99ddff;
-}
-.b{
-    background-color: #444e55;
-}
-.c{
-    background-color: #394147;
-}
-.d{
-    background-color: #1c252b;
-}
-.b1{
-    background-color: darken(#99ddff,10%);
-}
-.c1{
-    background-color: darken(#99ddff,15%);
-}
-.d1{
-    background-color: darken(#99ddff,20%);
-}
