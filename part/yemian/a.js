@@ -29,11 +29,10 @@ $(".right-caret").click(function(){
 $(".point").click(function(){
     clearInterval(rollTime);
     imglist2 = $(this).index();
+    if (imglist2 == imglist) return false;
     rollJump();
     rollImg();
 })
-
-
 
 //向左轮播
 //点击按钮时
