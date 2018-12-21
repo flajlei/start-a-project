@@ -11,22 +11,41 @@
 <body></body>
 <!--for和id不能同时存在-->
     <div id="app" v-if="seen" v-bind:title="message">
-        <div  v-for="nass in namess">{{nass.text}}</div>
+        <div v-for="n in evenNumbers">{{n}}</div>
         </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script>
-      var app = new Vue({
+    //   var app = new Vue({
+    //       el:"#app",
+    //       data:{
+    //           message:"123"+new Date().toLocaleString(),
+    //           seen:true,
+    //           namess:[
+    //             {text:1},
+    //             {text:2},
+    //             {text:3}  
+    //           ]
+    //       }
+    //   })
+    var app = new Vue({
           el:"#app",
           data:{
               message:"123"+new Date().toLocaleString(),
               seen:true,
-              namess:[
-                {text:"1"},
-                {text:"2"},
-                {text:"3"}  
-              ]
-          }
-      })
+              namess:{
+                text:1,
+                age:2,
+                name:3},
+              numbers: [ 1, 2, 3, 4, 5 ]
+          },
+          computed: {
+            evenNumbers: function () {
+                return this.numbers.filter(function (number) {
+                return number % 2 === 0
+                })
+            }
+        }
+    })
     </script>
 </body>
 </html>

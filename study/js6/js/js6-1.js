@@ -38,6 +38,8 @@ login.controller('loginCtrl',function($scope,$http) {
           //跳转页面
           sessionStorage.setItem("name",$scope.name);
           location.href = 'js6-2.html';
+        } else {
+          $scope.error = $scope.data.message;
         }
       });
     }
