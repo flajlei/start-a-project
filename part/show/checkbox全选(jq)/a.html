@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../../default.css" />
+</head>
+<body>
+    <table class="box" cellspacing="0">
+        <tbody>
+            <tr>
+                <td>单选</td>
+                <td>
+                    <label for="">
+                        <input type="radio" name="1">1
+                        <input type="radio" name="1">2
+                        <input type="radio" name="1">3
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>多选</td>
+                <td>
+                    <label for="">
+                        <input type="checkbox" name="2" class="check allcheck">全选
+                        <input type="checkbox" name="2" class="check">1
+                        <input type="checkbox" name="2" class="check">2
+                        <input type="checkbox" name="2" class="check">3
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>文框分离</td>
+                <td>
+                    <input type='checkbox' name='ball' id='basketball'>   
+                    <label for="basketball">篮球</label>
+                    <input type='checkbox' name='ball' id='football'>   
+                    <label for="football">足球</label>
+                </td>
+            </tr>
+            <input type='checkbox' class="linktype" name="message" value='wechar' id='wechar'>
+            <label for="wechar">短信</label>
+            <input type='checkbox' class="linktype" name='message' value="message" id='message'>
+            <label for="message">微信</label>
+            <button class="btn btn-primary" id="sub" type="button">提醒</button>
+        </tbody>
+    </table>
+    <script src="../../action/jquery-3.3.1.min.js"></script>
+    <script src="a.js"></script>
+</body>
+</html>

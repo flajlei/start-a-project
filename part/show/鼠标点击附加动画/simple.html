@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .text-popup {
+            animation: textPopup 1s;
+            color: red;
+            user-select: none;
+            white-space: nowrap;
+            position: absolute;
+            z-index: 99;
+        }
+        @keyframes textPopup {
+            0%, 100% {
+                opacity: 0;
+            }
+            5% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-50px);    
+            }
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    var fnTextPopup = function (arr, options) {
+        // arr参数是必须的
+        if (!arr || !arr.length) {
+            return;    
+        }
+        // 主逻辑
+        var index = 0;
+        document.documentElement.addEventListener('click', function (event) {
+            var x = event.pageX, y = event.pageY;
+            var eleText = document.createElement('span');
+            eleText.className = 'text-popup';
+            this.appendChild(eleText);
+            if (arr[index]) {
+                eleText.innerHTML = arr[index];
+            } else {
+                index = 0;
+                eleText.innerHTML = arr[0];
+            }
+            // 动画结束后删除自己
+            eleText.addEventListener('animationend', function () {
+                eleText.parentNode.removeChild(eleText);
+            });
+            // 位置
+            eleText.style.left = (x - eleText.clientWidth / 2) + 'px';
+            eleText.style.top = (y - eleText.clientHeight) + 'px';
+            // index递增
+            index++;
+        });    
+    };
+    fnTextPopup(['富强', '民主', '文明', '和谐', '自由', '平等', '公正', '法治', '爱国', '敬业', '诚信', '友善']);
+    // canvas调取图片url
+    // var img = new Image();
+    // img.crossOrigin = 'anonymous';
+    // img.onload= function(){};
+    // img.onerror = function(){};
+    // img.src=url;
+    // 向下兼容方法
+    // var xhr = new XMLHttpRequest();
+    // xhr.onload = function () {
+    //     var url = URL.createObjectURL(this.response);
+    //     var img = new Image();
+    //     img.onload = function () {
+    //         // 此时你就可以使用canvas对img为所欲为了
+    //         // ... code ...
+    //         // 图片用完后记得释放内存
+    //         URL.revokeObjectURL(url);
+    //     };
+    //     img.src = url;
+    // };
+    // xhr.open('GET', url, true);
+    // xhr.responseType = 'blob';
+    // xhr.send();
+</script>

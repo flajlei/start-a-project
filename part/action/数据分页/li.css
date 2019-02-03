@@ -1,0 +1,10 @@
+.page-list-btn > button{
+    line-height: 20px;
+    border: 1px #d9e4f7 solid;
+    margin: 0 4px;
+    outline: none;
+    background-color: transparent;
+}
+.page-list-btn > button.active{
+    background-color: #d9e4f7;
+}

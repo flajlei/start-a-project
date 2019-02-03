@@ -1,0 +1,55 @@
+.img1{
+    position: relative;
+}
+.show-img1{
+    width: 75px;
+    height: 75px;
+}
+.show-img1 > img{
+    width: 100%;
+    height: 100%；;
+}
+.big-img1{
+    position: absolute;
+    top: 0;
+    left: 80px;
+    display: none;
+}
+.big-img1 > img{
+    width: 200px;
+    height: 200px;
+}
+.show-img1:hover + .big-img1{
+    display: block;
+}
+/* 2 */
+.img2{
+    position: relative;
+}
+.show-img2{
+    width: 75px;
+    height: 75px;
+}
+.show-img2 > img{
+    width: 100%;
+    height: 100%；;
+}
+.big-img2{
+    position: absolute;
+    top: 0;
+    left: 80px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    display: none;
+}
+.big-img2 > img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 500px;
+}
+.show-img2:hover + .big-img2{
+    display: block;
+}

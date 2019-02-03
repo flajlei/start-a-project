@@ -1,0 +1,278 @@
+Array.forEach 仅对原数组进行一次遍历。
+
+Array.map 对原数组进行遍历，返回一个新数组。
+
+Array.filter 对原数组进行过滤，同时返回一个新数组。
+
+Array.reduce 对原数组进行一次遍历，可以进行累加。
+
+for in 循环可以随时中止数组的遍历，break一下就行。
+
+获取url中的参数
+判断变量类型
+函数防抖
+函数节流
+for each
+
+//用来给低版本ie添加正常js操作的js文件
+if (!document.addEventListener) {
+    // IE6~IE8
+    document.write('<script src="ieBetter.js"><\/script>');	
+}
+
+
+//document方法： 
+getElementById(id) Node 返回指定结点的引用 
+getElementsByTagName(name) NodeList 返回文档中所有匹配的元素的集合 
+createElement(name) Node Node 
+createTextNode(text) Node 创建一个纯文本结点 
+ownerDocument Document 指向这个节点所属的文档 
+documentElement Node 返回html节点 
+document.body Node 返回body节点 
+//element方法： 
+getAttribute(attributeName) String 返回指定属性的值 
+setAttribute(attributeName,value) String 给属性赋值 
+removeAttribute(attributeName) String 移除指定属性和它的值 
+getElementsByTagName(name) NodeList 返回结点内所有匹配的元素的集合 
+//node方法： 
+appendChild(child) Node 给指定结点添加一个新的子结点 
+removeChild(child) Node 移除指定结点的子结点 
+replaceChild(newChild,oldChild) Node 替换指定结点的子结点 
+insertBefore(newChild,refChild) Node 在同一层级的结点前面插入新结点 
+hasChildNodes() Boolean 如果结点有子结点则返回true 
+//node属性： 
+nodeName String 以字符串的格式存放结点的名称 
+nodeType String 以整型数据格式存放结点的类型 
+nodeValue String 以可用的格式存放结点的值 
+parentNode Node 指向结点的父结点的引用 
+childNodes NodeList 指向子结点的引用的集合 
+firstChild Node 指向子结点结合中的第一个子结点的引用 
+lastChild Node 指向子结点结合中的最后一个子结点的引用 
+previousSibling Node 指向前一个兄弟节点；如果这个节点就是兄弟节点，那么该值为null 
+nextSibling Node 指向后一个兄弟节点；如果这个节点就是兄弟节点，那么该值为null
+
+
+//结束时间  
+end_str = ("2014-01-01 10:15:00").replace(/-/g,"/");//一般得到的时间的格式都是：yyyy-MM-dd hh24:mi:ss，所以我就用了这个做例子，是/的格式，就不用replace了。  
+var end_date = new Date(end_str);//将字符串转化为时间  
+//开始时间  
+sta_str = ("2014-01-01 10:15:00").replace(/-/g,"/");  
+var sta_date = new Date(sta_str);  
+var num = (end_date-sta_date)/(1000*3600*24);//求出两个时间的时间差，这个是天数  
+var days = parseInt(Math.ceil(num));//转化为整天（小于零的话剧不用转了）  
+  
+//下面才附上js中一些针对时间类操作的方法  
+var myDate = new Date();    
+    myDate.getYear();      //获取当前年份(2位)    
+    myDate.getFullYear(); //获取完整的年份(4位,1970-????)    
+    myDate.getMonth();      //获取当前月份(0-11,0代表1月)    
+    myDate.getDate();      //获取当前日(1-31)    
+    myDate.getDay();        //获取当前星期X(0-6,0代表星期天)    
+    myDate.getTime();      //获取当前时间(从1970.1.1开始的毫秒数)    
+    myDate.getHours();      //获取当前小时数(0-23)    
+    myDate.getMinutes();    //获取当前分钟数(0-59)    
+    myDate.getSeconds();    //获取当前秒数(0-59)    
+    myDate.getMilliseconds(); //获取当前毫秒数(0-999)    
+    myDate.toLocaleDateString();    //获取当前日期    
+    var mytime=myDate.toLocaleTimeString();    //获取当前时间    
+    myDate.toLocaleString( );      //获取日期与时间----如果涉及到时分秒，直接使用即可。   
+//5.检查有效日期 
+//checkDate() 只允许"mm-dd-yyyy"或"mm/dd/yyyy"两种格式的日期 
+if( checkDate("2006-01-01") ){ } 
+//正则表达式(自己写的检查 yyyy-mm-dd, yy-mm-dd, yyyy/mm/dd, yy/mm/dd 四种) 
+var r = /^(\d{2}|\d{4})[\/-]\d{1,2}[\/-]\d{1,2}$/; 
+if( r.test( myString ) ){ } 
+
+
+//8.特殊字符: 
+//\b : 后退符 \t : 水平制表符 
+//\n : 换行符 \v : 垂直制表符 
+//\f : 分页符 \r : 回车符 
+//\" : 双引号 \' : 单引号 
+//\\ : 反斜杆 
+//9.将字符转换成Unicode编码 
+var myString = "hello"; 
+var code = myString.charCodeAt(3); //返回"l"的Unicode编码(整型) 
+var char = String.fromCharCode(66); //返回Unicode为66的字符 
+//10.将字符串转换成URL编码 
+var myString = "hello all"; 
+var code = encodeURI(myString); //结果: "hello%20all" 
+var str = decodeURI(code); //结果: "hello all" 
+//相应的还有: encodeURIComponent() decodeURIComponent() 
+//字符串转数字
+parseInt("1234blue")
+Number(true) //1
+
+·Math对象 
+1. Math.abs(num) : 返回num的绝对值 
+2. Math.acos(num) : 返回num的反余弦值 
+3. Math.asin(num) : 返回num的反正弦值 
+4. Math.atan(num) : 返回num的反正切值 
+5. Math.atan2(y,x) : 返回y除以x的商的反正切值 
+6. Math.ceil(num) : 返回大于num的最小整数 
+7. Math.cos(num) : 返回num的余弦值 
+8. Math.exp(x) : 返回以自然数为底,x次幂的数 
+9. Math.floor(num) : 返回小于num的最大整数 
+10.Math.log(num) : 返回num的自然对数 
+11.Math.max(num1,num2) : 返回num1和num2中较大的一个 
+12.Math.min(num1,num2) : 返回num1和num2中较小的一个 
+13.Math.pow(x,y) : 返回x的y次方的值 
+14.Math.random() : 返回0到1之间的一个随机数 
+15.Math.round(num) : 返回num四舍五入后的值 
+16.Math.sin(num) : 返回num的正弦值 
+17.Math.sqrt(num) : 返回num的平方根 
+18.Math.tan(num) : 返回num的正切值 
+19.Math.E : 自然数(2.718281828459045) 
+20.Math.LN2 : 2的自然对数(0.6931471805599453) 
+21.Math.LN10 : 10的自然对数(2.302585092994046) 
+22.Math.LOG2E : log 2 为底的自然数(1.4426950408889634) 
+23.Math.LOG10E : log 10 为底的自然数(0.4342944819032518) 
+24.Math.PI : π(3.141592653589793) 
+25.Math.SQRT1_2 : 1/2的平方根(0.7071067811865476) 
+26.Math.SQRT2 : 2的平方根(1.4142135623730951) 
+
+Math.ceil();  //向上取整。
+Math.floor();  //向下取整。
+Math.round();  //四舍五入。
+Math.random();  //0.0 ~ 1.0 之间的一个伪随机数。【包含0不包含1】 //比如0.8647578968666494
+Math.ceil(Math.random()*10);      // 获取从1到10的随机整数 ，取0的概率极小。
+Math.round(Math.random());   //可均衡获取0到1的随机整数。
+Math.floor(Math.random()*10);  //可均衡获取0到9的随机整数。
+Math.round(Math.random()*10);  //基本均衡获取0到10的随机整数，其中获取最小值0和最大值10的几率少一半。
+
+//十进制转其他  
+var x=110;  
+alert(x);  
+alert(x.toString(8));  
+alert(x.toString(32));  
+alert(x.toString(16));  
+//其他转十进制  
+var x='110';  
+alert(parseInt(x,2));  
+alert(parseInt(x,8));  
+alert(parseInt(x,16));  
+//其他转其他  
+//先用parseInt转成十进制再用toString转到目标进制
+alert(String.fromCharCode(parseInt(141,8)))
+alert(parseInt('ff',16).toString(2));
+
+//jq
+//注意： 操作checkbox的checked,disabled属性时jquery1.6以前版本用attr,1.6以上（包含）建议用prop
+//1、根据id获取checkbox
+$("#cbCheckbox1");
+
+//2、获取所有的checkbox
+$("input[type='checkbox']");//or
+$("input[name='cb']");
+
+//3、获取所有选中的checkbox
+$("input:checkbox:checked");//or
+$("input:[type='checkbox']:checked");//or
+$("input[type='checkbox']:checked");//or
+$("input:[name='ck']:checked");
+
+//4、获取checkbox值
+//用.val()即可，比如：
+$("#cbCheckbox1").val();
+age = $("#age input[name='age']:checked + label").text();
+
+//5、获取多个选中的checkbox值
+var vals = [];
+$('input:checkbox:checked').each(function (index, item) {
+    vals.push($(this).val());
+});
+
+//6、判断checkbox是否选中（jquery 1.6以前版本 用  $(this).attr("checked")）
+$("#cbCheckbox1").click(function () {
+    if ($(this).prop("checked")) {
+        alert("选中");
+    } else {
+        alert("没有选中");
+    }
+});
+
+//7、设置checkbox为选中状态
+$('input:checkbox').attr("checked", 'checked');//or
+$('input:checkbox').attr("checked", true);
+
+//8、设置checkbox为不选中状态
+$('input:checkbox').attr("checked", '');//or
+$('input:checkbox').attr("checked", false);
+
+//9、设置checkbox为禁用状态(jquery<1.6用attr,jquery>=1.6建议用prop)
+$("input[type='checkbox']").attr("disabled", "disabled");//or
+$("input[type='checkbox']").attr("disabled", true);//or
+$("input[type='checkbox']").prop("disabled", true);//or
+$("input[type='checkbox']").prop("disabled", "disabled");
+
+//10、设置checkbox为启用状态(jquery<1.6用attr,jquery>=1.6建议用prop)
+$("input[type='checkbox']").removeAttr("disabled");//or
+$("input[type='checkbox']").attr("disabled", false);//or
+$("input[type='checkbox']").prop("disabled", "");//or
+$("input[type='checkbox']").prop("disabled", false);
+
+//option的选中
+$("option[value='3']").prop("selected",true)
+
+
+
+requestAnimationFrame的ie9兼容
+//兼容
+　　IE9-浏览器不支持该方法，可以使用setTimeout来兼容
+
+【简单兼容】
+
+if (!window.requestAnimationFrame) {
+    requestAnimationFrame = function(fn) {
+        setTimeout(fn, 17);
+    };    
+}
+【严格兼容】
+
+复制代码
+if(!window.requestAnimationFrame){
+    var lastTime = 0;
+    window.requestAnimationFrame = function(callback){
+        var currTime = new Date().getTime();
+        var timeToCall = Math.max(0,16.7-(currTime - lastTime));
+        var id  = window.setTimeout(function(){
+            callback(currTime + timeToCall);
+        },timeToCall);
+        lastTime = currTime + timeToCall;
+        return id;
+    }
+}
+复制代码
+if (!window.cancelAnimationFrame) {
+    window.cancelAnimationFrame = function(id) {
+        clearTimeout(id);
+    };
+}
+
+//canvas指令相关
+获取canvas
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+开始canvas
+ctx.beginPath();
+保存及重置(用于canvas一部分动一部分静时保存静态部分)
+ctx.save();//保存绘图环境
+ctx.restore()//重置到save时的状态
+清理画布
+ctx.clearRect(0, 0,canvas.width,canvas.height);
+画笔属性
+ctx.fillStyle = "green";//填充
+ctx.strokeStyle = "black";//描边
+ctx.lineWidth = 3;//画笔宽
+
+圆 ctx.arc(x坐标,y坐标,r半径,开始弧度,结束弧度,布尔值)
+// ctx.arc(100,100,50,Math.PI/180*0,Math.PI/180*360,false);
+
+矩形 rect
+使用sessionStorage、localStorage
+//数据缓存
+clear()：删除所有值。
+getItem(name)：根据指定的名字name获取对应的值
+key(index)：在指定的数字位置获取该位置的名字。
+removeItem(name)：删除由name指定的名值对
+setItem(name,value)：为指定名字设置一个对应的值

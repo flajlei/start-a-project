@@ -1,0 +1,36 @@
+.visainfo-table{
+    font-size: 12px;
+    border-collapse:collapse;
+    margin: auto;
+}
+.visainfo-table,.visainfo-table td,.visainfo-table th{
+    border: 1px #000 solid;
+}
+.visainfo-table th{
+    height: 40px;
+}
+.visainfo-table td{
+    height: 40px;
+}
+.visainfo-table td:nth-child(odd){
+    width: 80px;
+    background-color: #ededed;
+    text-align: center;
+}
+.visainfo-table td:nth-child(even){
+    padding-left: 5px;
+    min-width: 80px;
+}
+.visainfo-btn-go{
+    height: 25px;
+    padding: 5px;
+    margin-left: 10px;
+    color: #883300;
+    font-weight: bold;
+    background-color: #ffa500;
+    background: -webkit-gradient(linear,left bottom,left top, color-stop(1%, #d9a445), color-stop(3%, #f2c43c), color-stop(5%, #f3c43d), color-stop(50%, #ffaa00), color-stop(97%, #fdd790), color-stop(100%, #d9a445));
+    box-shadow: 1px 1px 1px 1px #d9a445;
+    border: 0;
+    outline: none; 
+    cursor: pointer;
+}

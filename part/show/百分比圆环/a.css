@@ -1,0 +1,58 @@
+.box{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background-color: #888;
+}
+.pre-cir1{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: aqua;
+}
+.pre-cir2,.pre-cir4{
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 300px;
+    background-color: red;
+}
+.pre-cir2{
+    left: 0; 
+    border-radius: 300px 0 0 300px;
+    transform-origin: 100% 50%;
+    animation: left-half 2s linear infinite forwards;
+}
+.pre-cir3{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 300px;
+    background-color: aqua;
+    border-radius: 0 300px 300px 0;
+    transform-origin: 0 50%;
+}
+.pre-cir4{
+    right: 0;
+    border-radius: 0 300px 300px 0;
+    transform-origin: 0 50%;
+    animation: right-half 2s linear infinite forwards;
+}
+@keyframes right-half{
+    0%{transform: rotateZ(0deg);opacity: 1;}
+    50%{transform: rotateZ(180deg);opacity: 1;}
+    50.1%{transform: rotateZ(180deg);opacity: 0;}
+    100%{transform: rotateZ(180deg);opacity: 0;}
+}
+@keyframes left-half{
+    0%{transform: rotateZ(0deg);}
+    50%{transform: rotateZ(0deg);}
+    100%{transform: rotateZ(180deg);}
+}

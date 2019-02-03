@@ -1,0 +1,30 @@
+body{
+    position: relative;
+    height: 200vh;
+}
+.box{
+    width: 500px;
+    height: 300px;
+    border: 10px red solid;
+    background-color: aquamarine;
+}
+.win{
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+}
+.win2{
+    position: fixed;
+    bottom: 0;
+    left: 50px;
+}
+.win3{
+    position: fixed;
+    top: 0;
+    right: 50px;
+}
+.win4{
+    position: fixed;
+    top: 0;
+    left: 50px;
+}

@@ -5,47 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="a.css" />
-    
+    <link rel="stylesheet" type="text/css" media="screen" href="../default.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
 </head>
-<body></body>
-<!--for和id不能同时存在-->
-    <div id="app" v-if="seen" v-bind:title="message">
-        <div v-for="n in evenNumbers">{{n}}</div>
+<body>
+    <div class="app">
+        <login></login>
+    </div>
+    <template id="login">
+        <div>
+            <div class="login-box">
+                <h3 class="login-theme">登录界面</h3>
+                <div class="login-box-input">
+                    <input class="login-input" placeholder="请输入账号" v-model="user">
+                    <label class="login-input-hover" for="">请输入账号</label>
+                </div>
+                <div class="login-box-input">
+                    <input class="login-input" placeholder="请输入密码" v-model="password">
+                    <label class="login-input-hover" for="">请输入密码</label>
+                </div>
+                <div class="login-error" v-text='error'></div>
+                <button class="login-btn" @click="login">登录</button>
+            </div>
         </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script>
-    //   var app = new Vue({
-    //       el:"#app",
-    //       data:{
-    //           message:"123"+new Date().toLocaleString(),
-    //           seen:true,
-    //           namess:[
-    //             {text:1},
-    //             {text:2},
-    //             {text:3}  
-    //           ]
-    //       }
-    //   })
-    var app = new Vue({
-          el:"#app",
-          data:{
-              message:"123"+new Date().toLocaleString(),
-              seen:true,
-              namess:{
-                text:1,
-                age:2,
-                name:3},
-              numbers: [ 1, 2, 3, 4, 5 ]
-          },
-          computed: {
-            evenNumbers: function () {
-                return this.numbers.filter(function (number) {
-                return number % 2 === 0
-                })
-            }
-        }
-    })
-    </script>
+    </template>
+    <script src="templates/js/vue.js"></script>
+    <script src="templates/js/vue-router.js"></script>
+    <script src="templates/js/a.js"></script>
 </body>
 </html>

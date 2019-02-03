@@ -1,0 +1,29 @@
+.search-box{
+    margin: 0 0 20px 10%;
+}
+
+.file-table{
+    width: 80%;
+    margin: 0 10%;
+    border-collapse: collapse;
+    border: 1px #999 solid;
+}
+.file-td-country{
+    background-color: #f9f9f9;
+    border: 1px #999 solid;
+    line-height: 30px;
+    font-weight: bold;
+}
+.file-td-name{
+    padding: 8px 0;
+}
+.file-btn-load{
+    border: 0;
+    background-color: #2577e3;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.upfile-box{
+    float: right;
+}

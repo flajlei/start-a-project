@@ -1,0 +1,37 @@
+html{
+    width: 100vw;
+    height: 100vh;
+}
+.box{
+    perspective:1000;
+    -webkit-perspective: 1000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 464px;
+    height: 408px;
+    transition: 1s all;
+    filter: drop-shadow(0 0 5px #f00);
+}
+.heart{
+    transform-style: preserve-3d;
+}
+.left,.right{
+    position: absolute;
+    top: -20px;
+    width: 250px;
+    height: 400px;
+    border-radius: 300px 300px 0px 0px;
+    background: radial-gradient(closest-side circle, red 0,orange 33.33%,yellow 66.666%,white);
+}
+.left{
+    left: 53px;
+    transform: rotateZ(-45deg);
+}
+.right{
+    left: 159px;
+    transform: rotateZ(45deg);
+}

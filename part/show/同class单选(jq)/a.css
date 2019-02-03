@@ -1,0 +1,22 @@
+.box1{
+    position: relative;
+    overflow: hidden;
+}
+.box-list1{
+    float: left;
+    width: 100px;
+    line-height: 50px;
+    text-align: center;
+    background-color: aquamarine;
+}
+.box2{
+    width: 500px;
+}
+.box-list2{
+    height: 50px;
+    text-align: center;
+    background-color: aquamarine;
+}
+.box-list:hover,.box-list.active{
+    background-color: aqua;
+}

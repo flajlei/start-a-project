@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <style>
+        .color{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h4 :class="{'color':use}">{{url}}</h4>
+        <div>
+            <p>{{message}}</p>
+            <input type="text" v-model="message">
+            <button v-on:click="rese"></button>
+        </div>
+        <div>
+            <div>v-html:其值会作为html属性渲染</div>
+            <p>{{value}}</p>
+            <p v-html="value"></p>
+        </div>
+    </div>
+    <h2>2.字符串模板</h2>
+    <div id="app2">
+        <div>原文</div>
+    </div>
+    <template id="tem">
+        <p>我是template</p>
+    </template>
+    <h2>3.模版—render函数</h2>
+    <div id="app3">
+        <div>原文</div>
+    </div>
+    <h2>4.计算属性</h2>
+    <div id="app4">
+        <input type="button" value="改变" @click="change" />
+        <div>{{ myData }}</div>
+        <input type="button" value="改变2" @click="change2" />
+    </div>
+    <h2>5.组件化开发</h2>
+    <div id="app5">
+        <div class="app5">
+            <my-component></my-component>
+            <common></common>
+            <part1></part1>
+        </div>
+    </div>
+    <template id="part1">
+        <p>
+            <span>第二个局部组件(可放置多行代码)</span>
+        </p>
+    </template>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    <script src="vue.js"></script>
+    <script src="https://cdn.bootcss.com/vue-router/3.0.2/vue-router.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+.daymenu{
+    width: max-content;
+    overflow: hidden;
+    border: 1px #E8E8E8 solid;
+}
+.daymenu .lastweek-btn,
+.daymenu .year-box,
+.daymenu .week-box,
+.daymenu .day-box,
+.daymenu .nextweek-btn{
+    float: left;
+}
+.daymenu .lastweek-btn,
+.daymenu .nextweek-btn{
+    width: 80px;
+    height: 82px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ccc;
+    background-color: #f0f0f0;
+    user-select:none;
+}
+.daymenu .lastweek-btn:hover,
+.daymenu .nextweek-btn:hover{
+    color: #2577e3;
+    cursor: pointer;
+}
+.daymenu .year-box{
+    position: relative;
+    overflow: hidden;
+    width: 630px;
+    height: 82px;
+}
+.daymenu .week-box{
+    position: absolute;
+    left: 0;
+    background-color: #f0f0f0;
+    transition: 1s all;
+}
+.daymenu .day-box{
+    width: 90px;
+    height: 82px;
+    text-align: center;
+    border-top: 3px #f0f0f0 solid;
+}
+.daymenu .day-num,
+.daymenu .day-week{
+    padding: 12px 10px;
+    font-size: 12px;
+}
+.daymenu .day-week{
+    display: none;
+}
+.daymenu .day-box:hover{
+    color: #fff;
+    background-color: #2577e3;
+    border-top: 3px #2577e3 solid;
+}
+.daymenu .day-box.active{
+    color: #000;
+    background-color: #fff;
+    border-top: 3px #2577e3 solid;
+}

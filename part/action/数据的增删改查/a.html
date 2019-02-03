@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="a.js"></script>
+</head>
+<body>
+    <h3 class="theme" nam="1">字符串操作</h3>
+
+    <h4>toUpperCase,toLowerCase</h4>
+    <div>字符串全部大小写</div>
+    <div>string.toUpperCase()</div>
+
+    <h4>indexOf()</h4>
+    <div>索引指定字符下标(无返回-1)</div>
+    <div>string.index("abc")</div>
+
+    <h4>substring(start,end)</h4>
+    <div>获取从开始下标到结束下标前的字符(不包含结束下标的字符,0,5只截取前五个字符)</div>
+    <div>string.substring(0,5),string.substring(5)</div>
+    var section = myString.substr(6,4); //结果: "good" 
+
+    <h4>substr(start,num)</h4>
+    <div>从开始下标截取num个字符返回</div>
+    <div>string.substr(0,5)</div>
+
+    <h4>replace('a','b')</h4>
+    <div>搜索指定字符串a替换为b</div>
+    <div>string.replace('a','b')</div>
+
+    <h4>split()</h4>
+    <div>字符串分割</div>
+    <div>string.split('a')</div>
+
+    <h3>数组操作Array</h3>
+
+    <h4>indexOf()</h4>
+    <div>索引指定字符下标(无返回-1)</div>
+    <div>array.indexOf("abc")</div>
+
+    <h4>slice(start,end)</h4>
+    <div>获取从开始下标到结束下标前的数组(不包含结束下标的数组,0,5只截取前五个数组)</div>
+    <div>array.slice(0,5),array.slice(5),array.slice()//复制数组</div>
+
+    <h4>push和pop</h4>
+    <div>数组最后一位的添加与删除(前者返回数组长度,后者返回被删除的元素)</div>
+    <div>array.push("a","b"),array.pop()</div>
+
+    <h4>unshift和shift</h4>
+    <div>数组开头的添加与删除(前者返回数组长度,后者返回删除后的数组)</div>
+    <div>array.push("a","b"),array.pop()</div>
+
+    <h4>sort</h4>
+    <div>对数组进行排序(默认为字符编码顺序,可自行设置)</div>
+    <div>array.sort()</div>
+
+    <h4>reverse</h4>
+    <div>数组反序</div>
+    <div>array.reverse()</div>
+
+    <h4>splice(起始下标,删除个数,添加元素,添加元素,...)</h4>
+    <div>修改数组用</div>
+    <div>var arr = ['a','b','c','d','e','f'];</div>
+    <div>arr.splice(2,3,'1','2')//返回值为三个被删除的元素'c','d','e'</div>
+    <div>arr ['a', 'b', '1', '2', 'f']</div>
+    <div>arr.splice(2,2)仅删除//返回被删除元素</div>
+    <div>arr ['a', 'b', 'f']</div>
+    <div>arr.splice(2,0,'1','2')仅添加</div>
+    <div>arr ['a', 'b', '1', '2', 'f']</div>
+
+    <h4>concat</h4>
+    <div>数组拼接</div>
+    <div>将多个数组拼接形成一个新数组</div>
+    <div>arr=[a,b,c];var b = arr.concat([1,2,3])//原arr并未发生改变</div>
+    
+    <h4>join</h4>
+    <div>将数组按指定符号连接形成字符串</div>
+    <div>arr.join("-")</div>
+
+    <h3>对象操作object</h3>
+
+    <div>for(var prop in obj){
+        if(obj.hasOwnProperty(prop)){
+            console.log(obj[prop]);
+        }
+    }</div>
+    
+    <h4>foreach</h4>
+    <div>
+        a.forEach(function (element, index, array) {
+            // element: 指向当前元素的值
+            // index: 指向当前索引
+            // array: 指向Array对象本身
+            console.log(element + ', index = ' + index);
+        });
+    </div>
+
+    <h3>es6新数据格式Map 和 Set</h3>
+
+    <h4>Map 对值</h4>
+    <div>var m = new Map();</div>
+    <div>m.set('Adam', 67); // 添加新的key-value</div>
+    <div>m.set('Bob', 59);</div>
+    <div>m.has('Adam'); // 是否存在key 'Adam': true</div>
+    <div>m.get('Adam'); // 67</div>
+    <div>m.delete('Adam'); // 删除key 'Adam'</div>
+    <div>m.get('Adam'); // undefined</div>
+
+    <h4>Set 无重复元素数组</h4>
+    <div>var s1 = new Set()</div>
+    <div>add添加</div>
+    <div>delete删除</div>
+
+    <h4>新的遍历格式</h4>
+    <h3>for (var x of a) {}</h3>
+    <div>map与set也可以使用foreach</div>
+</body>
+</html>

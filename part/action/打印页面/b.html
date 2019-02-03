@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="a.css" />
+    <!--打印时实行的css文件-->
+    <style media="print">
+        .noprint {
+            display: none;
+        }
+        .visainfo-table{
+            border-collapse:collapse;
+            margin: auto;
+        }
+        .visainfo-table,.visainfo-table td{
+            border: 1px #000 solid;
+        }
+    </style>
+</head>
+<body>
+<!--startprint-->
+<table class="visainfo-table">
+    <thead>
+        <tr>
+            <th colspan="6">旅游便捷免流水</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>办理地点:</td>
+            <td>北京</td>
+            <td>市场价格:</td>
+            <td>￥650</td>
+            <td>优惠价格:</td>
+            <td>登陆查看</td>
+        </tr>
+        <tr>
+            <td>申请递交:</td>
+            <td>委托代交</td>
+            <td>预约时间:</td>
+            <td>无需预约</td>
+            <td>工作日:</td>
+            <td>8-10</td>
+        </tr>
+        <tr>
+            <td>有效时间:</td>
+            <td>3个月</td>
+            <td>最多停留:</td>
+            <td>15天</td>
+            <td>入境次数:</td>
+            <td>单次</td>
+        </tr>
+        <tr>
+            <td>领区划分:</td>
+            <td colspan="5">北京,天津,河北,山西,内蒙古,湖北,湖南,西藏,陕西,甘肃,青海,宁夏,河南</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3">
+                <a class="visainfo-btn-go noprint">立即办理</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!--endprint-->
+<script>
+    function iframePrint(){
+      window.print();
+    }
+</script>
+</body>
+</html>

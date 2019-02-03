@@ -1,0 +1,37 @@
+label{
+    padding: 10px;
+    margin-left: 10px;
+    display: inline-block;
+    background-color: #eee;
+}
+.box1{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    overflow: hidden;
+}
+.box1-list{
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    position: relative;
+}
+.box1-list > input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    clip: rect(0,0,0,0);
+    outline: none;
+    background-color: transparent;
+}
+.box1-list:nth-of-type(1){
+    background-color: aqua;
+}
+.box1-list:nth-of-type(2){
+    background-color: red;
+}
+.box1-list:nth-of-type(3){
+    background-color: black;
+}
