@@ -35,6 +35,8 @@ var person = {
 //({x, y} = { name, x:100, y: 200});
 //快速获取当前页面的域名和路径：
 //var {hostname:domain, pathname:path} = location;
+// domain 被赋值hostname    
+// path 赋值/
 
 //function buildDate({year, month, day, hour=0, minute=0, second=0}) {
 //    return new Date(year + '-' + month + '-' + day + ' ' + hour + ':' + minute + ':' + second);

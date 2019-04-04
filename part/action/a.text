@@ -276,3 +276,21 @@ getItem(name)：根据指定的名字name获取对应的值
 key(index)：在指定的数字位置获取该位置的名字。
 removeItem(name)：删除由name指定的名值对
 setItem(name,value)：为指定名字设置一个对应的值
+
+ajax发送请求
+$.ajax({
+    async:true,//默认为异步true
+    url:'/api/user',
+    type:'POST',
+    contentType//向后台发送数据
+    data:'id=9&name=222',
+    success:function(data){
+        console.log(data)
+    },
+    error:function(data){
+
+    }
+})
+
+getJSON
+getScript

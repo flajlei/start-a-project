@@ -31,9 +31,11 @@
                 tabBtn[i].onclick = function (){
                     for(var j=0;j<tabBtn.length;j++){
                         tabBtn[j].className='';
+                        //tabBtn[j].classlist.remove("active")
                         tabDiv[j].style.display='none';
                     }
                     this.className='active';
+                    //this.classlist.add("active")
                     tabDiv[this.index].style.display='block';
                 };
             }

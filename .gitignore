@@ -1,0 +1,5 @@
+
+my/node_modules/.bin/acorn
+my/node_modules/.bin/acorn.cmd
+my/node_modules/.bin/escodegen
+*.cmd

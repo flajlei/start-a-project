@@ -14,7 +14,7 @@ $(document).ready(function() {
     $(this).css("background-color","#777");
   })
 });
-var myApp = angular.module('myApp',['ngRoute'])
+var myApp = angular.module('myApp',['ngRoute']);
 //转换字符串
 myApp.config(function ($httpProvider) {
   $httpProvider.defaults.transformRequest = function (obj) {

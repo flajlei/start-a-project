@@ -15,6 +15,7 @@ label{
     height: 100px;
     color: #fff;
     position: relative;
+    transition: 0.6s all;
 }
 .box1-list > input{
     position: absolute;

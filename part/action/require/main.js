@@ -1,0 +1,10 @@
+require.config({
+    paths:{
+        jquery:["../jquery-3.3.1.min"],
+        a:["a"]
+    },
+    baseUrl:"./"
+});
+require(["a"],function(flaj){
+    flaj.daylist("2019-5-3");
+});

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    infoSort();
+    //infoSort();
     liActive();
 })
 //分页

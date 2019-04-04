@@ -1,6 +1,7 @@
 // var fs = require('fs');
 // var data = fs.readFileSync('input.txt');
 // console.log(data.toString());
+//读取文件内容并将其转换为字符
 // console.log('程序执行结束!');
 
 
@@ -50,29 +51,13 @@ eventEmitter.addListener('connection', listener1);
 eventEmitter.on('connection', listener2);
 var eventListeners = eventEmitter.listenerCount('connection');
 console.log(eventListeners + " 个监听器监听连接事件。");
-// 处理 connection 事件 
+// 执行 connection 事件 
 eventEmitter.emit('connection');
 // 移除监绑定的 listener1 函数
 eventEmitter.removeListener('connection', listener1);
 console.log("listener1 不再受监听。");
-// 触发连接事件
+// 执行 connection 事件
 eventEmitter.emit('connection');
 eventListeners = eventEmitter.listenerCount('connection');
 console.log(eventListeners + " 个监听器监听连接事件。");
 console.log("程序执行完毕。");
-
-
-var events = require('events');
-var eventEmitter = new events.EventEmitter();
-var listener1 = function listener1(){
-  console.log('监听器 listen1执行');
-}
-var listener2 = function listener2(){
-  console.log('监听器2执行')
-}
-eventEmitter.addListener('connection',listener1);
-eventEmitter.on('connection',listener2);
-
-//显示connection的监听事件数
-var eventListeners = eventEmitter.listenerCount('connection');
-console.log(eventListeners);
